@@ -43,7 +43,7 @@
             <plugin id="TiledBg" />
             <texture />
         </object-type>
-        <object-type name="Sprite" sid="3616952699279181">
+        <object-type name="bolo" sid="3616952699279181">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="87424511733853" speed="5">
@@ -62,7 +62,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite2" sid="8382531157367309">
+        <object-type name="mosca" sid="8382531157367309">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="3" loop="1" name="mosca_voando" pingpong="0" repeatcount="1" repeatto="0" sid="4844604054068532" speed="9">
