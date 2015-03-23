@@ -4,8 +4,8 @@
     <sid>7584171430171486</sid>
     <event-sheet>Event sheet 1</event-sheet>
     <size>
-        <width>1708</width>
-        <height>960</height>
+        <width>1024</width>
+        <height>576</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
@@ -64,7 +64,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="bolo" uid="1">
+                <instance type="Sprite" uid="1">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -74,11 +74,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1487</x>
-                        <y>818</y>
+                        <x>715</x>
+                        <y>391</y>
                         <z>0</z>
-                        <width>431</width>
-                        <height>275</height>
+                        <width>268.536376953</width>
+                        <height>171.339904785</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -86,7 +86,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mosca1" uid="2">
+                <instance type="Sprite2" uid="2">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -96,14 +96,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>134</x>
-                        <y>318</y>
+                        <x>213</x>
+                        <y>231</y>
                         <z>0</z>
-                        <width>168.579162598</width>
-                        <height>133.088821411</height>
+                        <width>64.976799011</width>
+                        <height>51.761180878</height>
                         <depth>0</depth>
-                        <hotspotX>0.508771956</hotspotX>
-                        <hotspotY>0.51111114</hotspotY>
+                        <hotspotX>0.508474588</hotspotX>
+                        <hotspotY>1</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
