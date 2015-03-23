@@ -43,7 +43,7 @@
             <plugin id="TiledBg" />
             <texture />
         </object-type>
-        <object-type name="Sprite" sid="3616952699279181">
+        <object-type name="bolo" sid="3616952699279181">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="87424511733853" speed="5">
@@ -57,6 +57,25 @@
                             <point x="0.5" y="1" />
                             <point x="0.0285714" y="0.971429" />
                             <point x="0.0142857" y="0.514286" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mosca1" sid="8382531157367309">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4844604054068532" speed="5">
+                    <frame duration="1" hotspotX="0.508772" hotspotY="0.511111">
+                        <collision-poly>
+                            <point x="0.807018" y="0.488889" />
+                            <point x="0.807018" y="0.755556" />
+                            <point x="0.508772" y="0.933333" />
+                            <point x="0.122807" y="0.844444" />
+                            <point x="0.122807" y="0.488889" />
+                            <point x="0.0877193" y="0.111111" />
+                            <point x="0.508772" y="0.333333" />
+                            <point x="0.929825" y="0.0888889" />
                         </collision-poly>
                     </frame>
                 </animation>
