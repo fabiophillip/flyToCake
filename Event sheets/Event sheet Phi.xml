@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet Phi</name>
+    <events>
+        <event-block sid="1966854238322328">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="8760211300451323" type="moscaphi">
+                    <param id="0" name="Object">parte_cima_bolo</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="4517215082644898" type="moscaphi">
+                    <param id="0" name="Instance variable">mosca_no_bolo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="8110251834911979" type="Text">
+                    <param id="0" name="Text">&quot;MOSCA OVERLAPPING PARTE_CIMA_BOLO&quot;</param>
+                </action>
+                <action behavior="Platform" id="5" name="Set gravity" sid="2769319976241428" type="moscaphi">
+                    <param id="0" name="Gravity">10</param>
+                </action>
+                <action id="-17" name="Move forward" sid="2082834718941466" type="moscaphi">
+                    <param id="0" name="Distance">0.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4232971532727956">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="7210776306360609" type="System" />
+                <condition id="1" name="Is overlapping another object" sid="8853853875356209" type="moscaphi">
+                    <param id="0" name="Object">parte_antes_bolo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="6925267882970436" type="moscaphi">
+                    <param id="0" name="Distance">1</param>
+                </action>
+                <action behavior="Platform" id="5" name="Set gravity" sid="6654466285538391" type="moscaphi">
+                    <param id="0" name="Gravity">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9612268191648792">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4127973979265939" type="moscaphi">
+                    <param id="0" name="Object">bolophi</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="4044617654805494" type="moscaphi">
+                    <param id="0" name="Instance variable">mosca_no_bolo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9932084810085544">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="3950143418405272" type="System">
+                    <param id="0" name="Interval (seconds)">10.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="2919713953656636" type="System">
+                    <param id="0" name="Object to create">moscaphi</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">25</param>
+                    <param id="3" name="Y">choose(118,187,259)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="820878146361096">
+            <conditions>
+                <condition id="-18" name="On created" sid="3220917314207879" type="moscaphi" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="5" name="Set gravity" sid="7231477099005283" type="moscaphi">
+                    <param id="0" name="Gravity">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>FlyInCake</name>
     <description></description>
@@ -15,7 +15,11 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
-    <used-behaviors />
+    <used-behaviors>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -136,13 +140,120 @@
         <object-type name="TextoParaDebug" sid="948526118256563">
             <plugin id="Text" />
         </object-type>
+         <object-type name="parte_cima_bolo" sid="8465371796842569">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2842409307304256" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Detector" sid="4604617360653631">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7205119693835678" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="2541329816492471">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="parte_antes_bolo" sid="3838456574141762">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4421895805531538" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="moscaphi" sid="5030872031168529">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="mosca_no_bolo" sid="8248769869857101" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="5299815655951919">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="8065809750670045">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="3" loop="1" name="mosca_voando" pingpong="0" repeatcount="1" repeatto="0" sid="2219193432442412" speed="9">
+                    <frame duration="1" hotspotX="0.508475" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.79661" y="0.489362" />
+                            <point x="0.79661" y="0.744681" />
+                            <point x="0.508475" y="0.914894" />
+                            <point x="0.135593" y="0.829787" />
+                            <point x="0.135593" y="0.489362" />
+                            <point x="0.101695" y="0.12766" />
+                            <point x="0.508475" y="0.340426" />
+                            <point x="0.915254" y="0.106383" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507463" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.761194" y="0.487805" />
+                            <point x="0.761194" y="0.609756" />
+                            <point x="0.507463" y="0.926829" />
+                            <point x="0.134328" y="0.780488" />
+                            <point x="0.0447761" y="0.487805" />
+                            <point x="0.0746269" y="0.121951" />
+                            <point x="0.507463" y="0.219512" />
+                            <point x="0.925373" y="0.121951" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.508475" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.79661" y="0.489362" />
+                            <point x="0.79661" y="0.744681" />
+                            <point x="0.508475" y="0.914894" />
+                            <point x="0.135593" y="0.829787" />
+                            <point x="0.135593" y="0.489362" />
+                            <point x="0.101695" y="0.12766" />
+                            <point x="0.508475" y="0.340426" />
+                            <point x="0.915254" y="0.106383" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bolophi" sid="5318662320381873">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="9759904957763681">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1632415757326161" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0285714" y="0.0285714" />
+                            <point x="0.5" y="0" />
+                            <point x="0.971429" y="0.0285714" />
+                            <point x="1" y="0.5" />
+                            <point x="0.971429" y="0.971429" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0285714" y="0.971429" />
+                            <point x="0.0142857" y="0.514286" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
         <layout>Layout 1.xml</layout>
+        <layout>LayoutPhi.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
         <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet Phi.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="2">
