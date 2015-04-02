@@ -11,7 +11,9 @@
     <saved-with-version>17300</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors />
     <used-effects />
@@ -31,7 +33,7 @@
         <prop name="Fullscreen in browser">Letterbox scale</prop>
         <prop name="Fullscreen scaling">High quality</prop>
         <prop name="Loader style">Progress bar &amp; logo</prop>
-        <prop name="Orientations">Any</prop>
+        <prop name="Orientations">Landscape</prop>
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D web</prop>
         <prop name="Preview browser">(default)</prop>
@@ -64,6 +66,10 @@
         </object-type>
         <object-type name="mosca" sid="8382531157367309">
             <plugin id="Sprite" />
+            <container>
+                <type>LetraCimaMosca</type>
+                <type>mosca</type>
+            </container>
             <animation-folder expanded="1">
                 <animation framecount="3" loop="1" name="mosca_voando" pingpong="0" repeatcount="1" repeatto="0" sid="4844604054068532" speed="9">
                     <frame duration="1" hotspotX="0.508475" hotspotY="1">
@@ -105,6 +111,31 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="LetraCimaMosca" sid="3272350357212903">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable comment="Se a letra for a, o número é 1 e assim vai..." name="NumeroLetraAlfabeto" sid="8986126320683824" type="number" />
+                <instance-variable comment="a letra que vai aparecer em cima da mosca. Ela mudarah de acordo com o valor de NumeroLetraAlfabeto..." name="Letra" sid="3336030768993654" type="string" />
+            </instance-variables>
+            <container>
+                <type>LetraCimaMosca</type>
+                <type>mosca</type>
+            </container>
+        </object-type>
+        <object-type name="Touch" sid="3528351347993669">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Sprite" sid="8360739786808492">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3839274672022935" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextoParaDebug" sid="948526118256563">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
@@ -113,7 +144,13 @@
     <event-folder expanded="1">
         <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
-    <global-instances />
+    <global-instances>
+        <global-instance type="Touch" uid="2">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+    </global-instances>
     <sounds-folder expanded="1" />
     <music-folder expanded="1" />
     <files-folder expanded="1">
