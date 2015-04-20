@@ -129,10 +129,11 @@
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="3" loop="1" name="mosca_voando_contrario" pingpong="0" repeatcount="1" repeatto="0" sid="4186066442981191" speed="9">
-                    <frame duration="1" hotspotX="0.508475" hotspotY="0.510638">
+                <animation framecount="3" loop="1" name="mosca_voando_contrario" pingpong="0" repeatcount="1" repeatto="0" sid="4207988102251718" speed="9">
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.957447">
+                        <image-point name="Imagepoint 1" x="0.440678" y="-0.0425532" />
                         <collision-poly>
-                            <point x="0.0847458" y="0.106383" />
+                            <point x="0.084746" y="0.106383" />
                             <point x="0.491525" y="0.340426" />
                             <point x="0.898305" y="0.12766" />
                             <point x="0.864407" y="0.489362" />
@@ -142,9 +143,9 @@
                             <point x="0.20339" y="0.489362" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.507463" hotspotY="0.512195">
+                    <frame duration="1" hotspotX="0.492537" hotspotY="1">
                         <collision-poly>
-                            <point x="0.0746269" y="0.121951" />
+                            <point x="0.074627" y="0.121951" />
                             <point x="0.492537" y="0.219512" />
                             <point x="0.925373" y="0.121951" />
                             <point x="0.955224" y="0.487805" />
@@ -154,9 +155,9 @@
                             <point x="0.238806" y="0.487805" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.508475" hotspotY="0.510638">
+                    <frame duration="1" hotspotX="0.491525" hotspotY="1">
                         <collision-poly>
-                            <point x="0.0847458" y="0.106383" />
+                            <point x="0.084746" y="0.106383" />
                             <point x="0.491525" y="0.340426" />
                             <point x="0.898305" y="0.12766" />
                             <point x="0.864407" y="0.489362" />
