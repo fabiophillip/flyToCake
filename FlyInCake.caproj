@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>FlyInCake</name>
     <description></description>
@@ -10,11 +10,10 @@
     <unique-id>22i10wq0cv9cl</unique-id>
     <saved-with-version>17300</saved-with-version>
     <used-plugins>
-        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
-        <plugin author="Scirra" id="Text" version="1">Text</plugin>
-        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
@@ -47,10 +46,6 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder expanded="1">
-        <object-type name="background" sid="4779962302667289">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
         <object-type name="bolo" sid="3616952699279181">
             <plugin id="Sprite" />
             <behaviors>
@@ -79,6 +74,8 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="mosca_no_bolo" sid="5965993056808972" type="number" />
+                <instance-variable name="mosca_voando_contrario" sid="8823576424116651" type="number" />
+                <instance-variable name="mosca_caindo" sid="2530123757497762" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="9711052420347661">
@@ -129,6 +126,44 @@
                             <point x="0.101695" y="0.12766" />
                             <point x="0.508475" y="0.340426" />
                             <point x="0.915254" y="0.106383" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="mosca_voando_contrario" pingpong="0" repeatcount="1" repeatto="0" sid="4186066442981191" speed="9">
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.510638">
+                        <collision-poly>
+                            <point x="0.0847458" y="0.106383" />
+                            <point x="0.491525" y="0.340426" />
+                            <point x="0.898305" y="0.12766" />
+                            <point x="0.864407" y="0.489362" />
+                            <point x="0.864407" y="0.829787" />
+                            <point x="0.491525" y="0.914894" />
+                            <point x="0.20339" y="0.744681" />
+                            <point x="0.20339" y="0.489362" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507463" hotspotY="0.512195">
+                        <collision-poly>
+                            <point x="0.0746269" y="0.121951" />
+                            <point x="0.492537" y="0.219512" />
+                            <point x="0.925373" y="0.121951" />
+                            <point x="0.955224" y="0.487805" />
+                            <point x="0.865672" y="0.780488" />
+                            <point x="0.492537" y="0.926829" />
+                            <point x="0.238806" y="0.609756" />
+                            <point x="0.238806" y="0.487805" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.510638">
+                        <collision-poly>
+                            <point x="0.0847458" y="0.106383" />
+                            <point x="0.491525" y="0.340426" />
+                            <point x="0.898305" y="0.12766" />
+                            <point x="0.864407" y="0.489362" />
+                            <point x="0.864407" y="0.829787" />
+                            <point x="0.491525" y="0.914894" />
+                            <point x="0.20339" y="0.744681" />
+                            <point x="0.20339" y="0.489362" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -196,7 +231,7 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="mosca_no_bolo" sid="8248769869857101" type="number" />
-                 <instance-variable name="mosca_voando_contrario" sid="9134008737387298" type="number" />
+                <instance-variable name="mosca_voando_contrario" sid="9134008737387298" type="number" />
                 <instance-variable name="voar_mosca_horizontalmente" sid="8758593773408593" type="number" />
                 <instance-variable name="mosca_caindo" sid="1502623244821005" type="number" />
             </instance-variables>
@@ -247,7 +282,7 @@
                         </collision-poly>
                     </frame>
                 </animation>
-                 <animation framecount="3" loop="1" name="mosca_voando_contrario" pingpong="0" repeatcount="1" repeatto="0" sid="4644792185227762" speed="9">
+                <animation framecount="3" loop="1" name="mosca_voando_contrario" pingpong="0" repeatcount="1" repeatto="0" sid="4644792185227762" speed="9">
                     <frame duration="1" hotspotX="0.491525" hotspotY="1">
                         <collision-poly>
                             <point x="0.084746" y="0.106383" />
@@ -1239,13 +1274,13 @@
         <event-sheet>Event sheet Phi.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Touch" uid="12">
+        <global-instance type="Touch" uid="23">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Mouse" uid="8" />
-        <global-instance type="Audio" uid="15">
+        <global-instance type="Mouse" uid="24" />
+        <global-instance type="Audio" uid="25">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
