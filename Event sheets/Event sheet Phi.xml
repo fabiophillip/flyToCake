@@ -13,16 +13,23 @@
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
                 </condition>
+                <condition id="-7" name="Compare instance variable" sid="2628656297402553" type="moscaphi">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="4408891855352338" type="moscaphi">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
             </conditions>
             <actions>
-                <action id="0" name="Set text" sid="8110251834911979" type="Text">
-                    <param id="0" name="Text">&quot;MOSCA OVERLAPPING PARTE_CIMA_BOLO&quot;</param>
-                </action>
                 <action behavior="Platform" id="5" name="Set gravity" sid="2769319976241428" type="moscaphi">
-                    <param id="0" name="Gravity">10</param>
+                    <param id="0" name="Gravity">5</param>
                 </action>
                 <action id="-17" name="Move forward" sid="2082834718941466" type="moscaphi">
-                    <param id="0" name="Distance">0.5</param>
+                    <param id="0" name="Distance">0.8</param>
                 </action>
             </actions>
         </event-block>
@@ -31,6 +38,16 @@
                 <condition id="-1" name="Every tick" sid="7210776306360609" type="System" />
                 <condition id="1" name="Is overlapping another object" sid="8853853875356209" type="moscaphi">
                     <param id="0" name="Object">parte_antes_bolo</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="810159394923423" type="moscaphi">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="2084583066206243" type="moscaphi">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
@@ -55,21 +72,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="9932084810085544">
-            <conditions>
-                <condition id="-6" name="Every X seconds" sid="3950143418405272" type="System">
-                    <param id="0" name="Interval (seconds)">10.0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-3" name="Create object" sid="2919713953656636" type="System">
-                    <param id="0" name="Object to create">moscaphi</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">25</param>
-                    <param id="3" name="Y">choose(118,187,259)</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="820878146361096">
             <conditions>
                 <condition id="-18" name="On created" sid="3220917314207879" type="moscaphi" />
@@ -77,6 +79,206 @@
             <actions>
                 <action behavior="Platform" id="5" name="Set gravity" sid="7231477099005283" type="moscaphi">
                     <param id="0" name="Gravity">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4660497985241357">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="3412177424443121" type="System" />
+                <condition id="1" name="Is overlapping another object" sid="7371858315498205" type="moscaphi">
+                    <param id="0" name="Object">parte_antes_bolo2</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="6791523450379339" type="moscaphi">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="419765327416114" type="moscaphi">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="7057204085684866" type="moscaphi">
+                    <param id="0" name="Distance">0.5</param>
+                </action>
+                <action behavior="Platform" id="5" name="Set gravity" sid="305937987592576" type="moscaphi">
+                    <param id="0" name="Gravity">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2651961453802287">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="2364873801779244" type="moscaphi">
+                    <param id="0" name="Object">parte_antes_bolo2</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="4972068906517201" type="moscaphi">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="8475303136289367" type="moscaphi">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="6843057484221722" type="System">
+                    <param id="0" name="Seconds">3.0</param>
+                </action>
+                <action id="4" name="Set animation" sid="90685581053762" type="moscaphi">
+                    <param id="0" name="Animation">&quot;mosca_voando_contrario&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="573684997395621" type="moscaphi">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1272059891362507">
+            <conditions />
+            <actions />
+        </event-block>
+        <event-block sid="4112525250720525">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="8727104218003227" type="moscaphi">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="6619293012069723" type="moscaphi">
+                    <param id="0" name="Object">parte_antes_bolo_pra_trigger</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="6908409067222044" type="moscaphi">
+                    <param id="0" name="Object">parte_cima_bolo</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="9505025375631551" type="moscaphi">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="6394414838160769" type="moscaphi">
+                    <param id="0" name="Distance">-1</param>
+                </action>
+                <action id="0" name="Set text" sid="5187988018250306" type="Text">
+                    <param id="0" name="Text">&quot;MOSCA voando contrario&quot;</param>
+                </action>
+                <action behavior="Platform" id="5" name="Set gravity" sid="136555930555074" type="moscaphi">
+                    <param id="0" name="Gravity">0</param>
+                </action>
+                <action behavior="Platform" id="9" name="Set vector Y" sid="5860388913977074" type="moscaphi">
+                    <param id="0" name="Vector Y">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8667972219411214">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="291945509153867" type="moscaphi">
+                    <param id="0" name="Object">parte_antes_bolo_pra_trigger</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="7709401823953607" type="moscaphi">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="7820367863561105" type="moscaphi">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="5" name="Set gravity" sid="2136056310307442" type="moscaphi">
+                    <param id="0" name="Gravity">8</param>
+                </action>
+                <action id="-17" name="Move forward" sid="3921972666478055" type="moscaphi">
+                    <param id="0" name="Distance">-0.5</param>
+                </action>
+                <action id="-16" name="Wait" sid="1364576266327549" type="System">
+                    <param id="0" name="Seconds">5.00</param>
+                </action>
+                <action id="-10" name="Set value" sid="2862337601032349" type="moscaphi">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action behavior="Platform" id="5" name="Set gravity" sid="7784511193648463" type="moscaphi">
+                    <param id="0" name="Gravity">0</param>
+                </action>
+                <action behavior="Platform" id="9" name="Set vector Y" sid="7547099863887888" type="moscaphi">
+                    <param id="0" name="Vector Y">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="9684511243668537" type="moscaphi">
+                    <param id="0" name="Animation">&quot;mosca_voando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6007512020215098">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="9707456224683076" type="System">
+                    <param id="0" name="Interval (seconds)">5.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="1246005981035848" type="System">
+                    <param id="0" name="Object to create">moscaphi</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">25</param>
+                    <param id="3" name="Y">choose(140, 130, 120, 110, 100, 90, 80, 70)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5100401819547847">
+            <conditions>
+                <condition id="-18" name="On created" sid="4995478603014053" type="moscaphi" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="5" name="Set gravity" sid="1004931363300533" type="moscaphi">
+                    <param id="0" name="Gravity">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1109931754626344">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="8405967920442172" type="Touch">
+                    <param id="0" name="Object">moscaphi</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="7506681529749311" type="moscaphi">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="2502641854170794" type="moscaphi">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="4404610705931682" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;7_year_old_boy_screams&quot;</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8016490060273203">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="3229488943820332" type="moscaphi">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="5" name="Set gravity" sid="1812534247259549" type="moscaphi">
+                    <param id="0" name="Gravity">40</param>
                 </action>
             </actions>
         </event-block>
