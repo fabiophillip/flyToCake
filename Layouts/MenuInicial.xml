@@ -156,7 +156,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="texto_instrucoes" uid="28">
+                <instance type="texto_instrucoes" uid="25">
                     <properties>
                         <text>Instructions</text>
                         <initial-visibility>Visible</initial-visibility>

@@ -3,6 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="moscas_viraram_bolo" sid="3862675104719746" static="0" type="number">0</variable>
+        <variable comment="nome do sprite da mosca" constant="0" name="sprite_da_mosca" sid="3559637804088934" static="0" type="text">mosca</variable>
+        <variable constant="0" name="tempo_restante" sid="8647882511149372" static="0" type="number">90</variable>
         <variable comment="eh a pontuacao do usuario apenas na jogatina atual" constant="0" name="pontuacaoNoJogoAtual" sid="1570557738680984" static="0" type="number">0</variable>
         <event-block sid="8159090108177292">
             <conditions>
@@ -227,6 +230,13 @@
                 <action id="-10" name="Set value" sid="8538363483544611" type="Score">
                     <param id="0" name="Instance variable">pontos</param>
                     <param id="1" name="Value">Score.pontos + 100</param>
+                </action>
+                <action id="-10" name="Add to" sid="6425925372097798" type="System">
+                    <param id="0" name="Variable">tempo_restante</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+                <action id="0" name="Set text" sid="5218377150241259" type="cronometro">
+                    <param id="0" name="Text">zeropad(floor(tempo_restante / 60 % 60), 2) &amp; &quot;:&quot;  &amp; zeropad(floor(tempo_restante % 60), 2)</param>
                 </action>
             </actions>
         </event-block>
@@ -1273,10 +1283,6 @@
                 <action id="-16" name="Wait" sid="6133739491549106" type="System">
                     <param id="0" name="Seconds">3.0</param>
                 </action>
-                <action id="4" name="Set animation" sid="1891966524848397" type="mosca">
-                    <param id="0" name="Animation">&quot;mosca_voando_contrario&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
                 <action id="-10" name="Set value" sid="461771375604768" type="mosca">
                     <param id="0" name="Instance variable">mosca_voando_contrario</param>
                     <param id="1" name="Value">1</param>
@@ -1374,10 +1380,6 @@
                 <action behavior="Platform" id="9" name="Set vector Y" sid="822659792182305" type="mosca">
                     <param id="0" name="Vector Y">0</param>
                 </action>
-                <action id="4" name="Set animation" sid="3974465619295709" type="mosca">
-                    <param id="0" name="Animation">&quot;mosca_voando&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
                 <action behavior="Platform" id="5" name="Set gravity" sid="5109907131861574" type="BiscoitoCimaMosca">
                     <param id="0" name="Gravity">0</param>
                 </action>
@@ -1464,8 +1466,10 @@
         </event-block>
         <event-block sid="5058374883758553">
             <conditions>
-                <condition id="4" name="Is touching object" sid="3338848986465558" type="Touch">
-                    <param id="0" name="Object">bolophi</param>
+                <condition id="-14" name="Compare variable" sid="3338848986465558" type="System">
+                    <param id="0" name="Variable">tempo_restante</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
@@ -1544,6 +1548,78 @@
                     <param id="2" name="X">137</param>
                     <param id="3" name="Y">335</param>
                 </action>
+                <action id="-3" name="Create object" sid="2049556721879526" type="System">
+                    <param id="0" name="Object to create">fireball</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">167</param>
+                    <param id="3" name="Y">335</param>
+                </action>
+                <action id="-3" name="Create object" sid="2833397588149067" type="System">
+                    <param id="0" name="Object to create">fireball</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">197</param>
+                    <param id="3" name="Y">335</param>
+                </action>
+                <action id="-3" name="Create object" sid="58284640276604" type="System">
+                    <param id="0" name="Object to create">fireball</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">227</param>
+                    <param id="3" name="Y">335</param>
+                </action>
+                <action id="-3" name="Create object" sid="4021950748009123" type="System">
+                    <param id="0" name="Object to create">fireball</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">257</param>
+                    <param id="3" name="Y">335</param>
+                </action>
+                <action id="-3" name="Create object" sid="9217983636931129" type="System">
+                    <param id="0" name="Object to create">fireball</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">287</param>
+                    <param id="3" name="Y">335</param>
+                </action>
+                <action id="-3" name="Create object" sid="2835248182550903" type="System">
+                    <param id="0" name="Object to create">fireball</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">317</param>
+                    <param id="3" name="Y">335</param>
+                </action>
+                <action id="-3" name="Create object" sid="6407406575996507" type="System">
+                    <param id="0" name="Object to create">fireball</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">347</param>
+                    <param id="3" name="Y">335</param>
+                </action>
+                <action id="-3" name="Create object" sid="5591460620790635" type="System">
+                    <param id="0" name="Object to create">fireball</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">377</param>
+                    <param id="3" name="Y">335</param>
+                </action>
+                <action id="-3" name="Create object" sid="1459075634724961" type="System">
+                    <param id="0" name="Object to create">fireball</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">407</param>
+                    <param id="3" name="Y">335</param>
+                </action>
+                <action id="-3" name="Create object" sid="2804873885926117" type="System">
+                    <param id="0" name="Object to create">fireball</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">437</param>
+                    <param id="3" name="Y">335</param>
+                </action>
+                <action id="-3" name="Create object" sid="5530720372166653" type="System">
+                    <param id="0" name="Object to create">fireball</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">467</param>
+                    <param id="3" name="Y">335</param>
+                </action>
+                <action id="-3" name="Create object" sid="1567557247914688" type="System">
+                    <param id="0" name="Object to create">fireball</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">497</param>
+                    <param id="3" name="Y">335</param>
+                </action>
                 <action id="0" name="Set text" sid="1597114740243692" type="Questao">
                     <param id="0" name="Text">&quot;&quot;</param>
                 </action>
@@ -1568,6 +1644,233 @@
                     <param id="0" name="Y">fireball.Y - 3</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="2621050246925934">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="804686104356368" type="fireball">
+                    <param id="0" name="Object">mosca</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="8267076482192935" type="mosca" />
+                <action id="7" name="Play (by name)" sid="2021376931452167" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;7_year_old_boy_screams&quot;</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8351714277291434">
+            <conditions>
+                <condition id="-18" name="On created" sid="264310757858423" type="cronometro" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="3103438034392308" type="cronometro">
+                    <param id="0" name="Text">zeropad(floor(tempo_restante / 60 % 60), 2) &amp; &quot;:&quot;  &amp; zeropad(floor(tempo_restante % 60), 2)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1544534617100224">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="9944235657813083" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4816942028433301" type="System">
+                    <param id="0" name="Variable">tempo_restante</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="7531807607898561" type="System">
+                    <param id="0" name="Variable">tempo_restante</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="2773287223999903" type="cronometro">
+                    <param id="0" name="Text">zeropad(floor(tempo_restante / 60 % 60), 2) &amp; &quot;:&quot;  &amp; zeropad(floor(tempo_restante % 60), 2)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7719495959076915">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="496962803576595" type="System">
+                    <param id="0" name="Interval (seconds)">30.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="8542387397392983" type="System">
+                    <param id="0" name="Variable">moscas_viraram_bolo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2770812319510831">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="1741694988605108" type="Touch">
+                    <param id="0" name="Object">placa_jogo_pausar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="2292290873955864" type="System">
+                    <param id="0" name="Time scale">0.0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="6231291937959598" type="System">
+                    <param id="0" name="Layer">0</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="365537020719686" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="6259400395273867" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3937853319462562">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="2656452326389647" type="Touch">
+                    <param id="0" name="Object">placa_choco_continuar_jogo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="2197822054760838" type="System">
+                    <param id="0" name="Time scale">1.0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="7012722931681219" type="System">
+                    <param id="0" name="Layer">0</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="2485559861930449" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="6731619396808765" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3487713575374227">
+            <conditions>
+                <condition id="-7" name="Compare time" sid="1380798715906496" type="System">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Time (seconds)">0.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="4109945403559746" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6749436213558046">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="565172545712193" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="6751573607260982">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="4495047001101156" type="System">
+                            <param id="0" name="First value">moscas_viraram_bolo % 2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="3198624249981376" type="mosca">
+                            <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8073068216185057" type="mosca">
+                            <param id="0" name="Animation">&quot;mosca_bolo&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="4457249923122723" type="bolophi">
+                            <param id="0" name="Animation">&quot;forno_bolo&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="291310900516363">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="870436746118177" type="System">
+                            <param id="0" name="First value">moscas_viraram_bolo % 2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="6929645818673696" type="mosca">
+                            <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="1061812656772315" type="mosca">
+                            <param id="0" name="Animation">sprite_da_mosca &amp;&quot;_voando&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="499413047616881" type="bolophi">
+                            <param id="0" name="Animation">&quot;bolo&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2729715959405227">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="7869602937338106" type="System">
+                            <param id="0" name="First value">moscas_viraram_bolo % 2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="1830477290955324" type="mosca">
+                            <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="3147422822560426" type="mosca">
+                            <param id="0" name="Animation">&quot;mosca_bolo_contrario&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="3662064127437566" type="bolophi">
+                            <param id="0" name="Animation">&quot;forno_bolo&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8687336386138838">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="1417614742077732" type="System">
+                            <param id="0" name="First value">moscas_viraram_bolo % 2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="3808771635807755" type="mosca">
+                            <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="1648146150779201" type="mosca">
+                            <param id="0" name="Animation">sprite_da_mosca &amp; &quot;_voando_contrario&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="3404035304440624" type="bolophi">
+                            <param id="0" name="Animation">&quot;bolo&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
