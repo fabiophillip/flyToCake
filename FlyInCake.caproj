@@ -48,7 +48,7 @@
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
-    <object-folder expanded="0">
+    <object-folder expanded="1">
         <object-type name="bolo" sid="3616952699279181">
             <plugin id="Sprite" />
             <behaviors>
@@ -94,6 +94,7 @@
                 <instance-variable name="mosca_voando_contrario" sid="8823576424116651" type="number" />
                 <instance-variable name="mosca_caindo" sid="2530123757497762" type="number" />
                 <instance-variable name="mosca_virou_bolo" sid="5950868070711554" type="boolean" />
+                <instance-variable name="mosca_parada" sid="1359546440365007" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="9711052420347661">
@@ -1838,11 +1839,28 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="placa_jogo_jogar" sid="5590228167480625">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9780875080003389" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.00883392" y="0.0181159" />
+                            <point x="0.5" y="0" />
+                            <point x="0.991166" y="0.0181159" />
+                            <point x="0.991166" y="0.981884" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00883392" y="0.981884" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
         <layout>Layout 1.xml</layout>
-        <layout>CopiaLayout1.xml</layout>
+        <layout>CopiaDoLayout 1.xml</layout>
         <layout>LayoutPhi.xml</layout>
         <layout>MenuInicial.xml</layout>
         <layout>fimDeJogo.xml</layout>
@@ -1855,13 +1873,13 @@
         <event-sheet>fimDeJogo.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Touch" uid="66">
+        <global-instance type="Touch" uid="67">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Mouse" uid="67" />
-        <global-instance type="Audio" uid="68">
+        <global-instance type="Mouse" uid="68" />
+        <global-instance type="Audio" uid="69">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -1876,7 +1894,7 @@
                 <doppler-factor>1</doppler-factor>
             </properties>
         </global-instance>
-        <global-instance type="WebStorage" uid="69" />
+        <global-instance type="WebStorage" uid="79" />
     </global-instances>
     <sounds-folder expanded="0">
         <file name="7_year_old_boy_screams.m4a" />

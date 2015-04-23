@@ -49,35 +49,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="bolophi" uid="46">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>447</x>
-                        <y>391</y>
-                        <z>0</z>
-                        <width>314</width>
-                        <height>168</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="bolophi" uid="47">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -100,6 +71,57 @@
                         <z>0</z>
                         <width>225.207626343</width>
                         <height>120.493255615</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="placa_jogo_jogar" uid="25">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>446.472015381</x>
+                        <y>268.331237793</y>
+                        <z>0</z>
+                        <width>110.512809753</width>
+                        <height>53.889640808</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="bolophi" uid="46">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>447</x>
+                        <y>391</y>
+                        <z>0</z>
+                        <width>314</width>
+                        <height>168</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -156,7 +178,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="texto_instrucoes" uid="25">
+                <instance type="texto_instrucoes" uid="29">
                     <properties>
                         <text>Instructions</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -183,7 +205,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="fundo_logo" uid="29">
+                <instance type="fundo_logo" uid="30">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -205,7 +227,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mosca_logo" uid="30">
+                <instance type="mosca_logo" uid="31">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -230,7 +252,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="texto_titulo_logo" uid="31">
+                <instance type="texto_titulo_logo" uid="32">
                     <properties>
                         <text>Fly To Cake</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -257,7 +279,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="area_virar_mosca_logo1" uid="32">
+                <instance type="area_virar_mosca_logo1" uid="33">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -279,7 +301,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="area_virar_mosca_logo2" uid="33">
+                <instance type="area_virar_mosca_logo2" uid="35">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

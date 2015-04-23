@@ -98,5 +98,13 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="8598287697578589">
+            <conditions />
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="4935125181199982" type="System">
+                    <param id="0" name="Layout">&quot;Layout 1&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
