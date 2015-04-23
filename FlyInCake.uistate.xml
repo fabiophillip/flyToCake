@@ -11,13 +11,17 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout>Layout 1</layout>
+        <layout>LayoutPhi</layout>
+        <layout>fimDeJogo</layout>
         <event-sheet active="1">Event sheet 1</event-sheet>
+        <event-sheet>Event sheet Phi</event-sheet>
+        <event-sheet>fimDeJogo</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
         <property expanded="1" name="Project settings" />
         <property expanded="0" name="Window Size" />
-        <property expanded="1" name="Configuration Settings" />
+        <property expanded="0" name="Configuration Settings" />
     </properties>
     <families-expanded root="1" />
 </c2uistate>

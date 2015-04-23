@@ -3,90 +3,95 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
-        <event-block sid="3980512236704221">
+        <variable comment="eh a pontuacao do usuario apenas na jogatina atual" constant="0" name="pontuacaoNoJogoAtual" sid="1570557738680984" static="0" type="number">0</variable>
+        <event-block sid="8159090108177292">
             <conditions>
-                <condition id="-7" name="Compare instance variable" sid="9334717113253562" type="LetraCimaMosca">
+                <condition id="-7" name="Compare instance variable" sid="867349378423461" type="BiscoitoCimaMosca">
                     <param id="0" name="Instance variable">NumeroLetraAlfabeto</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-10" name="Set value" sid="8039092467158836" type="LetraCimaMosca">
+                <action id="-10" name="Set value" sid="4088745384779727" type="BiscoitoCimaMosca">
                     <param id="0" name="Instance variable">NumeroLetraAlfabeto</param>
                     <param id="1" name="Value">round(random(4))</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="4182282390994617">
+        <event-block sid="839555449654174">
             <conditions>
-                <condition id="-7" name="Compare instance variable" sid="8897292471486066" type="LetraCimaMosca">
+                <condition id="-7" name="Compare instance variable" sid="3622921406880843" type="BiscoitoCimaMosca">
                     <param id="0" name="Instance variable">NumeroLetraAlfabeto</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Set text" sid="2847844006449306" type="LetraCimaMosca">
-                    <param id="0" name="Text">&quot;a&quot;</param>
-                </action>
-                <action id="-10" name="Set value" sid="1736319185957825" type="LetraCimaMosca">
+                <action id="-10" name="Set value" sid="1951838454274163" type="BiscoitoCimaMosca">
                     <param id="0" name="Instance variable">Letra</param>
                     <param id="1" name="Value">&quot;a&quot;</param>
                 </action>
+                <action id="4" name="Set animation" sid="7574971099174628" type="BiscoitoCimaMosca">
+                    <param id="0" name="Animation">&quot;a&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
             </actions>
         </event-block>
-        <event-block sid="1610276153438868">
+        <event-block sid="5972127590564367">
             <conditions>
-                <condition id="-7" name="Compare instance variable" sid="5473289802150533" type="LetraCimaMosca">
+                <condition id="-7" name="Compare instance variable" sid="9648431406263136" type="BiscoitoCimaMosca">
                     <param id="0" name="Instance variable">NumeroLetraAlfabeto</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">2</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Set text" sid="2347338785178509" type="LetraCimaMosca">
-                    <param id="0" name="Text">&quot;b&quot;</param>
-                </action>
-                <action id="-10" name="Set value" sid="1270528377819476" type="LetraCimaMosca">
+                <action id="-10" name="Set value" sid="5933379774705814" type="BiscoitoCimaMosca">
                     <param id="0" name="Instance variable">Letra</param>
                     <param id="1" name="Value">&quot;b&quot;</param>
                 </action>
+                <action id="4" name="Set animation" sid="5112456310595067" type="BiscoitoCimaMosca">
+                    <param id="0" name="Animation">&quot;b&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
             </actions>
         </event-block>
-        <event-block sid="8460434807735803">
+        <event-block sid="3674564649352511">
             <conditions>
-                <condition id="-7" name="Compare instance variable" sid="9703100397481914" type="LetraCimaMosca">
+                <condition id="-7" name="Compare instance variable" sid="453186369531116" type="BiscoitoCimaMosca">
                     <param id="0" name="Instance variable">NumeroLetraAlfabeto</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">3</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Set text" sid="6407291444241378" type="LetraCimaMosca">
-                    <param id="0" name="Text">&quot;c&quot;</param>
-                </action>
-                <action id="-10" name="Set value" sid="1929173402318581" type="LetraCimaMosca">
+                <action id="-10" name="Set value" sid="5242365070562622" type="BiscoitoCimaMosca">
                     <param id="0" name="Instance variable">Letra</param>
                     <param id="1" name="Value">&quot;c&quot;</param>
                 </action>
+                <action id="4" name="Set animation" sid="6105011565241422" type="BiscoitoCimaMosca">
+                    <param id="0" name="Animation">&quot;c&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
             </actions>
         </event-block>
-        <event-block sid="8988631949829975">
+        <event-block sid="1615717922498091">
             <conditions>
-                <condition id="-7" name="Compare instance variable" sid="3526135847785472" type="LetraCimaMosca">
+                <condition id="-7" name="Compare instance variable" sid="8346734957933027" type="BiscoitoCimaMosca">
                     <param id="0" name="Instance variable">NumeroLetraAlfabeto</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">4</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Set text" sid="8131683320742289" type="LetraCimaMosca">
-                    <param id="0" name="Text">&quot;d&quot;</param>
-                </action>
-                <action id="-10" name="Set value" sid="3892758389493781" type="LetraCimaMosca">
+                <action id="-10" name="Set value" sid="4902372509305874" type="BiscoitoCimaMosca">
                     <param id="0" name="Instance variable">Letra</param>
                     <param id="1" name="Value">&quot;d&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="4489493763019205" type="BiscoitoCimaMosca">
+                    <param id="0" name="Animation">&quot;d&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
@@ -121,10 +126,10 @@
                 <action id="-17" name="Move forward" sid="3463682532037756" type="mosca">
                     <param id="0" name="Distance">0.8</param>
                 </action>
-                <action behavior="Platform" id="5" name="Set gravity" sid="2467721226415903" type="LetraCimaMosca">
+                <action behavior="Platform" id="5" name="Set gravity" sid="9151984328367148" type="BiscoitoCimaMosca">
                     <param id="0" name="Gravity">5</param>
                 </action>
-                <action id="-17" name="Move forward" sid="8898358431490729" type="LetraCimaMosca">
+                <action id="-17" name="Move forward" sid="7053245430483279" type="BiscoitoCimaMosca">
                     <param id="0" name="Distance">0.8</param>
                 </action>
             </actions>
@@ -153,10 +158,10 @@
                 <action behavior="Platform" id="5" name="Set gravity" sid="7204347257810499" type="mosca">
                     <param id="0" name="Gravity">0</param>
                 </action>
-                <action id="-17" name="Move forward" sid="9504263087196828" type="LetraCimaMosca">
+                <action id="-17" name="Move forward" sid="1782380030250542" type="BiscoitoCimaMosca">
                     <param id="0" name="Distance">1</param>
                 </action>
-                <action behavior="Platform" id="5" name="Set gravity" sid="7083913888486614" type="LetraCimaMosca">
+                <action behavior="Platform" id="5" name="Set gravity" sid="7820646154391968" type="BiscoitoCimaMosca">
                     <param id="0" name="Gravity">0</param>
                 </action>
             </actions>
@@ -174,7 +179,7 @@
                 <condition id="-7" name="Compare instance variable" sid="943335818470505" type="Questao">
                     <param id="0" name="Instance variable">resposta</param>
                     <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">LetraCimaMosca.Letra</param>
+                    <param id="2" name="Value">BiscoitoCimaMosca.Letra</param>
                 </condition>
             </conditions>
             <actions>
@@ -182,11 +187,31 @@
                     <param id="0" name="Instance variable">mosca_no_bolo</param>
                     <param id="1" name="Value">1</param>
                 </action>
-                <action behavior="Platform" id="11" name="Set enabled" sid="374315618100115" type="LetraCimaMosca">
+                <action behavior="Platform" id="11" name="Set enabled" sid="2322103632461384" type="BiscoitoCimaMosca">
                     <param id="0" name="State">0</param>
                 </action>
-                <action id="0" name="Set text" sid="7804049154041732" type="Questao">
-                    <param id="0" name="Text">&quot;acertou&quot;</param>
+                <action id="-10" name="Set value" sid="6711162878087072" type="BiscoitoCimaMosca">
+                    <param id="0" name="Instance variable">NumeroLetraAlfabeto</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="4" name="Set animation" sid="9122911646628761" type="BiscoitoCimaMosca">
+                    <param id="0" name="Animation">&quot;biscoitomordido&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="442766999589627" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;person_bites_into_toasted_tea_cake&quot;</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Set value" sid="7804049154041732" type="Questao">
+                    <param id="0" name="Instance variable">id_questao</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="7876381123334116" type="Questao">
+                    <param id="0" name="Instance variable">questaoJaFoiCriada</param>
+                    <param id="1" name="Value">0</param>
                 </action>
                 <action id="4" name="Set animation" sid="6283791495271112" type="AnimacaoAlteraScore">
                     <param id="0" name="Animation">&quot;aumentarPontuacao&quot;</param>
@@ -218,7 +243,7 @@
                 <condition id="-7" name="Compare instance variable" sid="4435004079368813" type="Questao">
                     <param id="0" name="Instance variable">resposta</param>
                     <param id="1" name="Comparison">1</param>
-                    <param id="2" name="Value">LetraCimaMosca.Letra</param>
+                    <param id="2" name="Value">BiscoitoCimaMosca.Letra</param>
                 </condition>
             </conditions>
             <actions>
@@ -226,11 +251,23 @@
                     <param id="0" name="Instance variable">mosca_no_bolo</param>
                     <param id="1" name="Value">1</param>
                 </action>
-                <action behavior="Platform" id="11" name="Set enabled" sid="7019739228414053" type="LetraCimaMosca">
+                <action behavior="Platform" id="11" name="Set enabled" sid="9941062792182894" type="BiscoitoCimaMosca">
                     <param id="0" name="State">0</param>
                 </action>
-                <action id="0" name="Set text" sid="9284824802030065" type="Questao">
-                    <param id="0" name="Text">&quot;errou&quot;</param>
+                <action id="-10" name="Set value" sid="5389360902913204" type="BiscoitoCimaMosca">
+                    <param id="0" name="Instance variable">NumeroLetraAlfabeto</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="4" name="Set animation" sid="5865629829602319" type="BiscoitoCimaMosca">
+                    <param id="0" name="Animation">&quot;biscoitomordido&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="6386621388179922" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;person_bites_into_toasted_tea_cake&quot;</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
                 </action>
                 <action id="4" name="Set animation" sid="5234081988006193" type="AnimacaoAlteraScore">
                     <param id="0" name="Animation">&quot;diminuirPontuacao&quot;</param>
@@ -272,10 +309,10 @@
                 <action behavior="Platform" id="5" name="Set gravity" sid="484424303383652" type="mosca">
                     <param id="0" name="Gravity">0</param>
                 </action>
-                <action behavior="Platform" id="5" name="Set gravity" sid="7051764300903259" type="LetraCimaMosca">
+                <action behavior="Platform" id="5" name="Set gravity" sid="732188612953418" type="BiscoitoCimaMosca">
                     <param id="0" name="Gravity">0</param>
                 </action>
-                <action id="-4" name="Set position to another object" sid="5617901464702296" type="LetraCimaMosca">
+                <action id="-4" name="Set position to another object" sid="4030241040800755" type="BiscoitoCimaMosca">
                     <param id="0" name="Object">mosca</param>
                     <param id="1" name="Image point (optional)">1</param>
                 </action>
@@ -303,11 +340,16 @@
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
                 </condition>
+                <condition id="-7" name="Compare instance variable" sid="8144344389406579" type="Questao">
+                    <param id="0" name="Instance variable">id_questao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">-1</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-10" name="Set value" sid="4403266946280183" type="Questao">
                     <param id="0" name="Instance variable">id_questao</param>
-                    <param id="1" name="Value">1</param>
+                    <param id="1" name="Value">round(random(1,2))</param>
                 </action>
             </actions>
         </event-block>
@@ -318,11 +360,16 @@
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
+                <condition id="-7" name="Compare instance variable" sid="7948563235755116" type="Questao">
+                    <param id="0" name="Instance variable">id_questao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">-1</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-10" name="Set value" sid="3767164542368427" type="Questao">
                     <param id="0" name="Instance variable">id_questao</param>
-                    <param id="1" name="Value">round(random(1,51))</param>
+                    <param id="1" name="Value">round(random(1,2))</param>
                 </action>
             </actions>
         </event-block>
@@ -343,14 +390,120 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Set text" sid="6643366466592892" type="Questao">
-                    <param id="0" name="Text">&quot;how are you?&quot; &amp; newline &amp; &quot;a)I am fine, thank you&quot;  &amp; newline &amp; &quot;b)No,thanks&quot;  &amp; newline &amp; &quot;c)I will go there by walking&quot;  &amp; newline &amp; &quot;d)Okay&quot;</param>
+                <action id="-10" name="Set value" sid="1121903307611179" type="Questao">
+                    <param id="0" name="Instance variable">texto_questao</param>
+                    <param id="1" name="Value">&quot;how are you?&quot; &amp; newline &amp; &quot;a)I am fine, thank you&quot;  &amp; newline &amp; &quot;b)No,thanks&quot;  &amp; newline &amp; &quot;c)I will go there by walking&quot;  &amp; newline &amp; &quot;d)Okay&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="880928107775286" type="Questao">
+                    <param id="0" name="Text">Questao.texto_questao</param>
                 </action>
                 <action id="-10" name="Set value" sid="7058959502139866" type="Questao">
                     <param id="0" name="Instance variable">resposta</param>
                     <param id="1" name="Value">&quot;a&quot;</param>
                 </action>
                 <action id="-13" name="Set boolean" sid="7125016462922644" type="Questao">
+                    <param id="0" name="Instance variable">questaoJaFoiCriada</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="469098675578322">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="9751616569993482" type="Questao">
+                    <param id="0" name="Instance variable">id_questao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="8908079566786303" type="Questao">
+                    <param id="0" name="Instance variable">id_dificuldade_questao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="6102852136241621" type="Questao">
+                    <param id="0" name="Instance variable">questaoJaFoiCriada</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="7560140396083468" type="Questao">
+                    <param id="0" name="Instance variable">texto_questao</param>
+                    <param id="1" name="Value">&quot;what is your name?&quot; &amp; newline &amp; &quot;a)I am fine, thank you&quot;  &amp; newline &amp; &quot;b)my name is andrews&quot;  &amp; newline &amp; &quot;c)my name are andrews&quot;  &amp; newline &amp; &quot;d)my name it&apos;s andrews&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="7852168848089132" type="Questao">
+                    <param id="0" name="Text">Questao.texto_questao</param>
+                </action>
+                <action id="-10" name="Set value" sid="3060220606732577" type="Questao">
+                    <param id="0" name="Instance variable">resposta</param>
+                    <param id="1" name="Value">&quot;b&quot;</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="4244333231660497" type="Questao">
+                    <param id="0" name="Instance variable">questaoJaFoiCriada</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7021914419640946">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="9653161399071188" type="Questao">
+                    <param id="0" name="Instance variable">id_questao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="9366586206672963" type="Questao">
+                    <param id="0" name="Instance variable">id_dificuldade_questao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="1226830655718436" type="Questao">
+                    <param id="0" name="Instance variable">questaoJaFoiCriada</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="8267145688290955" type="Questao">
+                    <param id="0" name="Instance variable">texto_questao</param>
+                    <param id="1" name="Value">&quot;In which job do you need to be really good at getting ideas across to other people?&quot; &amp; newline &amp; &quot;a)a farmer&quot;  &amp; newline &amp; &quot;b)a jockey&quot;  &amp; newline &amp; &quot;c)a teacher&quot;  &amp; newline &amp; &quot;d)a choffer&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="5156311309797975" type="Questao">
+                    <param id="0" name="Text">Questao.texto_questao</param>
+                </action>
+                <action id="-10" name="Set value" sid="7444130315337656" type="Questao">
+                    <param id="0" name="Instance variable">resposta</param>
+                    <param id="1" name="Value">&quot;c&quot;</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="4081175000401699" type="Questao">
+                    <param id="0" name="Instance variable">questaoJaFoiCriada</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9991294056851214">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="2070120904493829" type="Questao">
+                    <param id="0" name="Instance variable">id_questao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="4553897830872918" type="Questao">
+                    <param id="0" name="Instance variable">id_dificuldade_questao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="8373283718048818" type="Questao">
+                    <param id="0" name="Instance variable">questaoJaFoiCriada</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="9060604443796969" type="Questao">
+                    <param id="0" name="Instance variable">texto_questao</param>
+                    <param id="1" name="Value">&quot;We need to make sure our kids can&apos;t get at anything&quot; &amp; newline &amp; &quot;a)educational&quot;  &amp; newline &amp; &quot;b)dangerous&quot;  &amp; newline &amp; &quot;c)healthy&quot;  &amp; newline &amp; &quot;d)sad&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="8593693713831547" type="Questao">
+                    <param id="0" name="Text">Questao.texto_questao</param>
+                </action>
+                <action id="-10" name="Set value" sid="9137403420241784" type="Questao">
+                    <param id="0" name="Instance variable">resposta</param>
+                    <param id="1" name="Value">&quot;b&quot;</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="3926458185583012" type="Questao">
                     <param id="0" name="Instance variable">questaoJaFoiCriada</param>
                     <param id="1" name="Value">1</param>
                 </action>
@@ -1092,6 +1245,12 @@
                 <action behavior="Platform" id="5" name="Set gravity" sid="1207199904355926" type="mosca">
                     <param id="0" name="Gravity">5</param>
                 </action>
+                <action id="-17" name="Move forward" sid="3015519941097283" type="BiscoitoCimaMosca">
+                    <param id="0" name="Distance">0.5</param>
+                </action>
+                <action behavior="Platform" id="5" name="Set gravity" sid="2228944002748365" type="BiscoitoCimaMosca">
+                    <param id="0" name="Gravity">5</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="1760611419196314">
@@ -1121,6 +1280,9 @@
                 <action id="-10" name="Set value" sid="461771375604768" type="mosca">
                     <param id="0" name="Instance variable">mosca_voando_contrario</param>
                     <param id="1" name="Value">1</param>
+                </action>
+                <action id="-1" name="Set X" sid="5353930464659919" type="BiscoitoCimaMosca">
+                    <param id="0" name="X">mosca.X - 11</param>
                 </action>
             </actions>
         </event-block>
@@ -1156,6 +1318,15 @@
                 <action behavior="Platform" id="9" name="Set vector Y" sid="45721993494368" type="mosca">
                     <param id="0" name="Vector Y">0</param>
                 </action>
+                <action id="-17" name="Move forward" sid="4967851350113656" type="BiscoitoCimaMosca">
+                    <param id="0" name="Distance">-1</param>
+                </action>
+                <action behavior="Platform" id="5" name="Set gravity" sid="155078903793261" type="BiscoitoCimaMosca">
+                    <param id="0" name="Gravity">0</param>
+                </action>
+                <action behavior="Platform" id="9" name="Set vector Y" sid="7875886696580461" type="BiscoitoCimaMosca">
+                    <param id="0" name="Vector Y">0</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="2833847695048736">
@@ -1178,7 +1349,13 @@
                 <action behavior="Platform" id="5" name="Set gravity" sid="4243550710501156" type="mosca">
                     <param id="0" name="Gravity">8</param>
                 </action>
+                <action behavior="Platform" id="5" name="Set gravity" sid="237777128808743" type="BiscoitoCimaMosca">
+                    <param id="0" name="Gravity">8</param>
+                </action>
                 <action id="-17" name="Move forward" sid="6995947920934775" type="mosca">
+                    <param id="0" name="Distance">-0.5</param>
+                </action>
+                <action id="-17" name="Move forward" sid="2425735637743828" type="BiscoitoCimaMosca">
                     <param id="0" name="Distance">-0.5</param>
                 </action>
                 <action id="-16" name="Wait" sid="6157624148593858" type="System">
@@ -1187,6 +1364,9 @@
                 <action id="-10" name="Set value" sid="8263639788999522" type="mosca">
                     <param id="0" name="Instance variable">mosca_voando_contrario</param>
                     <param id="1" name="Value">0</param>
+                </action>
+                <action id="-1" name="Set X" sid="1657946779964888" type="BiscoitoCimaMosca">
+                    <param id="0" name="X">mosca.X + 5</param>
                 </action>
                 <action behavior="Platform" id="5" name="Set gravity" sid="6927198626757611" type="mosca">
                     <param id="0" name="Gravity">0</param>
@@ -1197,6 +1377,12 @@
                 <action id="4" name="Set animation" sid="3974465619295709" type="mosca">
                     <param id="0" name="Animation">&quot;mosca_voando&quot;</param>
                     <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Platform" id="5" name="Set gravity" sid="5109907131861574" type="BiscoitoCimaMosca">
+                    <param id="0" name="Gravity">0</param>
+                </action>
+                <action behavior="Platform" id="9" name="Set vector Y" sid="8389701256709115" type="BiscoitoCimaMosca">
+                    <param id="0" name="Vector Y">0</param>
                 </action>
             </actions>
         </event-block>
@@ -1251,6 +1437,135 @@
             <actions>
                 <action behavior="Platform" id="5" name="Set gravity" sid="9714926390272291" type="mosca">
                     <param id="0" name="Gravity">40</param>
+                </action>
+                <action behavior="Platform" id="5" name="Set gravity" sid="2708037881531001" type="BiscoitoCimaMosca">
+                    <param id="0" name="Gravity">40</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6695322372834081">
+            <conditions>
+                <condition id="-18" name="On created" sid="7415982531671246" type="AnimacaoAlteraScore" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="1212562248970322" type="AnimacaoAlteraScore" />
+            </actions>
+        </event-block>
+        <event-block sid="8724218505411735">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8782726691556073" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="1461092026189872" type="Questao">
+                    <param id="0" name="Family name">&quot;ar_delaneyregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheetardelaney.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5058374883758553">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="3338848986465558" type="Touch">
+                    <param id="0" name="Object">bolophi</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="2124789172109585" type="System">
+                    <param id="0" name="Layout">fimDeJogo</param>
+                </action>
+                <action id="-9" name="Set value" sid="7385567472255272" type="System">
+                    <param id="0" name="Variable">pontuacaoNoJogoAtual</param>
+                    <param id="1" name="Value">Score.pontos</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9295948732302638">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="8056355515041468" type="System">
+                    <param id="0" name="Interval (seconds)">3.0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="7870460661141165" type="item">
+                    <param id="0" name="Instance variable">item</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="9247283937947365" type="item">
+                    <param id="0" name="Instance variable">item</param>
+                    <param id="1" name="Value">&quot;fireball&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="8615430345623725" type="item">
+                    <param id="0" name="Animation">&quot;fireball&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8456565958829638">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="8927785946646507" type="Touch">
+                    <param id="0" name="Object">item</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="7949192607852049" type="item">
+                    <param id="0" name="Instance variable">item</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;fireball&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="7413583781405335" type="item">
+                    <param id="0" name="Instance variable">item</param>
+                    <param id="1" name="Value">&quot;&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="3238802028349025" type="item">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-3" name="Create object" sid="2922786779866079" type="System">
+                    <param id="0" name="Object to create">fireball</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">47</param>
+                    <param id="3" name="Y">335</param>
+                </action>
+                <action id="-3" name="Create object" sid="6121568444751904" type="System">
+                    <param id="0" name="Object to create">fireball</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">77</param>
+                    <param id="3" name="Y">335</param>
+                </action>
+                <action id="-3" name="Create object" sid="1109465881896664" type="System">
+                    <param id="0" name="Object to create">fireball</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">107</param>
+                    <param id="3" name="Y">335</param>
+                </action>
+                <action id="-3" name="Create object" sid="9380286438104756" type="System">
+                    <param id="0" name="Object to create">fireball</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">137</param>
+                    <param id="3" name="Y">335</param>
+                </action>
+                <action id="0" name="Set text" sid="1597114740243692" type="Questao">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="8571831591910137" type="System">
+                    <param id="0" name="Seconds">3.0</param>
+                </action>
+                <action id="0" name="Set text" sid="8037689113199331" type="Questao">
+                    <param id="0" name="Text">Questao.texto_questao</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9362653542327638">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="7644159957697121" type="System" />
+                <condition id="-9" name="Is visible" sid="9100390333734568" type="fireball" />
+            </conditions>
+            <actions>
+                <action behavior="Rotate" id="0" name="Set speed" sid="5380656143267472" type="fireball">
+                    <param id="0" name="Speed">500</param>
+                </action>
+                <action id="-2" name="Set Y" sid="2617574821491215" type="fireball">
+                    <param id="0" name="Y">fireball.Y - 3</param>
                 </action>
             </actions>
         </event-block>
