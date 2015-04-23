@@ -57,7 +57,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="87424511733853" speed="5">
+                <animation framecount="1" loop="0" name="bolo" pingpong="0" repeatcount="1" repeatto="0" sid="87424511733853" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
                             <point x="0.0285714" y="0.0285714" />
@@ -71,6 +71,20 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="1" loop="0" name="forno_bolo" pingpong="0" repeatcount="1" repeatto="0" sid="5139828518490776" speed="5">
+                    <frame duration="1" hotspotX="0.506667" hotspotY="0.514286">
+                        <collision-poly>
+                            <point x="0.0190476" y="0.0304569" />
+                            <point x="0.498413" y="0" />
+                            <point x="0.980952" y="0.0304569" />
+                            <point x="1" y="0.497462" />
+                            <point x="0.980952" y="0.969543" />
+                            <point x="0.498413" y="1" />
+                            <point x="0.0190476" y="0.969543" />
+                            <point x="0" y="0.497462" />
+                        </collision-poly>
+                    </frame>
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="mosca" sid="8382531157367309">
@@ -79,6 +93,7 @@
                 <instance-variable name="mosca_no_bolo" sid="5965993056808972" type="number" />
                 <instance-variable name="mosca_voando_contrario" sid="8823576424116651" type="number" />
                 <instance-variable name="mosca_caindo" sid="2530123757497762" type="number" />
+                <instance-variable name="mosca_virou_bolo" sid="5950868070711554" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="9711052420347661">
@@ -168,6 +183,158 @@
                             <point x="0.491525" y="0.914894" />
                             <point x="0.20339" y="0.744681" />
                             <point x="0.20339" y="0.489362" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="mosca_bolo" pingpong="0" repeatcount="1" repeatto="0" sid="2140947132590139" speed="9">
+                    <frame duration="1" hotspotX="0.491228" hotspotY="0.955556">
+                        <image-point name="Imagepoint 1" x="0.561404" y="-0.0444444" />
+                        <collision-poly>
+                            <point x="0.210526" y="0.266667" />
+                            <point x="0.491228" y="0.222222" />
+                            <point x="0.947368" y="0.0666667" />
+                            <point x="0.824561" y="0.488889" />
+                            <point x="0.824561" y="0.777778" />
+                            <point x="0.491228" y="1" />
+                            <point x="0.0877193" y="0.888889" />
+                            <point x="0.0877193" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507692" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.0923077" y="0.153846" />
+                            <point x="0.492308" y="0.230769" />
+                            <point x="0.969231" y="0.0512821" />
+                            <point x="0.815385" y="0.487179" />
+                            <point x="0.8" y="0.666667" />
+                            <point x="0.492308" y="1" />
+                            <point x="0.153846" y="0.74359" />
+                            <point x="0.0769231" y="0.487179" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507692" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.0923077" y="0.153846" />
+                            <point x="0.492308" y="0.230769" />
+                            <point x="0.969231" y="0.0512821" />
+                            <point x="0.815385" y="0.487179" />
+                            <point x="0.8" y="0.666667" />
+                            <point x="0.492308" y="1" />
+                            <point x="0.153846" y="0.74359" />
+                            <point x="0.0769231" y="0.487179" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="mosca_bolo_contrario" pingpong="0" repeatcount="1" repeatto="0" sid="1174164394303379" speed="9">
+                    <frame duration="1" hotspotX="0.508772" hotspotY="0.955556">
+                        <image-point name="Imagepoint 1" x="0.438596" y="-0.0444444" />
+                        <collision-poly>
+                            <point x="0.912281" y="0.488889" />
+                            <point x="0.912281" y="0.888889" />
+                            <point x="0.508772" y="1" />
+                            <point x="0.175439" y="0.777778" />
+                            <point x="0.175439" y="0.488889" />
+                            <point x="0.0526316" y="0.0666667" />
+                            <point x="0.508772" y="0.222222" />
+                            <point x="0.789474" y="0.266667" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.492308" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.923077" y="0.487179" />
+                            <point x="0.846154" y="0.74359" />
+                            <point x="0.507692" y="1" />
+                            <point x="0.2" y="0.666667" />
+                            <point x="0.184615" y="0.487179" />
+                            <point x="0.0307692" y="0.0512821" />
+                            <point x="0.507692" y="0.230769" />
+                            <point x="0.907692" y="0.153846" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.492308" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.923077" y="0.487179" />
+                            <point x="0.846154" y="0.74359" />
+                            <point x="0.507692" y="1" />
+                            <point x="0.2" y="0.666667" />
+                            <point x="0.184615" y="0.487179" />
+                            <point x="0.0307692" y="0.0512821" />
+                            <point x="0.507692" y="0.230769" />
+                            <point x="0.907692" y="0.153846" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="morcego_voando" pingpong="0" repeatcount="1" repeatto="0" sid="3597585146547126" speed="9">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.957447">
+                        <image-point name="Imagepoint 1" x="0.557143" y="-0.0425532" />
+                        <collision-poly>
+                            <point x="0.671429" y="0.510638" />
+                            <point x="0.5" y="0.893617" />
+                            <point x="0.2" y="0.702128" />
+                            <point x="0.271429" y="0.489362" />
+                            <point x="0.0142857" y="0.0212766" />
+                            <point x="0.5" y="0.425532" />
+                            <point x="0.985714" y="0.0212766" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.488636" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.886364" y="0.486486" />
+                            <point x="0.761364" y="0.432432" />
+                            <point x="0.5" y="0.864865" />
+                            <point x="0.238636" y="0.432432" />
+                            <point x="0.113636" y="0.486486" />
+                            <point x="0.0681818" y="0.162162" />
+                            <point x="0.5" y="0.27027" />
+                            <point x="0.943182" y="0.135135" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.485714" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.671429" y="0.510638" />
+                            <point x="0.5" y="0.893617" />
+                            <point x="0.2" y="0.702128" />
+                            <point x="0.271429" y="0.489362" />
+                            <point x="0.0142857" y="0.0212766" />
+                            <point x="0.5" y="0.425532" />
+                            <point x="0.985714" y="0.0212766" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="morcego_voando_contrario" pingpong="0" repeatcount="1" repeatto="0" sid="8336726855198408" speed="9">
+                    <frame duration="1" hotspotX="0.514286" hotspotY="0.957447">
+                        <image-point name="Imagepoint 1" x="0.442857" y="-0.0425532" />
+                        <collision-poly>
+                            <point x="0.0142857" y="0.0212766" />
+                            <point x="0.5" y="0.425532" />
+                            <point x="0.985714" y="0.0212766" />
+                            <point x="0.728571" y="0.489362" />
+                            <point x="0.8" y="0.702128" />
+                            <point x="0.5" y="0.893617" />
+                            <point x="0.328571" y="0.510638" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.488636" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.0568182" y="0.135135" />
+                            <point x="0.5" y="0.27027" />
+                            <point x="0.931818" y="0.162162" />
+                            <point x="0.886364" y="0.486486" />
+                            <point x="0.761364" y="0.432432" />
+                            <point x="0.5" y="0.864865" />
+                            <point x="0.238636" y="0.432432" />
+                            <point x="0.113636" y="0.486486" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.485714" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.0142857" y="0.0212766" />
+                            <point x="0.5" y="0.425532" />
+                            <point x="0.985714" y="0.0212766" />
+                            <point x="0.728571" y="0.489362" />
+                            <point x="0.8" y="0.702128" />
+                            <point x="0.5" y="0.893617" />
+                            <point x="0.328571" y="0.510638" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1436,26 +1603,265 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="placa_choco_instrucoes" sid="1886035533464092">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2115161462683705" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.00883392" y="0.0181159" />
+                            <point x="0.5" y="0" />
+                            <point x="0.991166" y="0.0181159" />
+                            <point x="0.991166" y="0.981884" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00883392" y="0.981884" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="texto_jogar" sid="5907417717205099">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="texto_instrucoes" sid="2561051516268169">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="fundo_logo" sid="4388852769871177">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5587191693699226" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0285714" y="0.0285714" />
+                            <point x="0.5" y="0" />
+                            <point x="0.971429" y="0.0285714" />
+                            <point x="1" y="0.5" />
+                            <point x="0.971429" y="0.971429" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0285714" y="0.971429" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mosca_logo" sid="8010048997522804">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="mosca_voando_contrario" sid="1483332634403295" type="number" />
+            </instance-variables>
+            <animation-folder expanded="1">
+                <animation framecount="3" loop="1" name="mosca_voando" pingpong="0" repeatcount="1" repeatto="0" sid="9108691853741448" speed="5">
+                    <frame duration="1" hotspotX="0.508772" hotspotY="0.511111">
+                        <collision-poly>
+                            <point x="0.0615385" y="0.102564" />
+                            <point x="0.492308" y="0.205128" />
+                            <point x="0.938462" y="0.102564" />
+                            <point x="0.969231" y="0.487179" />
+                            <point x="0.876923" y="0.794872" />
+                            <point x="0.492308" y="0.948718" />
+                            <point x="0.230769" y="0.615385" />
+                            <point x="0.230769" y="0.487179" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507692" hotspotY="0.512821">
+                        <collision-poly>
+                            <point x="0.0615385" y="0.102564" />
+                            <point x="0.492308" y="0.205128" />
+                            <point x="0.938462" y="0.102564" />
+                            <point x="0.969231" y="0.487179" />
+                            <point x="0.876923" y="0.794872" />
+                            <point x="0.492308" y="0.948718" />
+                            <point x="0.230769" y="0.615385" />
+                            <point x="0.230769" y="0.487179" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.508772" hotspotY="0.511111">
+                        <collision-poly>
+                            <point x="0.0701754" y="0.0888889" />
+                            <point x="0.491228" y="0.333333" />
+                            <point x="0.912281" y="0.111111" />
+                            <point x="0.877193" y="0.488889" />
+                            <point x="0.877193" y="0.844444" />
+                            <point x="0.491228" y="0.933333" />
+                            <point x="0.192982" y="0.755556" />
+                            <point x="0.192982" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="mosca_voando_contrario" pingpong="0" repeatcount="1" repeatto="0" sid="7730827026405568" speed="5">
+                    <frame duration="1" hotspotX="0.491228" hotspotY="0.511111">
+                        <collision-poly>
+                            <point x="0.769231" y="0.487179" />
+                            <point x="0.769231" y="0.615385" />
+                            <point x="0.507692" y="0.948718" />
+                            <point x="0.123077" y="0.794872" />
+                            <point x="0.0307692" y="0.487179" />
+                            <point x="0.0615385" y="0.102564" />
+                            <point x="0.507692" y="0.205128" />
+                            <point x="0.938462" y="0.102564" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.492308" hotspotY="0.512821">
+                        <collision-poly>
+                            <point x="0.769231" y="0.487179" />
+                            <point x="0.769231" y="0.615385" />
+                            <point x="0.507692" y="0.948718" />
+                            <point x="0.123077" y="0.794872" />
+                            <point x="0.0307692" y="0.487179" />
+                            <point x="0.0615385" y="0.102564" />
+                            <point x="0.507692" y="0.205128" />
+                            <point x="0.938462" y="0.102564" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.491228" hotspotY="0.511111">
+                        <collision-poly>
+                            <point x="0.807018" y="0.488889" />
+                            <point x="0.807018" y="0.755556" />
+                            <point x="0.508772" y="0.933333" />
+                            <point x="0.122807" y="0.844444" />
+                            <point x="0.122807" y="0.488889" />
+                            <point x="0.0877193" y="0.111111" />
+                            <point x="0.508772" y="0.333333" />
+                            <point x="0.929825" y="0.0888889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="texto_titulo_logo" sid="7247588123081159">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="area_virar_mosca_logo1" sid="1220107586546499">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8900997732846617" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="area_virar_mosca_logo2" sid="7509037451699617">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3435830627431382" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text2" sid="5755759298567077">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite2" sid="7217987952085727">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9633358633242285" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0285714" y="0.0285714" />
+                            <point x="0.5" y="0" />
+                            <point x="0.971429" y="0.0285714" />
+                            <point x="1" y="0.5" />
+                            <point x="0.971429" y="0.971429" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0285714" y="0.971429" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="texto_menu_pausado" sid="6787422601312202">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="placa_choco_continuar_jogo" sid="2558390544202247">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="922102388271858" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.00883392" y="0.0181159" />
+                            <point x="0.5" y="0" />
+                            <point x="0.991166" y="0.0181159" />
+                            <point x="0.991166" y="0.981884" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00883392" y="0.981884" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="placa_choco_voltar_menu" sid="2570979539670381">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="896596961777198" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.00883392" y="0.0181159" />
+                            <point x="0.5" y="0" />
+                            <point x="0.991166" y="0.0181159" />
+                            <point x="0.991166" y="0.981884" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00883392" y="0.981884" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="texto_resume" sid="7851574665976504">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="texto_menu_inicial" sid="9380337202575826">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite3" sid="1375033842169032">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7539264863771101" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="placa_jogo_pausar" sid="4994652460397454">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4061604638345254" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.00883392" y="0.0181159" />
+                            <point x="0.5" y="0" />
+                            <point x="0.991166" y="0.0181159" />
+                            <point x="0.991166" y="0.981884" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00883392" y="0.981884" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
         <layout>Layout 1.xml</layout>
+        <layout>CopiaLayout1.xml</layout>
         <layout>LayoutPhi.xml</layout>
+        <layout>MenuInicial.xml</layout>
         <layout>fimDeJogo.xml</layout>
     </layout-folder>
     <event-folder expanded="0">
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>Event sheet Phi.xml</event-sheet>
+        <event-sheet>EventosMenuInicial.xml</event-sheet>
+        <event-sheet>CopiaEventSheet1.xml</event-sheet>
         <event-sheet>fimDeJogo.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Touch" uid="23">
+        <global-instance type="Touch" uid="66">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Mouse" uid="24" />
-        <global-instance type="Audio" uid="25">
+        <global-instance type="Mouse" uid="67" />
+        <global-instance type="Audio" uid="68">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -1470,7 +1876,7 @@
                 <doppler-factor>1</doppler-factor>
             </properties>
         </global-instance>
-        <global-instance type="WebStorage" uid="29" />
+        <global-instance type="WebStorage" uid="69" />
     </global-instances>
     <sounds-folder expanded="0">
         <file name="7_year_old_boy_screams.m4a" />
@@ -1499,5 +1905,15 @@
         <file name="ardelaney-webfont.woff" />
         <file name="ardelaney-webfont.woff2" />
         <file name="stylesheetardelaney.css" />
+        <file name="chifont-webfont.eot" />
+        <file name="chifont-webfont.svg" />
+        <file name="chifont-webfont.ttf" />
+        <file name="chifont-webfont.woff" />
+        <file name="chifontsheet.css" />
+        <file name="lobster_1.3-webfont.eot" />
+        <file name="lobster_1.3-webfont.svg" />
+        <file name="lobster_1.3-webfont.ttf" />
+        <file name="lobster_1.3-webfont.woff" />
+        <file name="lobstersheet.css" />
     </files-folder>
 </c2project>
