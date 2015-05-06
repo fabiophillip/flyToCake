@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>FlyInCake</name>
     <description></description>
@@ -10,6 +10,7 @@
     <unique-id>22i10wq0cv9cl</unique-id>
     <saved-with-version>17300</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
@@ -72,7 +73,7 @@
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="1" loop="0" name="forno_bolo" pingpong="0" repeatcount="1" repeatto="0" sid="5139828518490776" speed="5">
+                 <animation framecount="1" loop="0" name="forno_bolo" pingpong="0" repeatcount="1" repeatto="0" sid="5139828518490776" speed="5">
                     <frame duration="1" hotspotX="0.506667" hotspotY="0.514286">
                         <collision-poly>
                             <point x="0.0190476" y="0.0304569" />
@@ -113,7 +114,7 @@
                 <type>mosca</type>
             </container>
             <animation-folder expanded="1">
-                <animation framecount="3" loop="1" name="mosca_voando" pingpong="0" repeatcount="1" repeatto="0" sid="4844604054068532" speed="9">
+                <animation framecount="3" loop="1" name="mosca_voando" pingpong="0" repeatcount="10000" repeatto="0" sid="4844604054068532" speed="9">
                     <frame duration="1" hotspotX="0.491525" hotspotY="0.957447">
                         <image-point name="Imagepoint 1" x="0.728814" y="-0.0212766" />
                         <collision-poly>
@@ -548,7 +549,7 @@
         <object-type name="background_movendo" sid="948346726266771">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
-                <animation framecount="150" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4550635653612562" speed="9">
+                <animation framecount="150" loop="1" name="Default" pingpong="0" repeatcount="10000" repeatto="0" sid="4550635653612562" speed="9">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -1965,6 +1966,11 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type global="1" name="array_alternativas_mosca" sid="7649458076766756">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type global="1" name="array_temporario_shuffle" sid="9612144958500575">
+            <plugin id="Arr" />
     </object-folder>
     <families />
     <layout-folder expanded="1">
