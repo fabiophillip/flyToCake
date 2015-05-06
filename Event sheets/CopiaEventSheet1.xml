@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>CopiaEventSheet1</name>
     <events>
+        <variable constant="0" name="indice_percorre_sequencia_alternativas_mosca" sid="1422693955872828" static="0" type="number">0</variable>
         <event-block sid="8806841584557386">
             <conditions>
                 <condition id="-7" name="Compare instance variable" sid="2448839673030218" type="BiscoitoCimaMosca">
@@ -14,7 +15,26 @@
             <actions>
                 <action id="-10" name="Set value" sid="7446019207647698" type="BiscoitoCimaMosca">
                     <param id="0" name="Instance variable">NumeroLetraAlfabeto</param>
-                    <param id="1" name="Value">round(random(4))</param>
+                    <param id="1" name="Value">array_alternativas_mosca.At(indice_percorre_sequencia_alternativas_mosca)</param>
+                </action>
+                <action id="-10" name="Add to" sid="6211441290252883" type="System">
+                    <param id="0" name="Variable">indice_percorre_sequencia_alternativas_mosca</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9222964066120698">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="4594009242825501" type="System">
+                    <param id="0" name="Variable">indice_percorre_sequencia_alternativas_mosca</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="341251025959516" type="System">
+                    <param id="0" name="Variable">indice_percorre_sequencia_alternativas_mosca</param>
+                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>
@@ -50,7 +70,7 @@
                     <param id="0" name="Instance variable">Letra</param>
                     <param id="1" name="Value">&quot;b&quot;</param>
                 </action>
-                <action id="4" name="Set animation" sid="2132547328052674" type="BiscoitoCimaMosca">
+                <action id="4" name="Set animation" sid="8284290289953552" type="BiscoitoCimaMosca">
                     <param id="0" name="Animation">&quot;b&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -1476,6 +1496,7 @@
                     <param id="0" name="Family name">&quot;ar_delaneyregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheetardelaney.css&quot;</param>
                 </action>
+                <action id="-21" name="Reset global variables" sid="9196652343356864" type="System" />
             </actions>
         </event-block>
         <event-block sid="2884116081738539">
@@ -1732,11 +1753,19 @@
                 </action>
                 <action id="-18" name="Set layer opacity" sid="6921908690586121" type="System">
                     <param id="0" name="Layer">0</param>
-                    <param id="1" name="Opacity">60</param>
+                    <param id="1" name="Opacity">40</param>
                 </action>
-                <action id="-18" name="Set layer opacity" sid="8633699561655739" type="System">
+                <action id="-18" name="Set layer opacity" sid="2820960040373993" type="System">
                     <param id="0" name="Layer">1</param>
-                    <param id="1" name="Opacity">60</param>
+                    <param id="1" name="Opacity">40</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="6420791470318078" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="5756566984803321" type="System">
+                    <param id="0" name="Layer">0</param>
+                    <param id="1" name="Visibility">1</param>
                 </action>
                 <action id="-4" name="Set layer visible" sid="3722816135346123" type="System">
                     <param id="0" name="Layer">2</param>
@@ -1774,6 +1803,19 @@
                     <param id="0" name="Instance variable">mosca_parada</param>
                     <param id="1" name="Value">0</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="7242394017302837">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="5099747168152878" type="Touch">
+                    <param id="0" name="Object">placa_choco_voltar_menu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="9978778083875384" type="System">
+                    <param id="0" name="Layout">&quot;MenuInicial&quot;</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="2653624293481344" type="System" />
             </actions>
         </event-block>
         <event-block sid="951886112343942">
@@ -1889,6 +1931,154 @@
                         <action id="4" name="Set animation" sid="5174943318259889" type="bolophi">
                             <param id="0" name="Animation">&quot;bolo&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="2714773296619535">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6954449723177338" type="System" />
+            </conditions>
+            <actions>
+                <action id="2" name="Set at X" sid="9156772217203431" type="array_alternativas_mosca">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="2" name="Set at X" sid="1904870175596616" type="array_alternativas_mosca">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="2" name="Set at X" sid="3413623978758369" type="array_alternativas_mosca">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="2" name="Set at X" sid="1852586727501183" type="array_alternativas_mosca">
+                    <param id="0" name="X">3</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+                <action id="2" name="Set at X" sid="4377714998029321" type="array_temporario_shuffle">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="2" name="Set at X" sid="5486793881888526" type="array_temporario_shuffle">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="2" name="Set at X" sid="3264041317090489" type="array_temporario_shuffle">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="2" name="Set at X" sid="3663906943815052" type="array_temporario_shuffle">
+                    <param id="0" name="X">3</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3814302451324842">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3565970598497525" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <variable constant="0" name="pick" sid="678125011883207" static="0" type="number">0</variable>
+                <event-block sid="4471628928253845">
+                    <conditions>
+                        <condition id="-12" name="Repeat" sid="8209696619242892" type="System">
+                            <param id="0" name="Count">array_temporario_shuffle.Width</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="1850540721131173" type="array_temporario_shuffle">
+                            <param id="0" name="X">loopindex</param>
+                            <param id="1" name="Value">loopindex</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2060061372355727">
+                    <conditions>
+                        <condition id="-12" name="Repeat" sid="3877963902816269" type="System">
+                            <param id="0" name="Count">array_alternativas_mosca.Width</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="8064884257458836" type="System">
+                            <param id="0" name="Variable">pick</param>
+                            <param id="1" name="Value">floor(random(array_temporario_shuffle.Width))</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="2026698109161181" type="array_alternativas_mosca">
+                            <param id="0" name="X">loopindex</param>
+                            <param id="1" name="Value">(array_temporario_shuffle.At(pick)) + 1</param>
+                        </action>
+                        <action id="9" name="Delete" sid="4038835831910002" type="array_temporario_shuffle">
+                            <param id="0" name="Index">pick</param>
+                            <param id="1" name="Axis">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="7812596861982009">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="4588395675469206" type="System">
+                    <param id="0" name="Interval (seconds)">20.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Insert" sid="4078297079391357" type="array_temporario_shuffle">
+                    <param id="0" name="Value">1</param>
+                    <param id="1" name="Index">0</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+                <action id="10" name="Insert" sid="3895221877534439" type="array_temporario_shuffle">
+                    <param id="0" name="Value">2</param>
+                    <param id="1" name="Index">1</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+                <action id="10" name="Insert" sid="6813808227388625" type="array_temporario_shuffle">
+                    <param id="0" name="Value">3</param>
+                    <param id="1" name="Index">2</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+                <action id="10" name="Insert" sid="8206495612847105" type="array_temporario_shuffle">
+                    <param id="0" name="Value">4</param>
+                    <param id="1" name="Index">3</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <variable constant="0" name="pick" sid="7118204546737029" static="0" type="number">0</variable>
+                <event-block sid="5966579929138379">
+                    <conditions>
+                        <condition id="-12" name="Repeat" sid="709804452032357" type="System">
+                            <param id="0" name="Count">array_temporario_shuffle.Width</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="9867873742181704" type="array_temporario_shuffle">
+                            <param id="0" name="X">loopindex</param>
+                            <param id="1" name="Value">loopindex</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2558057177912407">
+                    <conditions>
+                        <condition id="-12" name="Repeat" sid="889465317984699" type="System">
+                            <param id="0" name="Count">array_alternativas_mosca.Width</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="1528316806981725" type="System">
+                            <param id="0" name="Variable">pick</param>
+                            <param id="1" name="Value">floor(random(array_temporario_shuffle.Width))</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="706634003011878" type="array_alternativas_mosca">
+                            <param id="0" name="X">loopindex</param>
+                            <param id="1" name="Value">(array_temporario_shuffle.At(pick)) + 1</param>
+                        </action>
+                        <action id="9" name="Delete" sid="1532469322200239" type="array_temporario_shuffle">
+                            <param id="0" name="Index">pick</param>
+                            <param id="1" name="Axis">0</param>
                         </action>
                     </actions>
                 </event-block>

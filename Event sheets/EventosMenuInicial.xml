@@ -99,10 +99,66 @@
             </actions>
         </event-block>
         <event-block sid="8598287697578589">
-            <conditions />
+            <conditions>
+                <condition id="4" name="Is touching object" sid="5802556567167826" type="Touch">
+                    <param id="0" name="Object">placa_jogo_jogar</param>
+                </condition>
+            </conditions>
             <actions>
                 <action id="-25" name="Go to layout (by name)" sid="4935125181199982" type="System">
-                    <param id="0" name="Layout">&quot;Layout 1&quot;</param>
+                    <param id="0" name="Layout">&quot;CopiaDoLayout 1&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5278327271223425">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5014940228045496" type="System" />
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" sid="7328463694683504" type="System" />
+                <action id="4" name="Set animation" sid="6546409735518936" type="mosca_logo">
+                    <param id="0" name="Animation">&quot;mosca_voando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="390209285776719" type="mosca_logo">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="2171187301141156" type="background_movendo">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2750248924974096">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="4309420401127074" type="System" />
+                <condition id="-7" name="Compare instance variable" sid="4573821851176071" type="mosca_logo">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="916907985607329" type="mosca_logo">
+                    <param id="0" name="Animation">&quot;mosca_voando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7219509389455481">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="404901996136311" type="System" />
+                <condition id="-7" inverted="1" name="Compare instance variable" sid="5126473879217396" type="mosca_logo">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="9635004780986043" type="mosca_logo">
+                    <param id="0" name="Animation">&quot;mosca_voando_contrario&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
