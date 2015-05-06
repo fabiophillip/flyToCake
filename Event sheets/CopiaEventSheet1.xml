@@ -206,6 +206,9 @@
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">BiscoitoCimaMosca.Letra</param>
                 </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="2537284111539287" type="Questao">
+                    <param id="0" name="Instance variable">questao_esta_mudando</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-10" name="Set value" sid="5377016489945247" type="mosca">
@@ -276,6 +279,9 @@
                     <param id="0" name="Instance variable">resposta</param>
                     <param id="1" name="Comparison">1</param>
                     <param id="2" name="Value">BiscoitoCimaMosca.Letra</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="5085588997252862" type="Questao">
+                    <param id="0" name="Instance variable">questao_esta_mudando</param>
                 </condition>
             </conditions>
             <actions>
@@ -1531,138 +1537,157 @@
             <actions>
                 <action id="-10" name="Set value" sid="4835817120314212" type="item">
                     <param id="0" name="Instance variable">item</param>
-                    <param id="1" name="Value">&quot;fireball&quot;</param>
+                    <param id="1" name="Value">&quot;mudar_questao&quot;</param>
                 </action>
                 <action id="4" name="Set animation" sid="8254989202619509" type="item">
-                    <param id="0" name="Animation">&quot;fireball&quot;</param>
+                    <param id="0" name="Animation">&quot;mudar_questao&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="2898631933096821">
+        <event-block sid="3209429833579273">
             <conditions>
-                <condition id="4" name="Is touching object" sid="4366645827073746" type="Touch">
+                <condition id="4" name="Is touching object" sid="786045912469232" type="Touch">
                     <param id="0" name="Object">item</param>
                 </condition>
-                <condition id="-7" name="Compare instance variable" sid="7417046813193388" type="item">
+                <condition id="-7" name="Compare instance variable" sid="5585495376543702" type="item">
                     <param id="0" name="Instance variable">item</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">&quot;fireball&quot;</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-10" name="Set value" sid="5029051099633061" type="item">
+                <action id="-10" name="Set value" sid="1115110457270367" type="item">
                     <param id="0" name="Instance variable">item</param>
                     <param id="1" name="Value">&quot;&quot;</param>
                 </action>
-                <action id="4" name="Set animation" sid="1777368515008115" type="item">
+                <action id="4" name="Set animation" sid="5401081763923325" type="item">
                     <param id="0" name="Animation">&quot;Default&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action id="-3" name="Create object" sid="9003961786788526" type="System">
+                <action id="-3" name="Create object" sid="6012130159656115" type="System">
                     <param id="0" name="Object to create">fireball</param>
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="X">47</param>
                     <param id="3" name="Y">335</param>
                 </action>
-                <action id="-3" name="Create object" sid="6843516192258755" type="System">
+                <action id="-3" name="Create object" sid="518108411858286" type="System">
                     <param id="0" name="Object to create">fireball</param>
                     <param id="1" name="Layer">1</param>
-                    <param id="2" name="X">77</param>
+                    <param id="2" name="X">97</param>
                     <param id="3" name="Y">335</param>
                 </action>
-                <action id="-3" name="Create object" sid="7821107052754394" type="System">
+                <action id="-3" name="Create object" sid="2445859874604397" type="System">
                     <param id="0" name="Object to create">fireball</param>
                     <param id="1" name="Layer">1</param>
-                    <param id="2" name="X">107</param>
+                    <param id="2" name="X">147</param>
                     <param id="3" name="Y">335</param>
                 </action>
-                <action id="-3" name="Create object" sid="8864097021266166" type="System">
-                    <param id="0" name="Object to create">fireball</param>
-                    <param id="1" name="Layer">1</param>
-                    <param id="2" name="X">137</param>
-                    <param id="3" name="Y">335</param>
-                </action>
-                <action id="-3" name="Create object" sid="5021539509357582" type="System">
-                    <param id="0" name="Object to create">fireball</param>
-                    <param id="1" name="Layer">1</param>
-                    <param id="2" name="X">167</param>
-                    <param id="3" name="Y">335</param>
-                </action>
-                <action id="-3" name="Create object" sid="226743043503568" type="System">
+                <action id="-3" name="Create object" sid="4668747589415579" type="System">
                     <param id="0" name="Object to create">fireball</param>
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="X">197</param>
                     <param id="3" name="Y">335</param>
                 </action>
-                <action id="-3" name="Create object" sid="8388255763582632" type="System">
+                <action id="-3" name="Create object" sid="5772448555107951" type="System">
                     <param id="0" name="Object to create">fireball</param>
                     <param id="1" name="Layer">1</param>
-                    <param id="2" name="X">227</param>
+                    <param id="2" name="X">247</param>
                     <param id="3" name="Y">335</param>
                 </action>
-                <action id="-3" name="Create object" sid="7173396879223313" type="System">
+                <action id="-3" name="Create object" sid="2495576251270029" type="System">
                     <param id="0" name="Object to create">fireball</param>
                     <param id="1" name="Layer">1</param>
-                    <param id="2" name="X">257</param>
+                    <param id="2" name="X">297</param>
                     <param id="3" name="Y">335</param>
                 </action>
-                <action id="-3" name="Create object" sid="9554736136589348" type="System">
-                    <param id="0" name="Object to create">fireball</param>
-                    <param id="1" name="Layer">1</param>
-                    <param id="2" name="X">287</param>
-                    <param id="3" name="Y">335</param>
-                </action>
-                <action id="-3" name="Create object" sid="6651483107794865" type="System">
-                    <param id="0" name="Object to create">fireball</param>
-                    <param id="1" name="Layer">1</param>
-                    <param id="2" name="X">317</param>
-                    <param id="3" name="Y">335</param>
-                </action>
-                <action id="-3" name="Create object" sid="869914360771019" type="System">
+                <action id="-3" name="Create object" sid="2857042643436856" type="System">
                     <param id="0" name="Object to create">fireball</param>
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="X">347</param>
                     <param id="3" name="Y">335</param>
                 </action>
-                <action id="-3" name="Create object" sid="7217722480554912" type="System">
+                <action id="-3" name="Create object" sid="9840849643290742" type="System">
                     <param id="0" name="Object to create">fireball</param>
                     <param id="1" name="Layer">1</param>
-                    <param id="2" name="X">377</param>
+                    <param id="2" name="X">397</param>
                     <param id="3" name="Y">335</param>
                 </action>
-                <action id="-3" name="Create object" sid="8532094410520834" type="System">
+                <action id="-3" name="Create object" sid="3067597411380381" type="System">
                     <param id="0" name="Object to create">fireball</param>
                     <param id="1" name="Layer">1</param>
-                    <param id="2" name="X">407</param>
+                    <param id="2" name="X">447</param>
                     <param id="3" name="Y">335</param>
                 </action>
-                <action id="-3" name="Create object" sid="9693837435313274" type="System">
-                    <param id="0" name="Object to create">fireball</param>
-                    <param id="1" name="Layer">1</param>
-                    <param id="2" name="X">437</param>
-                    <param id="3" name="Y">335</param>
-                </action>
-                <action id="-3" name="Create object" sid="8758841062584252" type="System">
-                    <param id="0" name="Object to create">fireball</param>
-                    <param id="1" name="Layer">1</param>
-                    <param id="2" name="X">467</param>
-                    <param id="3" name="Y">335</param>
-                </action>
-                <action id="-3" name="Create object" sid="7623490025059321" type="System">
+                <action id="-3" name="Create object" sid="2199811002144158" type="System">
                     <param id="0" name="Object to create">fireball</param>
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="X">497</param>
                     <param id="3" name="Y">335</param>
                 </action>
-                <action id="0" name="Set text" sid="6404498942870838" type="Questao">
+                <action id="0" name="Set text" sid="8990394360800208" type="Questao">
                     <param id="0" name="Text">&quot;&quot;</param>
                 </action>
-                <action id="-16" name="Wait" sid="6696963641623301" type="System">
+                <action id="-16" name="Wait" sid="5173964989510616" type="System">
                     <param id="0" name="Seconds">3.0</param>
                 </action>
-                <action id="0" name="Set text" sid="8916093277784577" type="Questao">
+                <action id="0" name="Set text" sid="2193360325700274" type="Questao">
                     <param id="0" name="Text">Questao.texto_questao</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7798083238551333">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="5223649139181715" type="Touch">
+                    <param id="0" name="Object">item</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="6716627669417064" type="item">
+                    <param id="0" name="Instance variable">item</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;mudar_questao&quot;</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="5739813115773245" type="mosca">
+                    <param id="0" name="Object">parte_cima_bolo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="8097231252278572" type="Questao">
+                    <param id="0" name="Instance variable">questao_esta_mudando</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="2963951634462735" type="item">
+                    <param id="0" name="Instance variable">item</param>
+                    <param id="1" name="Value">&quot;&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="7786828166102895" type="item">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Set text" sid="4473814810243192" type="Questao">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="8313395962095979" type="animacao_mudar_questao">
+                    <param id="0" name="Animation">&quot;animacao_mudar_questao&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="3282228293009729" type="System">
+                    <param id="0" name="Seconds">2.3</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="5948601462517012" type="Questao">
+                    <param id="0" name="Instance variable">questaoJaFoiCriada</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="2279635046606342" type="Questao">
+                    <param id="0" name="Instance variable">id_questao</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="4" name="Set animation" sid="7542740020277517" type="animacao_mudar_questao">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="5535041162035098" type="Questao">
+                    <param id="0" name="Instance variable">questao_esta_mudando</param>
+                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>
@@ -1670,6 +1695,9 @@
             <conditions>
                 <condition id="-1" name="Every tick" sid="6558576348008706" type="System" />
                 <condition id="-9" name="Is visible" sid="8647992535151765" type="fireball" />
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="3094446845318702" type="fireball">
+                    <param id="0" name="Instance variable">fireball_parada</param>
+                </condition>
             </conditions>
             <actions>
                 <action behavior="Rotate" id="0" name="Set speed" sid="6213979041002365" type="fireball">
@@ -1680,15 +1708,31 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="1672264122175253">
+        <event-block sid="6714632705956044">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="6259421238718031" type="fireball">
+                <condition id="0" name="On collision with another object" sid="810546022753274" type="fireball">
                     <param id="0" name="Object">mosca</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="9039450990483271" type="mosca" />
-                <action id="7" name="Play (by name)" sid="2136034499630534" type="Audio">
+                <action id="-13" name="Set boolean" sid="2001568370366546" type="fireball">
+                    <param id="0" name="Instance variable">fireball_parada</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="7979253172336181" type="fireball">
+                    <param id="0" name="Animation">&quot;explode&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="8833250257677303" type="mosca">
+                    <param id="0" name="Instance variable">mosca_parada</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="957388717665774" type="mosca" />
+                <action id="-16" name="Wait" sid="613718634808191" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="3525555802636346" type="fireball" />
+                <action id="7" name="Play (by name)" sid="2823151648811633" type="Audio">
                     <param id="0" name="Folder">0</param>
                     <param id="1" name="Audio file name">&quot;7_year_old_boy_screams&quot;</param>
                     <param id="3" name="Loop">0</param>

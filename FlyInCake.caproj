@@ -73,7 +73,7 @@
                         </collision-poly>
                     </frame>
                 </animation>
-                 <animation framecount="1" loop="0" name="forno_bolo" pingpong="0" repeatcount="1" repeatto="0" sid="5139828518490776" speed="5">
+                <animation framecount="1" loop="0" name="forno_bolo" pingpong="0" repeatcount="1" repeatto="0" sid="5139828518490776" speed="5">
                     <frame duration="1" hotspotX="0.506667" hotspotY="0.514286">
                         <collision-poly>
                             <point x="0.0190476" y="0.0304569" />
@@ -1971,7 +1971,7 @@
         </object-type>
         <object-type global="1" name="array_temporario_shuffle" sid="9612144958500575">
             <plugin id="Arr" />
-	</object-type>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
@@ -1989,13 +1989,13 @@
         <event-sheet>fimDeJogo.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Touch" uid="67">
+        <global-instance type="Touch" uid="68">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Mouse" uid="68" />
-        <global-instance type="Audio" uid="69">
+        <global-instance type="Mouse" uid="69" />
+        <global-instance type="Audio" uid="79">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -2010,7 +2010,7 @@
                 <doppler-factor>1</doppler-factor>
             </properties>
         </global-instance>
-        <global-instance type="WebStorage" uid="79" />
+        <global-instance type="WebStorage" uid="90" />
     </global-instances>
     <sounds-folder expanded="0">
         <file name="7_year_old_boy_screams.m4a" />
