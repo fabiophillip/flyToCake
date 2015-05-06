@@ -22,6 +22,7 @@
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
+        <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
@@ -102,6 +103,9 @@
                 </behavior-type>
                 <behavior-type name="8Direction" sid="3537915260567824">
                     <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="CustomMovement" sid="6788440706070722">
+                    <behavior id="custom" />
                 </behavior-type>
             </behaviors>
             <container>
@@ -375,6 +379,7 @@
                 <instance-variable comment="qual a resposta da questão? pode ser a,b,c ou d" name="resposta" sid="9505013693944662" type="string" />
                 <instance-variable name="questaoJaFoiCriada" sid="1262583150468952" type="boolean" />
                 <instance-variable name="texto_questao" sid="142156132775836" type="string" />
+                <instance-variable comment="o item mudar_questao estah sendo usado?" name="questao_esta_mudando" sid="6978084385600414" type="boolean" />
             </instance-variables>
         </object-type>
         <object-type name="parte_cima_bolo" sid="8465371796842569">
@@ -1520,7 +1525,7 @@
         <object-type name="WebStorage" sid="1578051671779875">
             <plugin id="WebStorage" />
         </object-type>
-        <object-type name="titulo" sid="8557497285690309">
+        <object-type name="tituloFimDeJogo" sid="8557497285690309">
             <plugin id="Text" />
         </object-type>
         <object-type name="scoreFinal" sid="3056032705239922">
@@ -1554,6 +1559,9 @@
         </object-type>
         <object-type name="fireball" sid="4167608835096134">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="fireball_parada" sid="3656822200370896" type="boolean" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Rotate" sid="8848648041915425">
                     <behavior id="Rotate" />
@@ -1564,6 +1572,43 @@
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9156002883523111" speed="20">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="35" loop="0" name="explode" pingpong="0" repeatcount="1" repeatto="0" sid="5791660148027368" speed="20">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
@@ -1589,6 +1634,34 @@
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="fireball" pingpong="0" repeatcount="1" repeatto="0" sid="6340212865307954" speed="5">
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.511111">
+                        <collision-poly>
+                            <point x="0.0204082" y="0.0222222" />
+                            <point x="0.489796" y="0" />
+                            <point x="0.979592" y="0.0222222" />
+                            <point x="1" y="0.488889" />
+                            <point x="0.979592" y="0.977778" />
+                            <point x="0.489796" y="1" />
+                            <point x="0.0204082" y="0.977778" />
+                            <point x="0" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="mudar_questao" pingpong="0" repeatcount="1" repeatto="0" sid="62745889831347" speed="5">
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.511111">
+                        <collision-poly>
+                            <point x="0.0204082" y="0.0222222" />
+                            <point x="0.489796" y="0" />
+                            <point x="0.979592" y="0.0222222" />
+                            <point x="1" y="0.488889" />
+                            <point x="0.979592" y="0.977778" />
+                            <point x="0.489796" y="1" />
+                            <point x="0.0204082" y="0.977778" />
+                            <point x="0" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="mudar_questao_transparente" pingpong="0" repeatcount="1" repeatto="0" sid="7931553058693925" speed="5">
                     <frame duration="1" hotspotX="0.510204" hotspotY="0.511111">
                         <collision-poly>
                             <point x="0.0204082" y="0.0222222" />
@@ -1853,6 +1926,42 @@
                             <point x="0.00883392" y="0.981884" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="animacao_mudar_questao" sid="170818388825291">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8363594453760851" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504673">
+                        <collision-poly>
+                            <point x="0.0292683" y="0.11215" />
+                            <point x="0.970732" y="0.11215" />
+                            <point x="0.987805" y="0.495327" />
+                            <point x="0.970732" y="0.88785" />
+                            <point x="0.0292683" y="0.88785" />
+                            <point x="0.0121951" y="0.495327" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="8" loop="0" name="animacao_mudar_questao" pingpong="0" repeatcount="1" repeatto="0" sid="9484208316029039" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504673">
+                        <collision-poly>
+                            <point x="0.0292683" y="0.11215" />
+                            <point x="0.970732" y="0.11215" />
+                            <point x="0.987805" y="0.495327" />
+                            <point x="0.970732" y="0.88785" />
+                            <point x="0.0292683" y="0.88785" />
+                            <point x="0.0121951" y="0.495327" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504673" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504673" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504673" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504673" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504673" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504673" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504673" />
                 </animation>
             </animation-folder>
         </object-type>

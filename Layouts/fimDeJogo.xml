@@ -49,14 +49,14 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="titulo" uid="42">
+                <instance type="tituloFimDeJogo" uid="42">
                     <properties>
                         <text>Fim de jogo</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-37,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
@@ -64,8 +64,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>301</x>
-                        <y>18</y>
+                        <x>312</x>
+                        <y>14</y>
                         <z>0</z>
                         <width>201</width>
                         <height>54</height>

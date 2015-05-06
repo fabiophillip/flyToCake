@@ -61,5 +61,49 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="2571650229612789">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8875171578161834" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="1556138890419024" type="playAgain">
+                    <param id="0" name="Family name">&quot;lobster_1.3regular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;lobstersheet.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2718986007067372">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5593910537143327" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="2082562617839386" type="scoreAcumulado">
+                    <param id="0" name="Family name">&quot;chifontregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;chifontsheet.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9980525494243984">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2427675887289724" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="9671436424931885" type="scoreFinal">
+                    <param id="0" name="Family name">&quot;chifontregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;chifontsheet.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4479431451491291">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5210451340568988" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="9867621827830508" type="tituloFimDeJogo">
+                    <param id="0" name="Family name">&quot;lobster_1.3regular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;lobstersheet.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
