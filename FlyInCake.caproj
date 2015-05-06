@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>FlyInCake</name>
     <description></description>
@@ -1971,6 +1971,7 @@
         </object-type>
         <object-type global="1" name="array_temporario_shuffle" sid="9612144958500575">
             <plugin id="Arr" />
+	</object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
