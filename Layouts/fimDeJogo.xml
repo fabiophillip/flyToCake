@@ -27,7 +27,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="background_movendo" uid="41">
+                <instance type="background_movendo" uid="42">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -49,9 +49,9 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="tituloFimDeJogo" uid="42">
+                <instance type="tituloFimDeJogo" uid="43">
                     <properties>
-                        <text>Fim de jogo</text>
+                        <text>Game Over</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-37,400,0</font>
                         <color>0,0,0</color>
@@ -76,9 +76,9 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="scoreFinal" uid="43">
+                <instance type="scoreFinal" uid="44">
                     <properties>
-                        <text>Score Final:</text>
+                        <text>Score:</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-16</font>
                         <color>0,0,0</color>
@@ -103,7 +103,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="scoreAcumulado" uid="44">
+                <instance type="scoreAcumulado" uid="51">
                     <properties>
                         <text>Score acumulado:</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -130,7 +130,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="limparScoreAcumulado" uid="51">
+                <instance type="limparScoreAcumulado" uid="65">
                     <properties>
                         <type>Button</type>
                         <text>limpar score acumulado</text>
@@ -154,7 +154,7 @@
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
-                <instance type="botaoPlayAgain" uid="65">
+                <instance type="botaoPlayAgain" uid="66">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -176,7 +176,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="playAgain" uid="66">
+                <instance type="playAgain" uid="67">
                     <properties>
                         <text>Play Again</text>
                         <initial-visibility>Visible</initial-visibility>

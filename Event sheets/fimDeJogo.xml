@@ -38,7 +38,7 @@
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="3801416017874352" type="scoreFinal">
-                    <param id="0" name="Text">&quot;Score final: &quot;&amp; pontuacaoNoJogoAtual</param>
+                    <param id="0" name="Text">&quot;Score: &quot;&amp; pontuacaoNoJogoAtual</param>
                 </action>
                 <action id="0" name="Set local value" sid="4380117572418682" type="WebStorage">
                     <param id="0" name="Key">&quot;scoreAcumulado&quot;</param>

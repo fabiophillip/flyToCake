@@ -71,41 +71,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Questao" uid="5">
-                    <properties>
-                        <text>Se um trem atravessa a ponte em x quilômetros, em quanto tempo ele irá atravessar novamente? \n a)10km \n b)20km \n c)30km d)40km</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Times New Roman,-21,400,0</font>
-                        <color>255,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <instance-variables>
-                        <id_questao>-1</id_questao>
-                        <id_dificuldade_questao>-1</id_dificuldade_questao>
-                        <resposta>a</resposta>
-                        <questaoJaFoiCriada>false</questaoJaFoiCriada>
-                        <texto_questao></texto_questao>
-                        <questao_esta_mudando>false</questao_esta_mudando>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>22</x>
-                        <y>308</y>
-                        <z>0</z>
-                        <width>510</width>
-                        <height>172</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="parte_antes_bolo" uid="13">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -310,6 +275,7 @@
                     </properties>
                     <instance-variables>
                         <pontos>0</pontos>
+                        <pode_aumentar_ainda_mais>true</pode_aumentar_ainda_mais>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -423,11 +389,13 @@
                     </properties>
                     <instance-variables>
                         <item></item>
+                        <doisx_em_uso>false</doisx_em_uso>
+                        <tempo_que_falta_doisx_em_uso>-1</tempo_que_falta_doisx_em_uso>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>255</x>
+                        <x>295</x>
                         <y>25</y>
                         <z>0</z>
                         <width>49</width>
@@ -515,7 +483,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="animacao_mudar_questao" uid="88">
+                <instance type="Sprite5" uid="92">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -525,14 +493,109 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>258</x>
-                        <y>357</y>
+                        <x>263</x>
+                        <y>371</y>
                         <z>0</z>
-                        <width>410</width>
-                        <height>107</height>
+                        <width>520</width>
+                        <height>170</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.504672885</hotspotY>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="vidro" uid="93">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>266</x>
+                        <y>357</y>
+                        <z>0</z>
+                        <width>613</width>
+                        <height>264</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="area_dentro_prato" uid="94">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>264</x>
+                        <y>371.5</y>
+                        <z>0</z>
+                        <width>520</width>
+                        <height>12</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="sapo" uid="95">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>493</x>
+                        <y>417</y>
+                        <z>0</z>
+                        <width>80</width>
+                        <height>113</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.504424751</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="2x_perto_score" uid="96">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>206</x>
+                        <y>16</y>
+                        <z>0</z>
+                        <width>29.600000381</width>
+                        <height>28.800001144</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -567,6 +630,7 @@
                         <mosca_caindo>0</mosca_caindo>
                         <mosca_virou_bolo>false</mosca_virou_bolo>
                         <mosca_parada>false</mosca_parada>
+                        <mosca_no_prato>false</mosca_no_prato>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -713,8 +777,8 @@
                         <x>54</x>
                         <y>83</y>
                         <z>0</z>
-                        <width>30</width>
-                        <height>30</height>
+                        <width>50</width>
+                        <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -882,6 +946,80 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="layer questao" sid="5719083665235228">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Questao" uid="5">
+                    <properties>
+                        <text>Se um trem atravessa a ponte em x quilômetros, em quanto tempo ele irá atravessar novamente? \n a)10km \n b)20km \n c)30km d)40km</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Times New Roman,-21,400,0</font>
+                        <color>255,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <instance-variables>
+                        <id_questao>-1</id_questao>
+                        <id_dificuldade_questao>-1</id_dificuldade_questao>
+                        <resposta>a</resposta>
+                        <questaoJaFoiCriada>false</questaoJaFoiCriada>
+                        <texto_questao></texto_questao>
+                        <questao_esta_mudando>false</questao_esta_mudando>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>18</x>
+                        <y>268</y>
+                        <z>0</z>
+                        <width>510</width>
+                        <height>172</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="animacao_mudar_questao" uid="88">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>258</x>
+                        <y>357</y>
+                        <z>0</z>
+                        <width>410</width>
+                        <height>107</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.504672885</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
