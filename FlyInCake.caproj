@@ -2439,8 +2439,8 @@
     </object-folder>
     <families />
     <layout-folder expanded="1">
-        <layout>Layout 1.xml</layout>
         <layout>CopiaDoLayout 1.xml</layout>
+        <layout>Layout 1.xml</layout>
         <layout>LayoutPhi.xml</layout>
         <layout>MenuInicial.xml</layout>
         <layout>fimDeJogo.xml</layout>

@@ -3,7 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>CopiaEventSheet1</name>
     <events>
-        <variable comment="muda quando o jogador ganha pontos" constant="0" name="acabou_de_ganhar_pontos" sid="8756345552245342" static="0" type="number">0</variable>
+        <variable constant="0" name="tempo_restante" sid="8647882511149372" static="0" type="number">240</variable>
+        <variable comment="nome do sprite da mosca" constant="0" name="sprite_da_mosca" sid="3559637804088934" static="0" type="text">mosca</variable>
+        <variable constant="0" name="moscas_viraram_bolo" sid="3862675104719746" static="0" type="number">0</variable>
         <variable constant="0" name="acabou_de_criar_nuvem_veneno" sid="9846862048538818" static="0" type="number">0</variable>
         <variable constant="0" name="quantas_nuvens_de_veneno" sid="9964746130369485" static="0" type="number">0</variable>
         <variable constant="0" name="indice_percorre_sequencia_alternativas_mosca" sid="1422693955872828" static="0" type="number">0</variable>

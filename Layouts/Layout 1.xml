@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
     <name>Layout 1</name>
-    <sid>7584171430171486</sid>
+    <sid>1245671932792523</sid>
     <event-sheet>Event sheet 1</event-sheet>
     <size>
         <width>1024</width>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="9219888993795422">
+        <layer name="Layer 0" sid="8226130205501215">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -27,51 +27,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="background_movendo" uid="0">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>427.125</x>
-                        <y>240</y>
-                        <z>0</z>
-                        <width>856</width>
-                        <height>481</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="backgroundScore" uid="21">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>112</x>
-                        <y>22</y>
-                        <z>0</z>
-                        <width>218</width>
-                        <height>38</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="parte_antes_bolo" uid="13">
+                <instance type="parte_antes_bolo" uid="116">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -93,7 +49,51 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="parte_cima_bolo" uid="14">
+                <instance type="parte_antes_bolo_pra_trigger" uid="117">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>73.5</x>
+                        <y>240</y>
+                        <z>0</z>
+                        <width>146</width>
+                        <height>476</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="background_movendo" uid="118">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>427.125</x>
+                        <y>240</y>
+                        <z>0</z>
+                        <width>856</width>
+                        <height>481</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="parte_cima_bolo" uid="119">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -115,7 +115,78 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="bolophi" uid="1">
+                <instance type="placa_moscas_indesejadas" uid="120">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>683</x>
+                        <y>260</y>
+                        <z>0</z>
+                        <width>144</width>
+                        <height>157</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="seta_placa_moscas_rejeitadas" uid="121">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>684</x>
+                        <y>271</y>
+                        <z>0</z>
+                        <width>30</width>
+                        <height>27</height>
+                        <depth>0</depth>
+                        <hotspotX>0.511627913</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="texto_placa_moscas_rejeitadas" uid="122">
+                    <properties>
+                        <text>No-good Flies</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-24,400,0</font>
+                        <color>255,153,204</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>684</x>
+                        <y>229</y>
+                        <z>0</z>
+                        <width>138</width>
+                        <height>62</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="bolophi" uid="123">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -144,7 +215,151 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="AnimacaoAlteraScore" uid="16">
+                <instance type="background_score" uid="124">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>684</x>
+                        <y>426</y>
+                        <z>0</z>
+                        <width>107</width>
+                        <height>49</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="cronometro" uid="125">
+                    <properties>
+                        <text>00:00</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-29,400,0</font>
+                        <color>255,153,204</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>634</x>
+                        <y>406</y>
+                        <z>0</z>
+                        <width>104</width>
+                        <height>41</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="placa_jogo_pausar" uid="126">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>683</x>
+                        <y>356</y>
+                        <z>0</z>
+                        <width>150.972366333</width>
+                        <height>52.927482605</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="backgroundScore" uid="127">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>112</x>
+                        <y>22</y>
+                        <z>0</z>
+                        <width>218</width>
+                        <height>38</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="pratoPhi" uid="128">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>263</x>
+                        <y>371</y>
+                        <z>0</z>
+                        <width>520</width>
+                        <height>170</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="area_dentro_prato" uid="129">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>264</x>
+                        <y>371.5</y>
+                        <z>0</z>
+                        <width>520</width>
+                        <height>12</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="AnimacaoAlteraScore" uid="130">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -166,7 +381,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="primeiroDigitoScore" uid="17">
+                <instance type="primeiroDigitoScore" uid="131">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -191,7 +406,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="segundoDigitoScore" uid="18">
+                <instance type="segundoDigitoScore" uid="132">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -216,7 +431,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="terceiroDigitoScore" uid="19">
+                <instance type="terceiroDigitoScore" uid="133">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -241,7 +456,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="quartoDigitoScore" uid="20">
+                <instance type="quartoDigitoScore" uid="134">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -266,7 +481,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Score" uid="15">
+                <instance type="Score" uid="135">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -292,7 +507,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="parte_antes_bolo2" uid="26">
+                <instance type="parte_antes_bolo2" uid="136">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -314,29 +529,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="parte_antes_bolo_pra_trigger" uid="27">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>73.5</x>
-                        <y>240</y>
-                        <z>0</z>
-                        <width>146</width>
-                        <height>476</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="fireball" uid="34">
+                <instance type="fireball" uid="137">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -380,7 +573,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="item" uid="39">
+                <instance type="item" uid="138">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -395,8 +588,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>295</x>
-                        <y>25</y>
+                        <x>801</x>
+                        <y>82</y>
                         <z>0</z>
                         <width>49</width>
                         <height>45</height>
@@ -407,34 +600,34 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="cronometro" uid="70">
+                <instance type="texto_botao_pausar" uid="139">
                     <properties>
-                        <text>00:00</text>
+                        <text>Pause</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-37,400,0</font>
-                        <color>0,0,0</color>
+                        <font>Arial,-27,400,0</font>
+                        <color>255,153,204</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
+                        <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>535</x>
-                        <y>370</y>
+                        <x>683</x>
+                        <y>357</y>
                         <z>0</z>
-                        <width>307</width>
-                        <height>52</height>
+                        <width>140.546447754</width>
+                        <height>43</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="placa_jogo_pausar" uid="77">
+                <instance type="trigger_nuvem_veneno" uid="140">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -444,11 +637,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>685.484008789</x>
-                        <y>436.695007324</y>
+                        <x>4</x>
+                        <y>239.5</y>
                         <z>0</z>
-                        <width>150.972366333</width>
-                        <height>52.927482605</height>
+                        <width>8</width>
+                        <height>479</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -456,29 +649,32 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite5" uid="92">
+                <instance type="nuvem_veneno" uid="141">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <veneno_voando_contrario>false</veneno_voando_contrario>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>263</x>
-                        <y>371</y>
+                        <x>35</x>
+                        <y>645</y>
                         <z>0</z>
-                        <width>520</width>
-                        <height>170</height>
+                        <width>58.333618164</width>
+                        <height>50.194042206</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.501661122</hotspotX>
+                        <hotspotY>0.501930475</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="vidro" uid="93">
+                <instance type="vidro" uid="142">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -500,36 +696,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="area_dentro_prato" uid="94">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>264</x>
-                        <y>371.5</y>
-                        <z>0</z>
-                        <width>520</width>
-                        <height>12</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="sapo" uid="95">
+                <instance type="sapo" uid="143">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -551,7 +718,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="2x_perto_score" uid="96">
+                <instance type="2x_perto_score" uid="144">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -573,10 +740,37 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="label_item" uid="145">
+                    <properties>
+                        <text>Item</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-29,400,0</font>
+                        <color>255,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>802</x>
+                        <y>125</y>
+                        <z>0</z>
+                        <width>200</width>
+                        <height>46</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
-        <layer name="mosca" sid="3406560938390756">
+        <layer name="mosca" sid="1640079814052897">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -590,7 +784,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="mosca" uid="3">
+                <instance type="mosca" uid="146">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -644,7 +838,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>33</x>
-                        <y>70</y>
+                        <y>90</y>
                         <z>0</z>
                         <width>59</width>
                         <height>47</height>
@@ -655,7 +849,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="LetraCimaMosca" uid="4">
+                <instance type="LetraCimaMosca" uid="147">
                     <properties>
                         <text>z</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -711,7 +905,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="BiscoitoCimaMosca" uid="28">
+                <instance type="BiscoitoCimaMosca" uid="148">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -766,7 +960,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="pause menu" sid="7564945065979406">
+        <layer name="pause menu" sid="8493292180748874">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -780,7 +974,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sprite2" uid="71">
+                <instance type="background_menu_pausado" uid="149">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -802,7 +996,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="texto_menu_pausado" uid="72">
+                <instance type="texto_menu_pausado" uid="150">
                     <properties>
                         <text>Game Paused</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -829,7 +1023,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="placa_choco_continuar_jogo" uid="73">
+                <instance type="placa_choco_continuar_jogo" uid="151">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -851,7 +1045,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="placa_choco_voltar_menu" uid="74">
+                <instance type="placa_choco_voltar_menu" uid="152">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -873,7 +1067,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="texto_resume" uid="75">
+                <instance type="texto_resume" uid="153">
                     <properties>
                         <text>Resume</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -900,7 +1094,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="texto_menu_inicial" uid="76">
+                <instance type="texto_menu_inicial" uid="154">
                     <properties>
                         <text>Main menu</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -930,7 +1124,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="layer questao" sid="5719083665235228">
+        <layer name="layer questao" sid="4862365256167434">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -944,7 +1138,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Questao" uid="5">
+                <instance type="Questao" uid="155">
                     <properties>
                         <text>Se um trem atravessa a ponte em x quilômetros, em quanto tempo ele irá atravessar novamente? \n a)10km \n b)20km \n c)30km d)40km</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -979,7 +1173,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="animacao_mudar_questao" uid="88">
+                <instance type="animacao_mudar_questao" uid="156">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
