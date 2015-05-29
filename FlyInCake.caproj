@@ -50,7 +50,7 @@
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
-    <object-folder expanded="0">
+    <object-folder expanded="1">
         <object-type name="bolo" sid="3616952699279181">
             <plugin id="Sprite" />
             <behaviors>
@@ -98,6 +98,9 @@
                 <instance-variable name="mosca_virou_bolo" sid="5950868070711554" type="boolean" />
                 <instance-variable name="mosca_parada" sid="1359546440365007" type="boolean" />
                 <instance-variable name="mosca_no_prato" sid="328608918391544" type="boolean" />
+                <instance-variable name="mosca_voando_longe_bolo" sid="8195008005626826" type="boolean" />
+                <instance-variable name="mosca_comeu_bolo" sid="9296525288140108" type="boolean" />
+                <instance-variable name="mosca_morreu" sid="6851921443040136" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="9711052420347661">
@@ -342,6 +345,34 @@
                             <point x="0.8" y="0.702128" />
                             <point x="0.5" y="0.893617" />
                             <point x="0.328571" y="0.510638" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="mosca_morta" pingpong="0" repeatcount="1" repeatto="0" sid="8106740312438206" speed="5">
+                    <frame duration="1" hotspotX="0.508772" hotspotY="0.511111">
+                        <collision-poly>
+                            <point x="0.0877193" y="0.111111" />
+                            <point x="0.491228" y="0" />
+                            <point x="0.929825" y="0.0888889" />
+                            <point x="0.807018" y="0.488889" />
+                            <point x="0.807018" y="0.755556" />
+                            <point x="0.491228" y="0.933333" />
+                            <point x="0.122807" y="0.844444" />
+                            <point x="0.122807" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="mosca_morta_contrario" pingpong="0" repeatcount="1" repeatto="0" sid="607210594967099" speed="5">
+                    <frame duration="1" hotspotX="0.508772" hotspotY="0.511111">
+                        <collision-poly>
+                            <point x="0.0701754" y="0.0888889" />
+                            <point x="0.491228" y="0" />
+                            <point x="0.912281" y="0.111111" />
+                            <point x="0.877193" y="0.488889" />
+                            <point x="0.877193" y="0.844444" />
+                            <point x="0.491228" y="0.933333" />
+                            <point x="0.192982" y="0.755556" />
+                            <point x="0.192982" y="0.488889" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1445,6 +1476,7 @@
             <instance-variables>
                 <instance-variable name="NumeroLetraAlfabeto" sid="938481242389157" type="number" />
                 <instance-variable name="Letra" sid="5517399983988685" type="string" />
+                <instance-variable name="biscoito_parado" sid="2809834490897893" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="7350325391571276">
@@ -1979,10 +2011,10 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Text2" sid="5755759298567077">
+        <object-type name="texto_botao_pausar" sid="5755759298567077">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Sprite2" sid="7217987952085727">
+        <object-type name="background_menu_pausado" sid="7217987952085727">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9633358633242285" speed="5">
@@ -2128,6 +2160,145 @@
         <object-type global="1" name="array_temporario_shuffle" sid="9612144958500575">
             <plugin id="Arr" />
         </object-type>
+        <object-type name="pratoPhi" sid="1455749376226917">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2257619949503763" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50173">
+                        <collision-poly>
+                            <point x="0.0983333" y="0.204152" />
+                            <point x="0.5" y="0" />
+                            <point x="0.901667" y="0.204152" />
+                            <point x="1" y="0.49827" />
+                            <point x="0.901667" y="0.795848" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0983333" y="0.795848" />
+                            <point x="0" y="0.49827" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="area_dentro_prato" sid="2839112423308063">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="1927426340407726">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="368704741752637" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="placa_moscas_indesejadas" sid="9183767784314514">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4767548744037607" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0857143" y="0.0857143" />
+                            <point x="0.5" y="0" />
+                            <point x="0.914286" y="0.0857143" />
+                            <point x="1" y="0.5" />
+                            <point x="0.657143" y="0.657143" />
+                            <point x="0.5" y="1" />
+                            <point x="0.342857" y="0.657143" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="texto_placa_moscas_rejeitadas" sid="7920205832277565">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="background_score" sid="8087190770658892">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6083069997853564" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.00883392" y="0.0181159" />
+                            <point x="0.5" y="0" />
+                            <point x="0.991166" y="0.0181159" />
+                            <point x="0.991166" y="0.981884" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00883392" y="0.981884" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="seta_placa_moscas_rejeitadas" sid="6486457974369475">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8439100627379814" speed="5">
+                    <frame duration="1" hotspotX="0.511628" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.232558" y="0.192308" />
+                            <point x="0.488372" y="0.0192308" />
+                            <point x="0.767442" y="0.192308" />
+                            <point x="0.976744" y="0.5" />
+                            <point x="0.72093" y="0.769231" />
+                            <point x="0.488372" y="0.980769" />
+                            <point x="0.0232558" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="2802011336172531">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3046624396064869" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="nuvem_veneno" sid="1537076046690357">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="veneno_voando_contrario" sid="4683044496488256" type="boolean" />
+            </instance-variables>
+            <animation-folder expanded="1">
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8566168951830439" speed="2">
+                    <frame duration="1" hotspotX="0.501661" hotspotY="0.50193">
+                        <collision-poly>
+                            <point x="0.156146" y="0.181467" />
+                            <point x="0.498339" y="0.046332" />
+                            <point x="0.833887" y="0.19305" />
+                            <point x="0.996678" y="0.498069" />
+                            <point x="0.900332" y="0.88417" />
+                            <point x="0.498339" y="0.996139" />
+                            <point x="0.142857" y="0.833977" />
+                            <point x="0.0166113" y="0.498069" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501661" hotspotY="0.50193">
+                        <collision-poly>
+                            <point x="0.142857" y="0.166023" />
+                            <point x="0.498339" y="0.015444" />
+                            <point x="0.830565" y="0.196911" />
+                            <point x="0.956811" y="0.498069" />
+                            <point x="0.847176" y="0.822394" />
+                            <point x="0.498339" y="0.996139" />
+                            <point x="0.0996678" y="0.88417" />
+                            <point x="0.00664452" y="0.498069" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="trigger_nuvem_veneno" sid="7633300213174998">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7786536167814253" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
         <object-type name="Sprite4" sid="8188994912778791">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
@@ -2170,19 +2341,6 @@
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7041520531849061" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="area_dentro_prato" sid="2479030629358924">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="398989043346678">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5928039880380049" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
@@ -2292,13 +2450,13 @@
         <event-sheet>fimDeJogo.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Touch" uid="68">
+        <global-instance type="Touch" uid="101">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Mouse" uid="69" />
-        <global-instance type="Audio" uid="79">
+        <global-instance type="Mouse" uid="102" />
+        <global-instance type="Audio" uid="103">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -2313,9 +2471,9 @@
                 <doppler-factor>1</doppler-factor>
             </properties>
         </global-instance>
-        <global-instance type="WebStorage" uid="90" />
+        <global-instance type="WebStorage" uid="104" />
     </global-instances>
-    <sounds-folder expanded="0">
+    <sounds-folder expanded="1">
         <file name="7_year_old_boy_screams.m4a" />
         <file name="7_year_old_boy_screams.ogg" />
         <file name="7_year_old_boy_screams.wav" />
@@ -2334,6 +2492,9 @@
         <file name="firework_1.m4a" />
         <file name="firework_1.ogg" />
         <file name="firework_1.wav" />
+        <file name="baby_9_months_cough_003.m4a" />
+        <file name="baby_9_months_cough_003.ogg" />
+        <file name="baby_9_months_cough_003.wav" />
     </sounds-folder>
     <music-folder expanded="1" />
     <files-folder expanded="0">

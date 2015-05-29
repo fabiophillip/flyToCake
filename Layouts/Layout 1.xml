@@ -456,33 +456,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text2" uid="78">
-                    <properties>
-                        <text>Pause</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-27,400,0</font>
-                        <color>255,153,204</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Center</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>684.911010742</x>
-                        <y>437.5</y>
-                        <z>0</z>
-                        <width>140.546447754</width>
-                        <height>43</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="Sprite5" uid="92">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -631,6 +604,9 @@
                         <mosca_virou_bolo>false</mosca_virou_bolo>
                         <mosca_parada>false</mosca_parada>
                         <mosca_no_prato>false</mosca_no_prato>
+                        <mosca_voando_longe_bolo>false</mosca_voando_longe_bolo>
+                        <mosca_comeu_bolo>false</mosca_comeu_bolo>
+                        <mosca_morreu>false</mosca_morreu>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -745,6 +721,7 @@
                     <instance-variables>
                         <NumeroLetraAlfabeto>0</NumeroLetraAlfabeto>
                         <Letra></Letra>
+                        <biscoito_parado>false</biscoito_parado>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">

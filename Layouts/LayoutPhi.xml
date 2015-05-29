@@ -27,7 +27,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="background_movendo" uid="7">
+                <instance type="background_movendo" uid="22">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -49,7 +49,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="parte_antes_bolo" uid="9">
+                <instance type="parte_antes_bolo" uid="23">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -71,7 +71,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="bolophi" uid="8">
+                <instance type="bolophi" uid="24">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -100,7 +100,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="parte_cima_bolo" uid="10">
+                <instance type="parte_cima_bolo" uid="25">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -122,7 +122,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text" uid="11">
+                <instance type="Text" uid="29">
                     <properties>
                         <text>PARA DEBUGGING</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -166,7 +166,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="parte_antes_bolo_pra_trigger" uid="12">
+                <instance type="parte_antes_bolo_pra_trigger" uid="30">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -188,7 +188,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="parte_antes_bolo2" uid="22">
+                <instance type="parte_antes_bolo2" uid="31">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -210,7 +210,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="moscaphi" uid="23">
+                <instance type="moscaphi" uid="32">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -263,7 +263,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="cronometro" uid="24">
+                <instance type="cronometro" uid="33">
                     <properties>
                         <text>00:00</text>
                         <initial-visibility>Visible</initial-visibility>
