@@ -2600,7 +2600,7 @@
         <event-block sid="5553274337915417">
             <conditions>
                 <condition id="4" name="Is touching object" sid="1140912782378118" type="Touch">
-                    <param id="0" name="Object">placa_choco_continuar_jogo</param>
+                    <param id="0" name="Object">placa_choco_resume</param>
                 </condition>
             </conditions>
             <actions>
