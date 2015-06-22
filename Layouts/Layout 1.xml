@@ -24,6 +24,8 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
@@ -584,6 +586,9 @@
                         <item></item>
                         <doisx_em_uso>false</doisx_em_uso>
                         <tempo_que_falta_doisx_em_uso>-1</tempo_que_falta_doisx_em_uso>
+                        <id_item>-1</id_item>
+                        <tempo_que_falta_para_bolo_gostoso_em_uso>-1</tempo_que_falta_para_bolo_gostoso_em_uso>
+                        <aponta_resposta_em_uso>false</aponta_resposta_em_uso>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -744,7 +749,7 @@
                     <properties>
                         <text>Item</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-29,400,0</font>
+                        <font>AR CENA,-29,400,0</font>
                         <color>255,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -756,13 +761,62 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>802</x>
-                        <y>125</y>
+                        <y>120</y>
                         <z>0</z>
                         <width>200</width>
                         <height>46</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Alerta_mais_moscas_aparecerao_fundo" uid="17">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>719</x>
+                        <y>32</y>
+                        <z>0</z>
+                        <width>195</width>
+                        <height>49</height>
+                        <depth>0</depth>
+                        <hotspotX>0.502564132</hotspotX>
+                        <hotspotY>0.510204077</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Alerta_mais_moscas_aparecerao" uid="16">
+                    <properties>
+                        <text>Mais moscas aparecerão para comer o bolo granulado!</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>AR CENA,-16,400,0</font>
+                        <color>255,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>628</x>
+                        <y>12</y>
+                        <z>0</z>
+                        <width>178</width>
+                        <height>71</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -781,6 +835,8 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
@@ -811,6 +867,8 @@
                                 <jump-strength>650</jump-strength>
                                 <gravity>1500</gravity>
                                 <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
                                 <default-controls>Yes</default-controls>
                                 <initial-state>Enabled</initial-state>
                             </properties>
@@ -838,7 +896,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>33</x>
-                        <y>90</y>
+                        <y>130</y>
                         <z>0</z>
                         <width>59</width>
                         <height>47</height>
@@ -885,6 +943,8 @@
                                 <jump-strength>650</jump-strength>
                                 <gravity>1500</gravity>
                                 <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
                                 <default-controls>Yes</default-controls>
                                 <initial-state>Enabled</initial-state>
                             </properties>
@@ -926,6 +986,8 @@
                                 <jump-strength>650</jump-strength>
                                 <gravity>1500</gravity>
                                 <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
                                 <default-controls>Yes</default-controls>
                                 <initial-state>Enabled</initial-state>
                             </properties>
@@ -971,6 +1033,8 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
@@ -987,8 +1051,8 @@
                         <x>424</x>
                         <y>245</y>
                         <z>0</z>
-                        <width>324.912658691</width>
-                        <height>422.116455078</height>
+                        <width>324.912994385</width>
+                        <height>422.115997314</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1012,7 +1076,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>421.417999268</x>
-                        <y>93.357002258</y>
+                        <y>143.356994629</y>
                         <z>0</z>
                         <width>205.716003418</width>
                         <height>44.544998169</height>
@@ -1135,6 +1199,8 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>

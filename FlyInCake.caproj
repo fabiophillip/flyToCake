@@ -8,7 +8,7 @@
     <author-website>http://</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>22i10wq0cv9cl</unique-id>
-    <saved-with-version>17300</saved-with-version>
+    <saved-with-version>20402</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
@@ -35,6 +35,7 @@
         <height>480</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -50,7 +51,7 @@
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
-    <object-folder expanded="1">
+    <object-folder>
         <object-type name="bolo" sid="3616952699279181">
             <plugin id="Sprite" />
             <behaviors>
@@ -58,7 +59,7 @@
                     <behavior id="solid" />
                 </behavior-type>
             </behaviors>
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="bolo" pingpong="0" repeatcount="1" repeatto="0" sid="87424511733853" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
@@ -117,7 +118,7 @@
                 <type>BiscoitoCimaMosca</type>
                 <type>mosca</type>
             </container>
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="3" loop="1" name="mosca_voando" pingpong="0" repeatcount="10000" repeatto="0" sid="4844604054068532" speed="9">
                     <frame duration="1" hotspotX="0.491525" hotspotY="0.957447">
                         <image-point name="Imagepoint 1" x="0.728814" y="-0.255319" />
@@ -398,7 +399,7 @@
         </object-type>
         <object-type name="Sprite" sid="8360739786808492">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3839274672022935" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
@@ -417,7 +418,7 @@
         </object-type>
         <object-type name="parte_cima_bolo" sid="8465371796842569">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2842409307304256" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
@@ -428,7 +429,7 @@
         </object-type>
         <object-type name="parte_antes_bolo" sid="3838456574141762">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4421895805531538" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
@@ -450,7 +451,7 @@
                     <behavior id="EightDir" />
                 </behavior-type>
             </behaviors>
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="3" loop="1" name="mosca_voando" pingpong="0" repeatcount="1" repeatto="0" sid="2219193432442412" speed="9">
                     <frame duration="1" hotspotX="0.508475" hotspotY="1">
                         <collision-poly>
@@ -536,9 +537,23 @@
                     <behavior id="solid" />
                 </behavior-type>
             </behaviors>
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1632415757326161" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\bolo_maior\bolo_maior_true.png">
+                        <collision-poly>
+                            <point x="0.0285714" y="0.0285714" />
+                            <point x="0.5" y="0" />
+                            <point x="0.971429" y="0.0285714" />
+                            <point x="1" y="0.5" />
+                            <point x="0.971429" y="0.971429" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0285714" y="0.971429" />
+                            <point x="0.0142857" y="0.514286" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="bolo_gostoso" pingpong="0" repeatcount="1" repeatto="0" sid="6921437514866054" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\items de jogo\bologostoso\bologostoso_sprite_true.png">
                         <collision-poly>
                             <point x="0.0285714" y="0.0285714" />
                             <point x="0.5" y="0" />
@@ -555,7 +570,7 @@
         </object-type>
         <object-type name="parte_antes_bolo2" sid="89278351522498">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="882247165135208" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
@@ -563,7 +578,7 @@
         </object-type>
         <object-type name="parte_antes_bolo_pra_trigger" sid="7518358306500273">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="201196293124782" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
@@ -580,7 +595,7 @@
         </object-type>
         <object-type name="background_movendo" sid="948346726266771">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="150" loop="1" name="Default" pingpong="0" repeatcount="10000" repeatto="0" sid="4550635653612562" speed="9">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -737,7 +752,7 @@
         </object-type>
         <object-type name="AnimacaoAlteraScore" sid="9789229906374118">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5268908482560207" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
@@ -876,7 +891,7 @@
             <instance-variables>
                 <instance-variable name="digito" sid="5116877786390676" type="number" />
             </instance-variables>
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8854046390249106" speed="5">
                     <frame duration="1" hotspotX="0.533333" hotspotY="0.545455">
                         <collision-poly>
@@ -1016,7 +1031,7 @@
             <instance-variables>
                 <instance-variable name="digito" sid="2646787334141601" type="number" />
             </instance-variables>
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6972532640029556" speed="5">
                     <frame duration="1" hotspotX="0.533333" hotspotY="0.545455">
                         <collision-poly>
@@ -1156,7 +1171,7 @@
             <instance-variables>
                 <instance-variable name="digito" sid="7572071221468724" type="number" />
             </instance-variables>
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6437153493542502" speed="5">
                     <frame duration="1" hotspotX="0.533333" hotspotY="0.545455">
                         <collision-poly>
@@ -1296,7 +1311,7 @@
             <instance-variables>
                 <instance-variable name="digito" sid="2231595261833674" type="number" />
             </instance-variables>
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3216602099287987" speed="5">
                     <frame duration="1" hotspotX="0.533333" hotspotY="0.545455">
                         <collision-poly>
@@ -1437,7 +1452,7 @@
                 <instance-variable name="pontos" sid="1316630712214426" type="number" />
                 <instance-variable comment="se o score chegar num limite de 10000, era p ele n poder mais ser alterado" name="pode_aumentar_ainda_mais" sid="1317446624410911" type="boolean" />
             </instance-variables>
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="205949072167234" speed="5">
                     <frame duration="1" hotspotX="0.505155" hotspotY="0.5">
                         <collision-poly>
@@ -1455,7 +1470,7 @@
         </object-type>
         <object-type name="backgroundScore" sid="6259985331208099">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5032491583535251" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
@@ -1490,9 +1505,9 @@
                 <type>BiscoitoCimaMosca</type>
                 <type>mosca</type>
             </container>
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="a" pingpong="0" repeatcount="1" repeatto="0" sid="7081827972421794" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\biscoitos\biscoitoa.png">
                         <collision-poly>
                             <point x="0.16" y="0.16" />
                             <point x="0.5" y="0" />
@@ -1506,7 +1521,7 @@
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="b" pingpong="0" repeatcount="1" repeatto="0" sid="4248551538893941" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\biscoitos\biscoitob.png">
                         <collision-poly>
                             <point x="0.16" y="0.16" />
                             <point x="0.5" y="0" />
@@ -1520,7 +1535,7 @@
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="c" pingpong="0" repeatcount="1" repeatto="0" sid="7837688355900623" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\biscoitos\biscoitoc.png">
                         <collision-poly>
                             <point x="0.16" y="0.16" />
                             <point x="0.5" y="0" />
@@ -1534,7 +1549,7 @@
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="d" pingpong="0" repeatcount="1" repeatto="0" sid="9108618999480274" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\biscoitos\biscoitod.png">
                         <collision-poly>
                             <point x="0.16" y="0.16" />
                             <point x="0.5" y="0" />
@@ -1577,7 +1592,7 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
                 <animation framecount="1" loop="0" name="a_preto" pingpong="0" repeatcount="1" repeatto="0" sid="3500230795031957" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\biscoitos\biscoitoapreto.png">
                         <collision-poly>
                             <point x="0.16" y="0.16" />
                             <point x="0.5" y="0" />
@@ -1591,7 +1606,7 @@
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="b_preto" pingpong="0" repeatcount="1" repeatto="0" sid="8748523240426351" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\biscoitos\biscoitobpreto.png">
                         <collision-poly>
                             <point x="0.16" y="0.16" />
                             <point x="0.5" y="0" />
@@ -1605,7 +1620,7 @@
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="c_preto" pingpong="0" repeatcount="1" repeatto="0" sid="1227355204965552" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\biscoitos\biscoitocpreto.png">
                         <collision-poly>
                             <point x="0.16" y="0.16" />
                             <point x="0.5" y="0" />
@@ -1619,7 +1634,7 @@
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="d_preto" pingpong="0" repeatcount="1" repeatto="0" sid="2555567735554263" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\biscoitos\biscoitodpreto.png">
                         <collision-poly>
                             <point x="0.16" y="0.16" />
                             <point x="0.5" y="0" />
@@ -1693,26 +1708,75 @@
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
+                <animation framecount="1" loop="1" name="a_apontado" pingpong="0" repeatcount="1" repeatto="0" sid="1346424344118679" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.791667" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\items de jogo\apontar resposta\apontarRespostaEBiscoitoA.png">
+                        <collision-poly>
+                            <point x="0.0777778" y="0.0583333" />
+                            <point x="0.933333" y="0.05" />
+                            <point x="0.588889" y="0.5" />
+                            <point x="0.766667" y="0.825" />
+                            <point x="0.5" y="1" />
+                            <point x="0.222222" y="0.833333" />
+                            <point x="0.455556" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="1" name="b_apontado" pingpong="0" repeatcount="1" repeatto="0" sid="8173922393340771" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.791667" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\items de jogo\apontar resposta\apontarRespostaEBiscoitoB.png">
+                        <collision-poly>
+                            <point x="0.0777778" y="0.0583333" />
+                            <point x="0.933333" y="0.05" />
+                            <point x="0.588889" y="0.5" />
+                            <point x="0.766667" y="0.825" />
+                            <point x="0.5" y="1" />
+                            <point x="0.222222" y="0.833333" />
+                            <point x="0.455556" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="1" name="c_apontado" pingpong="0" repeatcount="1" repeatto="0" sid="1624860083364105" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.791667" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\items de jogo\apontar resposta\apontarRespostaEBiscoitoC.png">
+                        <collision-poly>
+                            <point x="0.0777778" y="0.0583333" />
+                            <point x="0.933333" y="0.05" />
+                            <point x="0.588889" y="0.5" />
+                            <point x="0.766667" y="0.825" />
+                            <point x="0.5" y="1" />
+                            <point x="0.222222" y="0.833333" />
+                            <point x="0.455556" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="1" name="d_apontado" pingpong="0" repeatcount="1" repeatto="0" sid="6322344699073668" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.791667" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\items de jogo\apontar resposta\apontarRespostaEBiscoitoD.png">
+                        <collision-poly>
+                            <point x="0.0777778" y="0.0583333" />
+                            <point x="0.933333" y="0.05" />
+                            <point x="0.588889" y="0.5" />
+                            <point x="0.766667" y="0.825" />
+                            <point x="0.5" y="1" />
+                            <point x="0.222222" y="0.833333" />
+                            <point x="0.455556" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="WebStorage" sid="1578051671779875">
             <plugin id="WebStorage" />
         </object-type>
-        <object-type name="tituloFimDeJogo" sid="8557497285690309">
-            <plugin id="Text" />
-        </object-type>
         <object-type name="scoreFinal" sid="3056032705239922">
             <plugin id="Text" />
         </object-type>
-        <object-type name="scoreAcumulado" sid="8175810748403734">
+        <object-type name="coins" sid="8175810748403734">
             <plugin id="Text" />
         </object-type>
-        <object-type name="limparScoreAcumulado" sid="7795928851951235">
+        <object-type name="limparCoins" sid="7795928851951235">
             <plugin id="Button" />
         </object-type>
         <object-type name="botaoPlayAgain" sid="5698001326231525">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="415537337338906" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
@@ -1743,7 +1807,7 @@
                     <behavior id="EightDir" />
                 </behavior-type>
             </behaviors>
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9156002883523111" speed="20">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
@@ -1792,9 +1856,12 @@
                 <instance-variable name="item" sid="5154902218991691" type="string" />
                 <instance-variable comment="serve para o item 2x, que deve permanecer em uso por x tempo" name="doisx_em_uso" sid="5897604863596694" type="boolean" />
                 <instance-variable comment="tempo que ainda falta para um item continuar seu efeito(serve para o item 2x por exemplo)" name="tempo_que_falta_doisx_em_uso" sid="7862604895336936" type="number" />
+                <instance-variable comment="com base nesse id, será escolhido o item adequado para aparecer de x em x tempo" name="id_item" sid="2985068381927178" type="number" />
+                <instance-variable name="tempo_que_falta_para_bolo_gostoso_em_uso" sid="8051557175490999" type="number" />
+                <instance-variable name="aponta_resposta_em_uso" sid="6055260805218534" type="boolean" />
             </instance-variables>
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9908238085437566" speed="5">
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9908238085437566" speed="0.1">
                     <frame duration="1" hotspotX="0.510204" hotspotY="0.511111">
                         <collision-poly>
                             <point x="0.0204082" y="0.0222222" />
@@ -1864,11 +1931,69 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="1" loop="0" name="bolo_gostoso" pingpong="0" repeatcount="1" repeatto="0" sid="5421015488646887" speed="5">
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.511111" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\items de jogo\bologostoso\bolo_gostoso.png">
+                        <collision-poly>
+                            <point x="0.0204082" y="0.0222222" />
+                            <point x="0.489796" y="0" />
+                            <point x="0.979592" y="0.0222222" />
+                            <point x="1" y="0.488889" />
+                            <point x="0.979592" y="0.977778" />
+                            <point x="0.489796" y="1" />
+                            <point x="0.0204082" y="0.977778" />
+                            <point x="0" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="apontar_resposta" pingpong="0" repeatcount="1" repeatto="0" sid="4429774924825062" speed="5">
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.511111" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\items de jogo\apontar resposta\icone_apontar_resposta.png">
+                        <collision-poly>
+                            <point x="0.0204082" y="0.0222222" />
+                            <point x="0.489796" y="0" />
+                            <point x="0.979592" y="0.0222222" />
+                            <point x="1" y="0.488889" />
+                            <point x="0.979592" y="0.977778" />
+                            <point x="0.489796" y="1" />
+                            <point x="0.0204082" y="0.977778" />
+                            <point x="0" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="6" loop="1" name="apontar_resposta_piscando" pingpong="0" repeatcount="1" repeatto="0" sid="7286638257144801" speed="6">
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.511111" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\items de jogo\apontar resposta\icone_apontar_resposta.png">
+                        <collision-poly>
+                            <point x="0.0204082" y="0.0222222" />
+                            <point x="0.489796" y="0" />
+                            <point x="0.979592" y="0.0222222" />
+                            <point x="1" y="0.488889" />
+                            <point x="0.979592" y="0.977778" />
+                            <point x="0.489796" y="1" />
+                            <point x="0.0204082" y="0.977778" />
+                            <point x="0" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.511111" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\items de jogo\apontar resposta\icone_apontar_resposta_80_fade.png" />
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.511111" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\items de jogo\apontar resposta\icone_apontar_resposta_60_fade.png" />
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.511111" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\items de jogo\apontar resposta\icone_apontar_resposta_40_fade.png" />
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.511111" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\items de jogo\apontar resposta\icone_apontar_resposta_20_fade.png" />
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.511111" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\items de jogo\sem_item.png">
+                        <collision-poly>
+                            <point x="0.0204082" y="0.0222222" />
+                            <point x="0.489796" y="0" />
+                            <point x="0.979592" y="0.0222222" />
+                            <point x="1" y="0.488889" />
+                            <point x="0.979592" y="0.977778" />
+                            <point x="0.489796" y="1" />
+                            <point x="0.0204082" y="0.977778" />
+                            <point x="0" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="placa_choco_instrucoes" sid="1886035533464092">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2115161462683705" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
@@ -1891,9 +2016,9 @@
         </object-type>
         <object-type name="fundo_logo" sid="4388852769871177">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5587191693699226" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\bolo_maior\bolo_maior_true.png">
                         <collision-poly>
                             <point x="0.0285714" y="0.0285714" />
                             <point x="0.5" y="0" />
@@ -1913,7 +2038,7 @@
             <instance-variables>
                 <instance-variable name="mosca_voando_contrario" sid="1483332634403295" type="number" />
             </instance-variables>
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="3" loop="1" name="mosca_voando" pingpong="0" repeatcount="1" repeatto="0" sid="9108691853741448" speed="5">
                     <frame duration="1" hotspotX="0.508772" hotspotY="0.511111">
                         <collision-poly>
@@ -1997,7 +2122,7 @@
         </object-type>
         <object-type name="area_virar_mosca_logo1" sid="1220107586546499">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8900997732846617" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
@@ -2005,7 +2130,7 @@
         </object-type>
         <object-type name="area_virar_mosca_logo2" sid="7509037451699617">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3435830627431382" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
@@ -2016,9 +2141,9 @@
         </object-type>
         <object-type name="background_menu_pausado" sid="7217987952085727">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9633358633242285" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\bolo_maior\bolo_maior_true.png">
                         <collision-poly>
                             <point x="0.0285714" y="0.0285714" />
                             <point x="0.5" y="0" />
@@ -2038,7 +2163,7 @@
         </object-type>
         <object-type name="placa_choco_continuar_jogo" sid="2558390544202247">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="922102388271858" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
@@ -2055,7 +2180,7 @@
         </object-type>
         <object-type name="placa_choco_voltar_menu" sid="2570979539670381">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="896596961777198" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
@@ -2078,7 +2203,7 @@
         </object-type>
         <object-type name="Sprite3" sid="1375033842169032">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7539264863771101" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
@@ -2086,7 +2211,7 @@
         </object-type>
         <object-type name="placa_jogo_pausar" sid="4994652460397454">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4061604638345254" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
@@ -2103,7 +2228,7 @@
         </object-type>
         <object-type name="placa_jogo_jogar" sid="5590228167480625">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9780875080003389" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
@@ -2120,7 +2245,7 @@
         </object-type>
         <object-type name="animacao_mudar_questao" sid="170818388825291">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8363594453760851" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.504673">
                         <collision-poly>
@@ -2162,7 +2287,7 @@
         </object-type>
         <object-type name="pratoPhi" sid="1455749376226917">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2257619949503763" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
@@ -2186,7 +2311,7 @@
                     <behavior id="solid" />
                 </behavior-type>
             </behaviors>
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="368704741752637" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
@@ -2194,7 +2319,7 @@
         </object-type>
         <object-type name="placa_moscas_indesejadas" sid="9183767784314514">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4767548744037607" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
@@ -2216,7 +2341,7 @@
         </object-type>
         <object-type name="background_score" sid="8087190770658892">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6083069997853564" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
@@ -2233,7 +2358,7 @@
         </object-type>
         <object-type name="seta_placa_moscas_rejeitadas" sid="6486457974369475">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8439100627379814" speed="5">
                     <frame duration="1" hotspotX="0.511628" hotspotY="0.5">
                         <collision-poly>
@@ -2251,7 +2376,7 @@
         </object-type>
         <object-type name="Sprite2" sid="2802011336172531">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3046624396064869" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
@@ -2262,7 +2387,7 @@
             <instance-variables>
                 <instance-variable name="veneno_voando_contrario" sid="4683044496488256" type="boolean" />
             </instance-variables>
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8566168951830439" speed="2">
                     <frame duration="1" hotspotX="0.501661" hotspotY="0.50193">
                         <collision-poly>
@@ -2293,7 +2418,7 @@
         </object-type>
         <object-type name="trigger_nuvem_veneno" sid="7633300213174998">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7786536167814253" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
@@ -2301,7 +2426,7 @@
         </object-type>
         <object-type name="Sprite4" sid="8188994912778791">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="858282790029028" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
@@ -2320,7 +2445,7 @@
         </object-type>
         <object-type name="Sprite5" sid="75303871877344">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2445866403321243" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
@@ -2339,7 +2464,7 @@
         </object-type>
         <object-type name="vidro" sid="4458083049889435">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7041520531849061" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
@@ -2347,7 +2472,7 @@
         </object-type>
         <object-type name="Sprite6" sid="3841702183035581">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8209599949721651" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
@@ -2355,7 +2480,7 @@
         </object-type>
         <object-type name="sapo" sid="8533545113279796">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5250595426421748" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.504425">
                         <collision-poly>
@@ -2402,7 +2527,7 @@
         </object-type>
         <object-type name="2x_perto_score" sid="1670075559298546">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1256139158993005" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
@@ -2436,21 +2561,418 @@
         <object-type name="label_item" sid="4231306633738431">
             <plugin id="Text" />
         </object-type>
+        <object-type name="botaoMainMenu" sid="6061024449845107">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2841679928242876" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.00883392" y="0.0181159" />
+                            <point x="0.5" y="0" />
+                            <point x="0.991166" y="0.0181159" />
+                            <point x="0.991166" y="0.981884" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00883392" y="0.981884" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mainMenu" sid="26595847537701">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="icone_coins" sid="6054498333554023">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3257196708373766" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.15" y="0.142857" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.142857" />
+                            <point x="1" y="0.5" />
+                            <point x="0.825" y="0.833333" />
+                            <point x="0.5" y="0.952381" />
+                            <point x="0.175" y="0.833333" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="X_fim_jogo_coins" sid="2673898720625278">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="tituloGameOver" sid="3300056491757774">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="13" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5822213088227346" speed="8">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Alerta_mais_moscas_aparecerao" sid="5434347201670815">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Alerta_mais_moscas_aparecerao_fundo" sid="8181337300548105">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7246043365172668" speed="5">
+                    <frame duration="1" hotspotX="0.502564" hotspotY="0.510204" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\freebundleConstruct2\Sprites\UI elements\Base pack\grey_button05.png">
+                        <collision-poly>
+                            <point x="0.0102564" y="0.0408163" />
+                            <point x="0.497436" y="0" />
+                            <point x="0.989744" y="0.0408163" />
+                            <point x="0.984615" y="0.938776" />
+                            <point x="0.497436" y="1" />
+                            <point x="0.0102564" y="0.959184" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="titulo_tela_explica_itens" sid="1456879339396712">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="background_tela_mostra_itens" sid="635291520313404">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3854684751379015" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\items de jogo\background_tela_mostra_itens.png">
+                        <collision-poly>
+                            <point x="0.0173333" y="0.0325" />
+                            <point x="0.982667" y="0.0325" />
+                            <point x="0.984" y="0.97" />
+                            <point x="0.016" y="0.97" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="icone_item_fireball" sid="1756794805995179">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1598786741402267" speed="5">
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.511111" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\items de jogo\fireball\itemfireball.png">
+                        <collision-poly>
+                            <point x="0.0204082" y="0.0222222" />
+                            <point x="0.489796" y="0" />
+                            <point x="0.979592" y="0.0222222" />
+                            <point x="1" y="0.488889" />
+                            <point x="0.979592" y="0.977778" />
+                            <point x="0.489796" y="1" />
+                            <point x="0.0204082" y="0.977778" />
+                            <point x="0" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="icone_item_2x" sid="2817612674150074">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4169181886916949" speed="5">
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.511111" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\items de jogo\doisx\itemdoisx.png">
+                        <collision-poly>
+                            <point x="0.0204082" y="0.0222222" />
+                            <point x="0.489796" y="0" />
+                            <point x="0.979592" y="0.0222222" />
+                            <point x="1" y="0.488889" />
+                            <point x="0.979592" y="0.977778" />
+                            <point x="0.489796" y="1" />
+                            <point x="0.0204082" y="0.977778" />
+                            <point x="0" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="icone_item_mudar_questao" sid="4088083237265153">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6715089210584139" speed="5">
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.511111" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\items de jogo\mudar questao - item\mudar_questao_icone.png">
+                        <collision-poly>
+                            <point x="0.0204082" y="0.0222222" />
+                            <point x="0.489796" y="0" />
+                            <point x="0.979592" y="0.0222222" />
+                            <point x="1" y="0.488889" />
+                            <point x="0.979592" y="0.977778" />
+                            <point x="0.489796" y="1" />
+                            <point x="0.0204082" y="0.977778" />
+                            <point x="0" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="icone_item_bolo_gostoso" sid="149290699017341">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1082294166586861" speed="5">
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.511111" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\items de jogo\bologostoso\bolo_gostoso.png">
+                        <collision-poly>
+                            <point x="0.0204082" y="0.0222222" />
+                            <point x="0.489796" y="0" />
+                            <point x="0.979592" y="0.0222222" />
+                            <point x="1" y="0.488889" />
+                            <point x="0.979592" y="0.977778" />
+                            <point x="0.489796" y="1" />
+                            <point x="0.0204082" y="0.977778" />
+                            <point x="0" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="icone_item_apontar_resposta" sid="1759803763635413">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2901211162359801" speed="5">
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.511111" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\items de jogo\apontar resposta\icone_apontar_resposta.png">
+                        <collision-poly>
+                            <point x="0.0204082" y="0.0222222" />
+                            <point x="0.489796" y="0" />
+                            <point x="0.979592" y="0.0222222" />
+                            <point x="1" y="0.488889" />
+                            <point x="0.979592" y="0.977778" />
+                            <point x="0.489796" y="1" />
+                            <point x="0.0204082" y="0.977778" />
+                            <point x="0" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="descricao_item" sid="9850303560733783">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="descricao_item2" sid="2126487497279355">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="descricao_item3" sid="7179984024223244">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="descricao_item4" sid="8647686467708906">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="placa_jogo_jogar2" sid="8194665088980211">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="255026028694485" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.00883392" y="0.0181159" />
+                            <point x="0.5" y="0" />
+                            <point x="0.991166" y="0.0181159" />
+                            <point x="0.991166" y="0.981884" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00883392" y="0.981884" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="botao_voltar_tela_descreve_itens" sid="6124461759884283">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7903763080625101" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Documents\git\flytocake\flyToCake\Animations\botaoPlayAgain\Default\000.png">
+                        <collision-poly>
+                            <point x="0.00883392" y="0.0181159" />
+                            <point x="0.5" y="0" />
+                            <point x="0.991166" y="0.0181159" />
+                            <point x="0.991166" y="0.981884" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00883392" y="0.981884" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bolophi2" sid="1031550422429921">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="3122366946400775">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7320111642297094" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0285714" y="0.0285714" />
+                            <point x="0.5" y="0" />
+                            <point x="0.971429" y="0.0285714" />
+                            <point x="1" y="0.5" />
+                            <point x="0.971429" y="0.971429" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0285714" y="0.971429" />
+                            <point x="0.0142857" y="0.514286" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="bolo_gostoso" pingpong="0" repeatcount="1" repeatto="0" sid="4936406151587467" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\items de jogo\bologostoso\bologostoso_sprite_true.png">
+                        <collision-poly>
+                            <point x="0.0285714" y="0.0285714" />
+                            <point x="0.5" y="0" />
+                            <point x="0.971429" y="0.0285714" />
+                            <point x="1" y="0.5" />
+                            <point x="0.971429" y="0.971429" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0285714" y="0.971429" />
+                            <point x="0.0142857" y="0.514286" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="botao_subsecao_game" sid="5411825152764984">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1105406141618427" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\shop\painel_subsecao_game.png">
+                        <collision-poly>
+                            <point x="0.02" y="0.02" />
+                            <point x="0.5" y="0" />
+                            <point x="0.98" y="0.02" />
+                            <point x="1" y="0.5" />
+                            <point x="0.98" y="0.98" />
+                            <point x="0.5" y="1" />
+                            <point x="0.02" y="0.98" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="label_subsecao_game" sid="6157037919151544">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="botao_character_bee" sid="4969373519094288">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1333257576163089" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\shop\painel_character_bee.png">
+                        <collision-poly>
+                            <point x="0.02" y="0.02" />
+                            <point x="0.5" y="0" />
+                            <point x="0.98" y="0.02" />
+                            <point x="1" y="0.5" />
+                            <point x="0.98" y="0.98" />
+                            <point x="0.5" y="1" />
+                            <point x="0.02" y="0.98" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="label_character" sid="6114380546275523">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite7" sid="4289892245426449">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8370973569555387" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="botao_character_bat" sid="5291914426944749">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9339808323663741" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\shop\painel_character_bat.png">
+                        <collision-poly>
+                            <point x="0.02" y="0.02" />
+                            <point x="0.5" y="0" />
+                            <point x="0.98" y="0.02" />
+                            <point x="1" y="0.5" />
+                            <point x="0.98" y="0.98" />
+                            <point x="0.5" y="1" />
+                            <point x="0.02" y="0.98" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="botao_character_cake" sid="9791283068264709">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8768215434568351" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\shop\painel_character_cake.png">
+                        <collision-poly>
+                            <point x="0.02" y="0.02" />
+                            <point x="0.5" y="0" />
+                            <point x="0.98" y="0.02" />
+                            <point x="1" y="0.5" />
+                            <point x="0.98" y="0.98" />
+                            <point x="0.5" y="1" />
+                            <point x="0.02" y="0.98" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="label_coins_item" sid="17177353255157">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="icone_coins_nao_se_mexe" sid="1338770731139309">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6325161145560585" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\moedinha\moedinha.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.142857" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.142857" />
+                            <point x="1" y="0.5" />
+                            <point x="0.825" y="0.833333" />
+                            <point x="0.5" y="0.952381" />
+                            <point x="0.175" y="0.833333" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
-    <layout-folder expanded="1">
+    <layout-folder>
         <layout>CopiaDoLayout 1.xml</layout>
         <layout>Layout 1.xml</layout>
         <layout>LayoutPhi.xml</layout>
         <layout>MenuInicial.xml</layout>
+        <layout>ExplicacaoItens.xml</layout>
         <layout>fimDeJogo.xml</layout>
+        <layout>Shop.xml</layout>
+        <layout>Shop_game.xml</layout>
     </layout-folder>
-    <event-folder expanded="1">
+    <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>Event sheet Phi.xml</event-sheet>
         <event-sheet>EventosMenuInicial.xml</event-sheet>
         <event-sheet>CopiaEventSheet1.xml</event-sheet>
         <event-sheet>fimDeJogo.xml</event-sheet>
+        <event-sheet>EventosExplicacaoItens.xml</event-sheet>
+        <event-sheet>EventosShop.xml</event-sheet>
+        <event-sheet>EventosShop_game.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="101">
@@ -2463,6 +2985,7 @@
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
                 <positioned-audio></positioned-audio>
                 <panning-model>HRTF</panning-model>
                 <distance-model>Inverse</distance-model>
@@ -2470,13 +2993,11 @@
                 <reference-distance>600</reference-distance>
                 <maximum-distance>10000</maximum-distance>
                 <roll-off-factor>1</roll-off-factor>
-                <speed-of-sound>5000</speed-of-sound>
-                <doppler-factor>1</doppler-factor>
             </properties>
         </global-instance>
         <global-instance type="WebStorage" uid="104" />
     </global-instances>
-    <sounds-folder expanded="1">
+    <sounds-folder>
         <file name="7_year_old_boy_screams.m4a" />
         <file name="7_year_old_boy_screams.ogg" />
         <file name="7_year_old_boy_screams.wav" />
@@ -2498,10 +3019,18 @@
         <file name="baby_9_months_cough_003.m4a" />
         <file name="baby_9_months_cough_003.ogg" />
         <file name="baby_9_months_cough_003.wav" />
+        <file name="smooth_going_free_royalty_free_music_track.m4a" />
+        <file name="smooth_going_free_royalty_free_music_track.ogg" />
+        <file name="_crazy_world_alt_version_ballad_loop_with_drums_gu.m4a" />
+        <file name="_crazy_world_alt_version_ballad_loop_with_drums_gu.ogg" />
+        <file name="_first_day_alt_version_light_hearted_acoustic_loop.m4a" />
+        <file name="_first_day_alt_version_light_hearted_acoustic_loop.ogg" />
+        <file name="GameOver1.m4a" />
+        <file name="GameOver1.ogg" />
     </sounds-folder>
-    <music-folder expanded="1" />
-    <files-folder expanded="0">
-        <file-folder expanded="1" name="Icons">
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
             <file name="icon-16.png" />
             <file name="icon-32.png" />
             <file name="icon-114.png" />

@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventosShop_game</name>
+    <events>
+        <variable comment="variavel usada durante o sistema inteiro" constant="0" name="habilitou_bee" sid="2360242351928204" static="0" type="text">false</variable>
+        <variable comment="variavel usada durante o sistema inteiro" constant="0" name="habilitou_bat" sid="7892971164880098" static="0" type="text">false</variable>
+        <variable comment="variavel usada durante o sistema inteiro" constant="0" name="habilitou_cake" sid="6736548636528477" static="0" type="text">false</variable>
+        <event-block sid="1565798783481572">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="3168222305934399" type="mosca_logo">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="3717857075176199" type="mosca_logo">
+                    <param id="0" name="Distance">-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8940159204367271">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="5865003033838982" type="mosca_logo">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="3137170772828647" type="mosca_logo">
+                    <param id="0" name="Distance">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3895374726738235">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="629589645087414" type="mosca_logo">
+                    <param id="0" name="Object">area_virar_mosca_logo1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="3999452943149367" type="mosca_logo">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="2723452017137191" type="mosca_logo">
+                    <param id="0" name="Animation">&quot;mosca_voando_contrario&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2094355262691958">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="6231856803980346" type="mosca_logo">
+                    <param id="0" name="Object">area_virar_mosca_logo2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="6665463816758107" type="mosca_logo">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="9080417184110763" type="mosca_logo">
+                    <param id="0" name="Animation">&quot;mosca_voando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4181526456913731">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1275878065058373" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="3168996041072333" type="mosca_logo">
+                    <param id="0" name="Animation">&quot;mosca_voando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="9854106108578031" type="mosca_logo">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="9872963372602802" type="background_movendo">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="86180644398224">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="1259262739928538" type="System" />
+                <condition id="-7" name="Compare instance variable" sid="5241964493434393" type="mosca_logo">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8413221331323431" type="mosca_logo">
+                    <param id="0" name="Animation">&quot;mosca_voando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5414408705656499">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="5735956563106563" type="System" />
+                <condition id="-7" inverted="1" name="Compare instance variable" sid="739066187871764" type="mosca_logo">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1131758563012766" type="mosca_logo">
+                    <param id="0" name="Animation">&quot;mosca_voando_contrario&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="779302064792113">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4712510898439135" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="3359496158548601" type="texto_titulo_logo">
+                    <param id="0" name="Family name">&quot;chifontregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;chifontsheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="3399060818775669" type="label_character">
+                    <param id="0" name="Family name">&quot;chifontregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;chifontsheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="5637977537625605" type="label_coins_item">
+                    <param id="0" name="Family name">&quot;chifontregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;chifontsheet.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9573350319438304">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8299126695499115" type="System" />
+                <condition id="3" name="Local key exists" sid="2238757449960993" type="WebStorage">
+                    <param id="0" name="Key">&quot;coins&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="9695806469458152" type="coins">
+                    <param id="0" name="Text">&quot;Your coins:&quot; &amp; WebStorage.LocalValue(&quot;coins&quot;) </param>
+                </action>
+                <action id="-5" name="Set width" sid="5273524218612203" type="coins">
+                    <param id="0" name="Width">len(coins.Text) * 100</param>
+                </action>
+                <action id="-3" name="Set position" sid="8960912874673216" type="X_fim_jogo_coins">
+                    <param id="0" name="X">coins.X + len(coins.Text)*9</param>
+                    <param id="1" name="Y">X_fim_jogo_coins.Y</param>
+                </action>
+                <action id="-3" name="Set position" sid="910383986179664" type="icone_coins">
+                    <param id="0" name="X">X_fim_jogo_coins.X +50</param>
+                    <param id="1" name="Y">icone_coins.Y</param>
+                </action>
+                <action id="5" name="Set web font" sid="2475483806697395" type="coins">
+                    <param id="0" name="Family name">&quot;chifontregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;chifontsheet.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1710355768193016">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2410491989158137" type="System" />
+                <condition id="3" inverted="1" name="Local key exists" sid="7026898622853791" type="WebStorage">
+                    <param id="0" name="Key">&quot;coins&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="7781867993524124" type="coins">
+                    <param id="0" name="Text">&quot;Your coins:&quot; &amp; 0</param>
+                </action>
+                <action id="-5" name="Set width" sid="9945393884397866" type="coins">
+                    <param id="0" name="Width">len(coins.Text) * 100</param>
+                </action>
+                <action id="-3" name="Set position" sid="5376174096889224" type="X_fim_jogo_coins">
+                    <param id="0" name="X">coins.X + len(coins.Text)*9</param>
+                    <param id="1" name="Y">X_fim_jogo_coins.Y</param>
+                </action>
+                <action id="-3" name="Set position" sid="8005916351639812" type="icone_coins">
+                    <param id="0" name="X">X_fim_jogo_coins.X +50</param>
+                    <param id="1" name="Y">icone_coins.Y</param>
+                </action>
+                <action id="5" name="Set web font" sid="4058670759631524" type="coins">
+                    <param id="0" name="Family name">&quot;chifontregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;chifontsheet.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="307360465280777">
+            <conditions>
+                <condition id="3" name="On touched object" sid="8856052007816961" type="Touch">
+                    <param id="0" name="Object">botao_voltar_tela_descreve_itens</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3062876381773475" type="System">
+                    <param id="0" name="Layout">Shop</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1396747173950112">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9107341287314977" type="System" />
+                <condition id="3" inverted="1" name="Local key exists" sid="5631324644615287" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_bee&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set local value" sid="8133642809772257" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_bee&quot;</param>
+                    <param id="1" name="Value">&quot;false&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="5873070393515474" type="System">
+                    <param id="0" name="Variable">habilitou_bee</param>
+                    <param id="1" name="Value">&quot;false&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="62712619634293">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4477787526713356" type="System" />
+                <condition id="3" inverted="1" name="Local key exists" sid="411972984485629" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_bat&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set local value" sid="1288341141445909" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_bat&quot;</param>
+                    <param id="1" name="Value">&quot;false&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="57631388345201" type="System">
+                    <param id="0" name="Variable">habilitou_bat</param>
+                    <param id="1" name="Value">&quot;false&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2191928970022758">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8655877011032085" type="System" />
+                <condition id="3" inverted="1" name="Local key exists" sid="6945978337273295" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_cake&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set local value" sid="6406209868036978" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_cake&quot;</param>
+                    <param id="1" name="Value">&quot;false&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="2244583790135539" type="System">
+                    <param id="0" name="Variable">habilitou_cake</param>
+                    <param id="1" name="Value">&quot;false&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8648267546127546">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5567441179562242" type="System" />
+                <condition id="3" name="Local key exists" sid="7958888323042592" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_bee&quot;</param>
+                </condition>
+                <condition id="6" name="Compare key value (as text)" sid="8158316068986581" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_bee&quot;</param>
+                    <param id="1" name="Text to compare">&quot;true&quot;</param>
+                    <param id="2" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="6185053488908373" type="System">
+                    <param id="0" name="Variable">habilitou_bee</param>
+                    <param id="1" name="Value">WebStorage.LocalValue(&quot;habilitou_bee&quot;)</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="3441467393931496" type="botao_character_bee">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4718511841385396">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5854800794309689" type="System" />
+                <condition id="3" name="Local key exists" sid="191424228586139" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_bee&quot;</param>
+                </condition>
+                <condition id="6" name="Compare key value (as text)" sid="3826674994202546" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_bee&quot;</param>
+                    <param id="1" name="Text to compare">&quot;false&quot;</param>
+                    <param id="2" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="2971949721004477" type="System">
+                    <param id="0" name="Variable">habilitou_bee</param>
+                    <param id="1" name="Value">WebStorage.LocalValue(&quot;habilitou_bee&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2280784070606876">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8167155248826144" type="System" />
+                <condition id="3" name="Local key exists" sid="1896313308174355" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_bat&quot;</param>
+                </condition>
+                <condition id="6" name="Compare key value (as text)" sid="7881034709023483" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_bat&quot;</param>
+                    <param id="1" name="Text to compare">&quot;true&quot;</param>
+                    <param id="2" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="2382871615407527" type="System">
+                    <param id="0" name="Variable">habilitou_bat</param>
+                    <param id="1" name="Value">WebStorage.LocalValue(&quot;habilitou_bat&quot;)</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="7058393928781499" type="botao_character_bat">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1642819630878605">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1610256265675609" type="System" />
+                <condition id="3" name="Local key exists" sid="8928378697192582" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_bat&quot;</param>
+                </condition>
+                <condition id="6" name="Compare key value (as text)" sid="2512998395544555" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_bat&quot;</param>
+                    <param id="1" name="Text to compare">&quot;false&quot;</param>
+                    <param id="2" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="6884706196074236" type="System">
+                    <param id="0" name="Variable">habilitou_bat</param>
+                    <param id="1" name="Value">WebStorage.LocalValue(&quot;habilitou_bat&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7403895555458108">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6976040519766386" type="System" />
+                <condition id="3" name="Local key exists" sid="6453674476459808" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_cake&quot;</param>
+                </condition>
+                <condition id="6" name="Compare key value (as text)" sid="5439912071671468" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_cake&quot;</param>
+                    <param id="1" name="Text to compare">&quot;true&quot;</param>
+                    <param id="2" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="3785633175434769" type="System">
+                    <param id="0" name="Variable">habilitou_cake</param>
+                    <param id="1" name="Value">WebStorage.LocalValue(&quot;habilitou_cake&quot;)</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="7828463740061112" type="botao_character_cake">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3427612415118234">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1807616855503268" type="System" />
+                <condition id="3" name="Local key exists" sid="9007253138206505" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_cake&quot;</param>
+                </condition>
+                <condition id="6" name="Compare key value (as text)" sid="7909664631555781" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_cake&quot;</param>
+                    <param id="1" name="Text to compare">&quot;false&quot;</param>
+                    <param id="2" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1187631451805913" type="System">
+                    <param id="0" name="Variable">habilitou_cake</param>
+                    <param id="1" name="Value">WebStorage.LocalValue(&quot;habilitou_cake&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8610277179360409">
+            <conditions>
+                <condition id="3" name="On touched object" sid="8460331754832072" type="Touch">
+                    <param id="0" name="Object">botao_character_bee</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3243200959152097" type="System">
+                    <param id="0" name="Variable">habilitou_bee</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+                <condition id="7" name="Compare key value (as number)" sid="9298902996035057" type="WebStorage">
+                    <param id="0" name="Key">&quot;coins&quot;</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set local value" sid="1812308215762733" type="WebStorage">
+                    <param id="0" name="Key">&quot;coins&quot;</param>
+                    <param id="1" name="Value">float(WebStorage.LocalValue(&quot;coins&quot;)) - 100</param>
+                </action>
+                <action id="0" name="Set local value" sid="8005896556246476" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_bee&quot;</param>
+                    <param id="1" name="Value">&quot;true&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="6509498795303684" type="System">
+                    <param id="0" name="Variable">habilitou_bee</param>
+                    <param id="1" name="Value">&quot;true&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="8721331263489485" type="botao_character_bee">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+                <action id="0" name="Set text" sid="372409156160794" type="coins">
+                    <param id="0" name="Text">&quot;Your coins:&quot; &amp; WebStorage.LocalValue(&quot;coins&quot;) </param>
+                </action>
+                <action id="-5" name="Set width" sid="6390846872219316" type="coins">
+                    <param id="0" name="Width">len(coins.Text) * 100</param>
+                </action>
+                <action id="-3" name="Set position" sid="5862043264784284" type="X_fim_jogo_coins">
+                    <param id="0" name="X">coins.X + len(coins.Text)*9</param>
+                    <param id="1" name="Y">X_fim_jogo_coins.Y</param>
+                </action>
+                <action id="-3" name="Set position" sid="7051068496291032" type="icone_coins">
+                    <param id="0" name="X">X_fim_jogo_coins.X +50</param>
+                    <param id="1" name="Y">icone_coins.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3639653194960243">
+            <conditions>
+                <condition id="3" name="On touched object" sid="3149224435540243" type="Touch">
+                    <param id="0" name="Object">botao_character_bat</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="344069883602797" type="System">
+                    <param id="0" name="Variable">habilitou_bat</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+                <condition id="7" name="Compare key value (as number)" sid="7616645906639263" type="WebStorage">
+                    <param id="0" name="Key">&quot;coins&quot;</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">200</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set local value" sid="799746195296546" type="WebStorage">
+                    <param id="0" name="Key">&quot;coins&quot;</param>
+                    <param id="1" name="Value">float(WebStorage.LocalValue(&quot;coins&quot;)) - 200</param>
+                </action>
+                <action id="0" name="Set local value" sid="2834583590377587" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_bat&quot;</param>
+                    <param id="1" name="Value">&quot;true&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="7843699453239718" type="System">
+                    <param id="0" name="Variable">habilitou_bat</param>
+                    <param id="1" name="Value">&quot;true&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="7287489706926852" type="botao_character_bat">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+                <action id="0" name="Set text" sid="2085563751107383" type="coins">
+                    <param id="0" name="Text">&quot;Your coins:&quot; &amp; WebStorage.LocalValue(&quot;coins&quot;) </param>
+                </action>
+                <action id="-5" name="Set width" sid="3879840788034595" type="coins">
+                    <param id="0" name="Width">len(coins.Text) * 100</param>
+                </action>
+                <action id="-3" name="Set position" sid="6268362449197973" type="X_fim_jogo_coins">
+                    <param id="0" name="X">coins.X + len(coins.Text)*9</param>
+                    <param id="1" name="Y">X_fim_jogo_coins.Y</param>
+                </action>
+                <action id="-3" name="Set position" sid="4014964818369399" type="icone_coins">
+                    <param id="0" name="X">X_fim_jogo_coins.X +50</param>
+                    <param id="1" name="Y">icone_coins.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4508900200996432">
+            <conditions>
+                <condition id="3" name="On touched object" sid="4545230619179793" type="Touch">
+                    <param id="0" name="Object">botao_character_cake</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8805016832852586" type="System">
+                    <param id="0" name="Variable">habilitou_cake</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+                <condition id="7" name="Compare key value (as number)" sid="1701686109529717" type="WebStorage">
+                    <param id="0" name="Key">&quot;coins&quot;</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">200</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set local value" sid="9513126985496088" type="WebStorage">
+                    <param id="0" name="Key">&quot;coins&quot;</param>
+                    <param id="1" name="Value">float(WebStorage.LocalValue(&quot;coins&quot;)) - 300</param>
+                </action>
+                <action id="0" name="Set local value" sid="214413042902424" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_cake&quot;</param>
+                    <param id="1" name="Value">&quot;true&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="3944124188219438" type="System">
+                    <param id="0" name="Variable">habilitou_cake</param>
+                    <param id="1" name="Value">&quot;true&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="3820399784028554" type="botao_character_cake">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+                <action id="0" name="Set text" sid="7864389440923825" type="coins">
+                    <param id="0" name="Text">&quot;Your coins:&quot; &amp; WebStorage.LocalValue(&quot;coins&quot;) </param>
+                </action>
+                <action id="-5" name="Set width" sid="9895744307891565" type="coins">
+                    <param id="0" name="Width">len(coins.Text) * 100</param>
+                </action>
+                <action id="-3" name="Set position" sid="913583115002294" type="X_fim_jogo_coins">
+                    <param id="0" name="X">coins.X + len(coins.Text)*9</param>
+                    <param id="1" name="Y">X_fim_jogo_coins.Y</param>
+                </action>
+                <action id="-3" name="Set position" sid="4220884855102493" type="icone_coins">
+                    <param id="0" name="X">X_fim_jogo_coins.X +50</param>
+                    <param id="1" name="Y">icone_coins.Y</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

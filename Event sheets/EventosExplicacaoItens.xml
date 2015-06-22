@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventosExplicacaoItens</name>
+    <events>
+        <event-block sid="2206493878741328">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6757203441220905" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="2055894708216055" type="texto_jogar">
+                    <param id="0" name="Family name">&quot;lobster_1.3regular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;lobstersheet.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5797571601679135">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3690553076758966" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="5566730661491497" type="texto_jogar">
+                    <param id="0" name="Family name">&quot;lobster_1.3regular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;lobstersheet.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6061784334791935">
+            <conditions>
+                <condition id="3" name="On touched object" sid="6455313447566473" type="Touch">
+                    <param id="0" name="Object">botao_voltar_tela_descreve_itens</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3306485237511496" type="System">
+                    <param id="0" name="Layout">MenuInicial</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6410522914385732">
+            <conditions>
+                <condition id="3" name="On touched object" sid="2331260087984343" type="Touch">
+                    <param id="0" name="Object">placa_jogo_jogar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="1268563940506271" type="System">
+                    <param id="0" name="Layout">&quot;Layout 1&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="297020386499959">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="6837876321131099" type="mosca_logo">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="6201269882602364" type="mosca_logo">
+                    <param id="0" name="Distance">-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4826545528600492">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="7363806912226851" type="mosca_logo">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="8674456794172257" type="mosca_logo">
+                    <param id="0" name="Distance">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4140070405732667">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="1331068179812518" type="mosca_logo">
+                    <param id="0" name="Object">area_virar_mosca_logo1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="6973528589838508" type="mosca_logo">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="752683283002764" type="mosca_logo">
+                    <param id="0" name="Animation">&quot;mosca_voando_contrario&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4276679742451964">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="405352362635981" type="mosca_logo">
+                    <param id="0" name="Object">area_virar_mosca_logo2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="823225889106751" type="mosca_logo">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="2797543942991252" type="mosca_logo">
+                    <param id="0" name="Animation">&quot;mosca_voando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2579122615385257">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5432902332132445" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5174513885269905" type="mosca_logo">
+                    <param id="0" name="Animation">&quot;mosca_voando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="3248913218209313" type="mosca_logo">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="2140174081843302" type="background_movendo">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9460287191130753">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="9714360499853003" type="System" />
+                <condition id="-7" name="Compare instance variable" sid="5959881459849964" type="mosca_logo">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8150002362060226" type="mosca_logo">
+                    <param id="0" name="Animation">&quot;mosca_voando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8122100120687432">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="6874829761392189" type="System" />
+                <condition id="-7" inverted="1" name="Compare instance variable" sid="7650802924668444" type="mosca_logo">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="3649948153443778" type="mosca_logo">
+                    <param id="0" name="Animation">&quot;mosca_voando_contrario&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4644919149508095">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="285392688955647" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="6777413275491375" type="texto_titulo_logo">
+                    <param id="0" name="Family name">&quot;chifontregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;chifontsheet.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

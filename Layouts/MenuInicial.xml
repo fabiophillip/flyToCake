@@ -24,6 +24,8 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
@@ -67,10 +69,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>446</x>
-                        <y>253</y>
+                        <y>273.454040527</y>
                         <z>0</z>
-                        <width>225.207626343</width>
-                        <height>120.493255615</height>
+                        <width>214.697937012</width>
+                        <height>110.986221313</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -89,7 +91,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>446.472015381</x>
-                        <y>268.331237793</y>
+                        <y>277.422088623</y>
                         <z>0</z>
                         <width>110.512809753</width>
                         <height>53.889640808</height>
@@ -117,11 +119,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>447</x>
-                        <y>391</y>
+                        <x>449.27230835</x>
+                        <y>400.091491699</y>
                         <z>0</z>
-                        <width>314</width>
-                        <height>168</height>
+                        <width>331.165344238</width>
+                        <height>146.908538818</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -167,7 +169,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>444.682403564</x>
-                        <y>268.182373047</y>
+                        <y>277.273223877</y>
                         <z>0</z>
                         <width>128</width>
                         <height>44</height>
@@ -215,11 +217,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>443</x>
-                        <y>106</y>
+                        <x>444.364074707</x>
+                        <y>93.727272034</y>
                         <z>0</z>
-                        <width>284</width>
-                        <height>113</height>
+                        <width>297.615600586</width>
+                        <height>128.726486206</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -241,7 +243,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>556</x>
-                        <y>50</y>
+                        <y>30</y>
                         <z>0</z>
                         <width>57</width>
                         <height>45</height>
@@ -319,6 +321,82 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="coins" uid="13">
+                    <properties>
+                        <text>Your Coins:</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-16</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>53.184997559</x>
+                        <y>27.154350281</y>
+                        <z>0</z>
+                        <width>95.909881592</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="icone_coins" uid="14">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>262.184997559</x>
+                        <y>35.154350281</y>
+                        <z>0</z>
+                        <width>40</width>
+                        <height>42</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="X_fim_jogo_coins" uid="15">
+                    <properties>
+                        <text>X</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-16</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>224.184997559</x>
+                        <y>27.154350281</y>
+                        <z>0</z>
+                        <width>14</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
