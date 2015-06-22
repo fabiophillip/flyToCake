@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>FlyInCake</name>
     <description></description>
@@ -102,6 +102,8 @@
                 <instance-variable name="mosca_voando_longe_bolo" sid="8195008005626826" type="boolean" />
                 <instance-variable name="mosca_comeu_bolo" sid="9296525288140108" type="boolean" />
                 <instance-variable name="mosca_morreu" sid="6851921443040136" type="boolean" />
+                <instance-variable name="mosca_seguindo_lingua_sapa" sid="5173811411706497" type="boolean" />
+                <instance-variable name="posicao_x_mosca_na_lingua" sid="9399916602728164" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="9711052420347661">
@@ -2158,10 +2160,10 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="texto_menu_pausado" sid="6787422601312202">
+        <object-type name="texto_titulo_pausar_jogo" sid="6787422601312202">
             <plugin id="Text" />
         </object-type>
-        <object-type name="placa_choco_continuar_jogo" sid="2558390544202247">
+        <object-type name="placa_choco_resume" sid="2558390544202247">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="922102388271858" speed="5">
@@ -2952,6 +2954,771 @@
                 </animation>
             </animation-folder>
         </object-type>
+         <object-type name="sapa" sid="8099214388974503">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="sapa_aparecendo" sid="8928348057719794" type="boolean" />
+                <instance-variable name="sapa_descendo" sid="4307075183358074" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7980084401639202" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\sapa.png">
+                        <collision-poly>
+                            <point x="0.177344" y="0.270238" />
+                            <point x="0.5" y="0.0166667" />
+                            <point x="0.954687" y="0.0690476" />
+                            <point x="0.640625" y="0.5" />
+                            <point x="0.6625" y="0.485714" />
+                            <point x="0.5" y="0.811905" />
+                            <point x="0.08125" y="0.87619" />
+                            <point x="0.0515625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lingua_sapa" sid="2914663951293101">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="595721095978875" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0030.png">
+                        <collision-poly>
+                            <point x="0.0104167" y="0.25" />
+                            <point x="0.5" y="0.55" />
+                            <point x="0.991667" y="0.2" />
+                            <point x="0.98125" y="0.55" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00416667" y="0.9" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="30" loop="0" name="lingua_abrindo" pingpong="0" repeatcount="1" repeatto="0" sid="1236879723919053" speed="40">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0015.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0016.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0017.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0018.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0019.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0020.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0021.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0022.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0023.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0024.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0025.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0026.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0027.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0028.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0029.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\sapo\animacao_lingua_sapo\lingua_sem_branco\lingua0030.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="area_fazer_sapa_recuar" sid="2668658741408613">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="528575650145553" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="placa_choco_nivel4" sid="4386955252108091">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9746679425081461" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.00883392" y="0.0181159" />
+                            <point x="0.5" y="0" />
+                            <point x="0.991166" y="0.0181159" />
+                            <point x="0.991166" y="0.981884" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00883392" y="0.981884" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mosca2" sid="2466083180871054">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="mosca_no_bolo" sid="2798990799034828" type="number" />
+                <instance-variable name="mosca_voando_contrario" sid="8020834620372471" type="number" />
+                <instance-variable name="mosca_caindo" sid="5601644307962995" type="number" />
+                <instance-variable name="mosca_virou_bolo" sid="5905284353790526" type="boolean" />
+                <instance-variable name="mosca_parada" sid="6275549136272508" type="boolean" />
+                <instance-variable name="mosca_no_prato" sid="2908911324883288" type="boolean" />
+                <instance-variable name="mosca_voando_longe_bolo" sid="4057121355843974" type="boolean" />
+                <instance-variable name="mosca_comeu_bolo" sid="6692912378769507" type="boolean" />
+                <instance-variable name="mosca_morreu" sid="6470791747501856" type="boolean" />
+                <instance-variable name="mosca_seguindo_lingua_sapa" sid="4298495416696133" type="boolean" />
+                <instance-variable name="posicao_x_mosca_na_lingua" sid="9528646755256673" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="1470192228863756">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="6693914816733042">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="CustomMovement" sid="7986491996099847">
+                    <behavior id="custom" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="mosca_voando" pingpong="0" repeatcount="10000" repeatto="0" sid="8333104662565951" speed="9">
+                    <frame duration="1" hotspotX="0.491525" hotspotY="0.957447">
+                        <image-point name="Imagepoint 1" x="0.728814" y="-0.255319" />
+                        <collision-poly>
+                            <point x="0.79661" y="0.489362" />
+                            <point x="0.79661" y="0.744681" />
+                            <point x="0.508475" y="0.914894" />
+                            <point x="0.135593" y="0.829787" />
+                            <point x="0.135593" y="0.489362" />
+                            <point x="0.101695" y="0.12766" />
+                            <point x="0.508475" y="0.340426" />
+                            <point x="0.915254" y="0.106383" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507463" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.761194" y="0.487805" />
+                            <point x="0.761194" y="0.609756" />
+                            <point x="0.507463" y="0.926829" />
+                            <point x="0.134328" y="0.780488" />
+                            <point x="0.0447761" y="0.487805" />
+                            <point x="0.0746269" y="0.121951" />
+                            <point x="0.507463" y="0.219512" />
+                            <point x="0.925373" y="0.121951" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.508475" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.79661" y="0.489362" />
+                            <point x="0.79661" y="0.744681" />
+                            <point x="0.508475" y="0.914894" />
+                            <point x="0.135593" y="0.829787" />
+                            <point x="0.135593" y="0.489362" />
+                            <point x="0.101695" y="0.12766" />
+                            <point x="0.508475" y="0.340426" />
+                            <point x="0.915254" y="0.106383" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="mosca_voando_contrario" pingpong="0" repeatcount="1" repeatto="0" sid="1891311283557075" speed="9">
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.957447">
+                        <image-point name="Imagepoint 1" x="0.355932" y="-0.255319" />
+                        <collision-poly>
+                            <point x="0.084746" y="0.106383" />
+                            <point x="0.491525" y="0.340426" />
+                            <point x="0.898305" y="0.12766" />
+                            <point x="0.864407" y="0.489362" />
+                            <point x="0.864407" y="0.829787" />
+                            <point x="0.491525" y="0.914894" />
+                            <point x="0.20339" y="0.744681" />
+                            <point x="0.20339" y="0.489362" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.492537" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.074627" y="0.121951" />
+                            <point x="0.492537" y="0.219512" />
+                            <point x="0.925373" y="0.121951" />
+                            <point x="0.955224" y="0.487805" />
+                            <point x="0.865672" y="0.780488" />
+                            <point x="0.492537" y="0.926829" />
+                            <point x="0.238806" y="0.609756" />
+                            <point x="0.238806" y="0.487805" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.491525" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.084746" y="0.106383" />
+                            <point x="0.491525" y="0.340426" />
+                            <point x="0.898305" y="0.12766" />
+                            <point x="0.864407" y="0.489362" />
+                            <point x="0.864407" y="0.829787" />
+                            <point x="0.491525" y="0.914894" />
+                            <point x="0.20339" y="0.744681" />
+                            <point x="0.20339" y="0.489362" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mosca3" sid="3320788552457909">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="mosca_no_bolo" sid="4379252538459597" type="number" />
+                <instance-variable name="mosca_voando_contrario" sid="3276128209216249" type="number" />
+                <instance-variable name="mosca_caindo" sid="3003148995412239" type="number" />
+                <instance-variable name="mosca_virou_bolo" sid="2498805612240825" type="boolean" />
+                <instance-variable name="mosca_parada" sid="2323471287231997" type="boolean" />
+                <instance-variable name="mosca_no_prato" sid="395193235186977" type="boolean" />
+                <instance-variable name="mosca_voando_longe_bolo" sid="5287020001091867" type="boolean" />
+                <instance-variable name="mosca_comeu_bolo" sid="7500816256430683" type="boolean" />
+                <instance-variable name="mosca_morreu" sid="2231827214096254" type="boolean" />
+                <instance-variable name="mosca_seguindo_lingua_sapa" sid="6396354695225722" type="boolean" />
+                <instance-variable name="posicao_x_mosca_na_lingua" sid="5265825185768461" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="534553741180479">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="7330948198776786">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="CustomMovement" sid="21915253442879">
+                    <behavior id="custom" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="mosca_voando" pingpong="0" repeatcount="10000" repeatto="0" sid="9429472618555446" speed="9">
+                    <frame duration="1" hotspotX="0.491525" hotspotY="0.957447">
+                        <image-point name="Imagepoint 1" x="0.728814" y="-0.255319" />
+                        <collision-poly>
+                            <point x="0.79661" y="0.489362" />
+                            <point x="0.79661" y="0.744681" />
+                            <point x="0.508475" y="0.914894" />
+                            <point x="0.135593" y="0.829787" />
+                            <point x="0.135593" y="0.489362" />
+                            <point x="0.101695" y="0.12766" />
+                            <point x="0.508475" y="0.340426" />
+                            <point x="0.915254" y="0.106383" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507463" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.761194" y="0.487805" />
+                            <point x="0.761194" y="0.609756" />
+                            <point x="0.507463" y="0.926829" />
+                            <point x="0.134328" y="0.780488" />
+                            <point x="0.0447761" y="0.487805" />
+                            <point x="0.0746269" y="0.121951" />
+                            <point x="0.507463" y="0.219512" />
+                            <point x="0.925373" y="0.121951" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.508475" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.79661" y="0.489362" />
+                            <point x="0.79661" y="0.744681" />
+                            <point x="0.508475" y="0.914894" />
+                            <point x="0.135593" y="0.829787" />
+                            <point x="0.135593" y="0.489362" />
+                            <point x="0.101695" y="0.12766" />
+                            <point x="0.508475" y="0.340426" />
+                            <point x="0.915254" y="0.106383" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="mosca_voando_contrario" pingpong="0" repeatcount="1" repeatto="0" sid="7138327320311114" speed="9">
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.957447">
+                        <image-point name="Imagepoint 1" x="0.355932" y="-0.255319" />
+                        <collision-poly>
+                            <point x="0.084746" y="0.106383" />
+                            <point x="0.491525" y="0.340426" />
+                            <point x="0.898305" y="0.12766" />
+                            <point x="0.864407" y="0.489362" />
+                            <point x="0.864407" y="0.829787" />
+                            <point x="0.491525" y="0.914894" />
+                            <point x="0.20339" y="0.744681" />
+                            <point x="0.20339" y="0.489362" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.492537" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.074627" y="0.121951" />
+                            <point x="0.492537" y="0.219512" />
+                            <point x="0.925373" y="0.121951" />
+                            <point x="0.955224" y="0.487805" />
+                            <point x="0.865672" y="0.780488" />
+                            <point x="0.492537" y="0.926829" />
+                            <point x="0.238806" y="0.609756" />
+                            <point x="0.238806" y="0.487805" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.491525" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.084746" y="0.106383" />
+                            <point x="0.491525" y="0.340426" />
+                            <point x="0.898305" y="0.12766" />
+                            <point x="0.864407" y="0.489362" />
+                            <point x="0.864407" y="0.829787" />
+                            <point x="0.491525" y="0.914894" />
+                            <point x="0.20339" y="0.744681" />
+                            <point x="0.20339" y="0.489362" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mosca4" sid="6347562412656791">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="mosca_no_bolo" sid="281376323776693" type="number" />
+                <instance-variable name="mosca_voando_contrario" sid="4383288441448318" type="number" />
+                <instance-variable name="mosca_caindo" sid="5382232817235967" type="number" />
+                <instance-variable name="mosca_virou_bolo" sid="334041959843785" type="boolean" />
+                <instance-variable name="mosca_parada" sid="4369711977969018" type="boolean" />
+                <instance-variable name="mosca_no_prato" sid="7941219633114037" type="boolean" />
+                <instance-variable name="mosca_voando_longe_bolo" sid="8807627803600929" type="boolean" />
+                <instance-variable name="mosca_comeu_bolo" sid="8171904362692602" type="boolean" />
+                <instance-variable name="mosca_morreu" sid="5525706270039729" type="boolean" />
+                <instance-variable name="mosca_seguindo_lingua_sapa" sid="1961542866568281" type="boolean" />
+                <instance-variable name="posicao_x_mosca_na_lingua" sid="2247130030413228" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="8186793228228602">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="8904096100341404">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="CustomMovement" sid="704476748215068">
+                    <behavior id="custom" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="mosca_voando" pingpong="0" repeatcount="10000" repeatto="0" sid="1563369732532671" speed="9">
+                    <frame duration="1" hotspotX="0.491525" hotspotY="0.957447">
+                        <image-point name="Imagepoint 1" x="0.728814" y="-0.255319" />
+                        <collision-poly>
+                            <point x="0.79661" y="0.489362" />
+                            <point x="0.79661" y="0.744681" />
+                            <point x="0.508475" y="0.914894" />
+                            <point x="0.135593" y="0.829787" />
+                            <point x="0.135593" y="0.489362" />
+                            <point x="0.101695" y="0.12766" />
+                            <point x="0.508475" y="0.340426" />
+                            <point x="0.915254" y="0.106383" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507463" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.761194" y="0.487805" />
+                            <point x="0.761194" y="0.609756" />
+                            <point x="0.507463" y="0.926829" />
+                            <point x="0.134328" y="0.780488" />
+                            <point x="0.0447761" y="0.487805" />
+                            <point x="0.0746269" y="0.121951" />
+                            <point x="0.507463" y="0.219512" />
+                            <point x="0.925373" y="0.121951" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.508475" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.79661" y="0.489362" />
+                            <point x="0.79661" y="0.744681" />
+                            <point x="0.508475" y="0.914894" />
+                            <point x="0.135593" y="0.829787" />
+                            <point x="0.135593" y="0.489362" />
+                            <point x="0.101695" y="0.12766" />
+                            <point x="0.508475" y="0.340426" />
+                            <point x="0.915254" y="0.106383" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="mosca_voando_contrario" pingpong="0" repeatcount="1" repeatto="0" sid="6631182197215826" speed="9">
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.957447">
+                        <image-point name="Imagepoint 1" x="0.355932" y="-0.255319" />
+                        <collision-poly>
+                            <point x="0.084746" y="0.106383" />
+                            <point x="0.491525" y="0.340426" />
+                            <point x="0.898305" y="0.12766" />
+                            <point x="0.864407" y="0.489362" />
+                            <point x="0.864407" y="0.829787" />
+                            <point x="0.491525" y="0.914894" />
+                            <point x="0.20339" y="0.744681" />
+                            <point x="0.20339" y="0.489362" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.492537" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.074627" y="0.121951" />
+                            <point x="0.492537" y="0.219512" />
+                            <point x="0.925373" y="0.121951" />
+                            <point x="0.955224" y="0.487805" />
+                            <point x="0.865672" y="0.780488" />
+                            <point x="0.492537" y="0.926829" />
+                            <point x="0.238806" y="0.609756" />
+                            <point x="0.238806" y="0.487805" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.491525" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.084746" y="0.106383" />
+                            <point x="0.491525" y="0.340426" />
+                            <point x="0.898305" y="0.12766" />
+                            <point x="0.864407" y="0.489362" />
+                            <point x="0.864407" y="0.829787" />
+                            <point x="0.491525" y="0.914894" />
+                            <point x="0.20339" y="0.744681" />
+                            <point x="0.20339" y="0.489362" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="titulo_escolha_nivel" sid="9169459125431476">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="area_virar_mosca_select_level" sid="2876068389030157">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7397884004028347" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="area_virar_mosca_select_level2" sid="3756954227228882">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9328455509497171" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="niveis_dificuldade_selecionados" sid="961091006876464">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="bubble_advanced1" sid="9742356702209893">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="7609694864561656">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7323102685518889" speed="5">
+                    <frame duration="1" hotspotX="0.504065" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_advanced_1.png">
+                        <collision-poly>
+                            <point x="0.0731707" y="0.15" />
+                            <point x="0.495935" y="0.05" />
+                            <point x="0.951219" y="0.1" />
+                            <point x="0.951219" y="0.5" />
+                            <point x="0.804878" y="0.6" />
+                            <point x="0.195122" y="0.6" />
+                            <point x="0.0731707" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="balao_voando" pingpong="0" repeatcount="1" repeatto="0" sid="3317953352624592" speed="5">
+                    <frame duration="1" hotspotX="0.504065" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_advanced_1.png">
+                        <collision-poly>
+                            <point x="0.0731707" y="0.15" />
+                            <point x="0.495935" y="0.05" />
+                            <point x="0.951219" y="0.1" />
+                            <point x="0.951219" y="0.5" />
+                            <point x="0.804878" y="0.6" />
+                            <point x="0.195122" y="0.6" />
+                            <point x="0.0731707" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="balao_voando_contrario" pingpong="0" repeatcount="1" repeatto="0" sid="9520496819425018" speed="5">
+                    <frame duration="1" hotspotX="0.504065" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_advanced_1_right.png">
+                        <collision-poly>
+                            <point x="0.0487805" y="0.1" />
+                            <point x="0.495935" y="0.05" />
+                            <point x="0.926829" y="0.15" />
+                            <point x="0.926829" y="0.5" />
+                            <point x="0.804878" y="0.6" />
+                            <point x="0.195122" y="0.6" />
+                            <point x="0.0487805" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bubble_advanced2" sid="1848748825016021">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="3039251927968147">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5806628189939672" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_advanced_2.png">
+                        <collision-poly>
+                            <point x="0.0714286" y="0.15" />
+                            <point x="0.5" y="0.05" />
+                            <point x="0.952381" y="0.1" />
+                            <point x="0.952381" y="0.5" />
+                            <point x="0.809524" y="0.6" />
+                            <point x="0.190476" y="0.6" />
+                            <point x="0.0714286" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="balao_voando" pingpong="0" repeatcount="1" repeatto="0" sid="9916719651936324" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_advanced_2.png">
+                        <collision-poly>
+                            <point x="0.0714286" y="0.15" />
+                            <point x="0.5" y="0.05" />
+                            <point x="0.952381" y="0.1" />
+                            <point x="0.952381" y="0.5" />
+                            <point x="0.809524" y="0.6" />
+                            <point x="0.190476" y="0.6" />
+                            <point x="0.0714286" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="balao_voando_contrario" pingpong="0" repeatcount="1" repeatto="0" sid="5618002474175816" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_advanced_2_right.png">
+                        <collision-poly>
+                            <point x="0.047619" y="0.1" />
+                            <point x="0.5" y="0.05" />
+                            <point x="0.928571" y="0.15" />
+                            <point x="0.928571" y="0.5" />
+                            <point x="0.809524" y="0.6" />
+                            <point x="0.190476" y="0.6" />
+                            <point x="0.047619" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bubble_basic1" sid="3765331611024735">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="7445690901541425">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3293439798295699" speed="5">
+                    <frame duration="1" hotspotX="0.505747" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_basic_1.png">
+                        <collision-poly>
+                            <point x="0.103448" y="0.15" />
+                            <point x="0.494253" y="0.05" />
+                            <point x="0.931035" y="0.1" />
+                            <point x="0.931035" y="0.5" />
+                            <point x="0.494253" y="0.7" />
+                            <point x="0.275862" y="0.6" />
+                            <point x="0.103448" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="balao_voando" pingpong="0" repeatcount="1" repeatto="0" sid="5049345511566952" speed="5">
+                    <frame duration="1" hotspotX="0.505747" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_basic_1.png">
+                        <collision-poly>
+                            <point x="0.103448" y="0.15" />
+                            <point x="0.494253" y="0.05" />
+                            <point x="0.931035" y="0.1" />
+                            <point x="0.931035" y="0.5" />
+                            <point x="0.494253" y="0.7" />
+                            <point x="0.275862" y="0.6" />
+                            <point x="0.103448" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="balao_voando_contrario" pingpong="0" repeatcount="1" repeatto="0" sid="7598759397319355" speed="5">
+                    <frame duration="1" hotspotX="0.505747" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_basic_1_right.png">
+                        <collision-poly>
+                            <point x="0.0689655" y="0.1" />
+                            <point x="0.494253" y="0.05" />
+                            <point x="0.896552" y="0.15" />
+                            <point x="0.896552" y="0.5" />
+                            <point x="0.724138" y="0.6" />
+                            <point x="0.494253" y="0.7" />
+                            <point x="0.0689655" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bubble_basic2" sid="261646314729564">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="5333104123638788">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2085350003427707" speed="5">
+                    <frame duration="1" hotspotX="0.505747" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_basic_2.png">
+                        <collision-poly>
+                            <point x="0.103448" y="0.15" />
+                            <point x="0.494253" y="0.05" />
+                            <point x="0.931035" y="0.1" />
+                            <point x="0.931035" y="0.5" />
+                            <point x="0.494253" y="0.7" />
+                            <point x="0.275862" y="0.6" />
+                            <point x="0.103448" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="balao_voando" pingpong="0" repeatcount="1" repeatto="0" sid="1488335257201588" speed="5">
+                    <frame duration="1" hotspotX="0.505747" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_basic_2.png">
+                        <collision-poly>
+                            <point x="0.103448" y="0.15" />
+                            <point x="0.494253" y="0.05" />
+                            <point x="0.931035" y="0.1" />
+                            <point x="0.931035" y="0.5" />
+                            <point x="0.494253" y="0.7" />
+                            <point x="0.275862" y="0.6" />
+                            <point x="0.103448" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="balao_voando_contrario" pingpong="0" repeatcount="1" repeatto="0" sid="9282049544646519" speed="5">
+                    <frame duration="1" hotspotX="0.505747" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_basic_2_right.png">
+                        <collision-poly>
+                            <point x="0.0689655" y="0.1" />
+                            <point x="0.494253" y="0.05" />
+                            <point x="0.896552" y="0.15" />
+                            <point x="0.896552" y="0.5" />
+                            <point x="0.724138" y="0.6" />
+                            <point x="0.494253" y="0.7" />
+                            <point x="0.0689655" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mosca1" sid="1057641604968619">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="mosca_no_bolo" sid="5451672010944087" type="number" />
+                <instance-variable name="mosca_voando_contrario" sid="632681488851915" type="number" />
+                <instance-variable name="mosca_caindo" sid="4042794949673935" type="number" />
+                <instance-variable name="mosca_virou_bolo" sid="3497808094104209" type="boolean" />
+                <instance-variable name="mosca_parada" sid="4509224088186698" type="boolean" />
+                <instance-variable name="mosca_no_prato" sid="6370328308737381" type="boolean" />
+                <instance-variable name="mosca_voando_longe_bolo" sid="8629053999820661" type="boolean" />
+                <instance-variable name="mosca_comeu_bolo" sid="4759479858862418" type="boolean" />
+                <instance-variable name="mosca_morreu" sid="1215604586878047" type="boolean" />
+                <instance-variable name="mosca_seguindo_lingua_sapa" sid="5057682871911638" type="boolean" />
+                <instance-variable name="posicao_x_mosca_na_lingua" sid="9315915085919921" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="7032016461338454">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="7023015109291513">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="CustomMovement" sid="751733900898372">
+                    <behavior id="custom" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="mosca_voando" pingpong="0" repeatcount="10000" repeatto="0" sid="2216562012777729" speed="9">
+                    <frame duration="1" hotspotX="0.491525" hotspotY="0.957447">
+                        <image-point name="Imagepoint 1" x="0.728814" y="-0.255319" />
+                        <collision-poly>
+                            <point x="0.79661" y="0.489362" />
+                            <point x="0.79661" y="0.744681" />
+                            <point x="0.508475" y="0.914894" />
+                            <point x="0.135593" y="0.829787" />
+                            <point x="0.135593" y="0.489362" />
+                            <point x="0.101695" y="0.12766" />
+                            <point x="0.508475" y="0.340426" />
+                            <point x="0.915254" y="0.106383" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507463" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.761194" y="0.487805" />
+                            <point x="0.761194" y="0.609756" />
+                            <point x="0.507463" y="0.926829" />
+                            <point x="0.134328" y="0.780488" />
+                            <point x="0.0447761" y="0.487805" />
+                            <point x="0.0746269" y="0.121951" />
+                            <point x="0.507463" y="0.219512" />
+                            <point x="0.925373" y="0.121951" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.508475" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.79661" y="0.489362" />
+                            <point x="0.79661" y="0.744681" />
+                            <point x="0.508475" y="0.914894" />
+                            <point x="0.135593" y="0.829787" />
+                            <point x="0.135593" y="0.489362" />
+                            <point x="0.101695" y="0.12766" />
+                            <point x="0.508475" y="0.340426" />
+                            <point x="0.915254" y="0.106383" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="mosca_voando_contrario" pingpong="0" repeatcount="1" repeatto="0" sid="4672967215591353" speed="9">
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.957447">
+                        <image-point name="Imagepoint 1" x="0.355932" y="-0.255319" />
+                        <collision-poly>
+                            <point x="0.084746" y="0.106383" />
+                            <point x="0.491525" y="0.340426" />
+                            <point x="0.898305" y="0.12766" />
+                            <point x="0.864407" y="0.489362" />
+                            <point x="0.864407" y="0.829787" />
+                            <point x="0.491525" y="0.914894" />
+                            <point x="0.20339" y="0.744681" />
+                            <point x="0.20339" y="0.489362" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.492537" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.074627" y="0.121951" />
+                            <point x="0.492537" y="0.219512" />
+                            <point x="0.925373" y="0.121951" />
+                            <point x="0.955224" y="0.487805" />
+                            <point x="0.865672" y="0.780488" />
+                            <point x="0.492537" y="0.926829" />
+                            <point x="0.238806" y="0.609756" />
+                            <point x="0.238806" y="0.487805" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.491525" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.084746" y="0.106383" />
+                            <point x="0.491525" y="0.340426" />
+                            <point x="0.898305" y="0.12766" />
+                            <point x="0.864407" y="0.489362" />
+                            <point x="0.864407" y="0.829787" />
+                            <point x="0.491525" y="0.914894" />
+                            <point x="0.20339" y="0.744681" />
+                            <point x="0.20339" y="0.489362" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="balao_sapo" sid="9682842495231704">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8718262973767702" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\balao_sapo_vazio.png">
+                        <collision-poly>
+                            <point x="0.106299" y="0.306818" />
+                            <point x="0.5" y="0.284091" />
+                            <point x="0.984252" y="0.0454545" />
+                            <point x="0.996063" y="0.5" />
+                            <point x="0.968504" y="0.909091" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0314961" y="0.909091" />
+                            <point x="0.00393701" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="texto_balao_sapo" sid="9744147124542449">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -2963,6 +3730,7 @@
         <layout>fimDeJogo.xml</layout>
         <layout>Shop.xml</layout>
         <layout>Shop_game.xml</layout>
+        <layout>TelaEscolhaNivel.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
@@ -2973,6 +3741,7 @@
         <event-sheet>EventosExplicacaoItens.xml</event-sheet>
         <event-sheet>EventosShop.xml</event-sheet>
         <event-sheet>EventosShop_game.xml</event-sheet>
+        <event-sheet>eeventSheetTelaEscolhaNivel.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="101">

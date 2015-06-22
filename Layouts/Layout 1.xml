@@ -1060,7 +1060,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="texto_menu_pausado" uid="150">
+                <instance type="texto_titulo_pausar_jogo" uid="150">
                     <properties>
                         <text>Game Paused</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -1087,7 +1087,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="placa_choco_continuar_jogo" uid="151">
+                <instance type="placa_choco_resume" uid="151">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

@@ -1,0 +1,796 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>eeventSheetTelaEscolhaNivel</name>
+    <events>
+        <variable constant="0" name="indice_inserir_nivel_dificuldade_novo" sid="4378848715837169" static="0" type="number">0</variable>
+        <event-block sid="1004122176327644">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="5377142267367643" type="bubble_basic1">
+                    <param id="0" name="Object">area_virar_mosca_select_level</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="5563719544338171" type="mosca1">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="9183965769650848" type="mosca1">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="7816342910041665" type="mosca1">
+                    <param id="0" name="Animation">&quot;mosca_voando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="5719764959842133" type="bubble_basic1">
+                    <param id="0" name="Animation">&quot;balao_voando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-1" name="Set X" sid="4894031081500114" type="bubble_basic1">
+                    <param id="0" name="X">mosca1.X + 50</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4610437967879582">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="759736583466777" type="bubble_basic1">
+                    <param id="0" name="Object">area_virar_mosca_select_level2</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="3634815555180252" type="mosca1">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="840687295772868" type="mosca1">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="8320963012558889" type="mosca1">
+                    <param id="0" name="Animation">&quot;mosca_voando_contrario&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="6904644787525193" type="bubble_basic1">
+                    <param id="0" name="Animation">&quot;balao_voando_contrario&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-1" name="Set X" sid="3155857304748091" type="bubble_basic1">
+                    <param id="0" name="X">mosca1.X - 50</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4921654350478679">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="4178049885007337" type="mosca1">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="8841446110017911" type="mosca1">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="8807043518421818" type="mosca1">
+                    <param id="0" name="Distance">1</param>
+                </action>
+                <action id="-17" name="Move forward" sid="569966453833876" type="bubble_basic1">
+                    <param id="0" name="Distance">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9889447264476016">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="6122019006258684" type="mosca1">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="6127766735715506" type="mosca1">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="9936786076316438" type="mosca1">
+                    <param id="0" name="Distance">-1</param>
+                </action>
+                <action id="-17" name="Move forward" sid="1701683782919078" type="bubble_basic1">
+                    <param id="0" name="Distance">-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9024907823786216">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="4982851386443273" type="Touch">
+                    <param id="0" name="Object">mosca1</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="3587723755496745" type="mosca1">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="3104532802270845" type="mosca1">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="6209605275579447" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;7_year_old_boy_screams&quot;</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6935183358840482">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="2844240727377697" type="mosca1">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="4752020684798566" type="mosca1">
+                    <param id="0" name="Instance variable">mosca_no_prato</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="5" name="Set gravity" sid="2938662575866987" type="mosca1">
+                    <param id="0" name="Gravity">40</param>
+                </action>
+                <action behavior="Platform" id="5" name="Set gravity" sid="5919493003829508" type="bubble_basic1">
+                    <param id="0" name="Gravity">40</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2291813712047101">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1481508013036585" type="mosca1">
+                    <param id="0" name="Object">area_dentro_prato</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="5188156197436492" type="mosca1">
+                    <param id="0" name="Instance variable">mosca_no_prato</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="7457283463933612" type="mosca">
+                    <param id="0" name="Instance variable">mosca_no_prato</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="1239922403203706" type="placa_jogo_jogar">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="2724584954576007" type="bubble_basic1">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="2" name="Set at X" sid="8993317967060139" type="niveis_dificuldade_selecionados">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="5124808378871631" type="System">
+                    <param id="0" name="Variable">indice_inserir_nivel_dificuldade_novo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4850673219960769">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="2939837019850852" type="bubble_basic2">
+                    <param id="0" name="Object">area_virar_mosca_select_level</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="6678194686325204" type="mosca2">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="9294516512277785" type="mosca2">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="5514265131508905" type="mosca2">
+                    <param id="0" name="Animation">&quot;mosca_voando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="7495309929801611" type="bubble_basic2">
+                    <param id="0" name="Animation">&quot;balao_voando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-1" name="Set X" sid="5601717593386731" type="bubble_basic2">
+                    <param id="0" name="X">mosca2.X + 50</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1653567908244145">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="227159134526962" type="bubble_basic2">
+                    <param id="0" name="Object">area_virar_mosca_select_level2</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="7506447402752032" type="mosca2">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="5343906255381317" type="mosca2">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="5387707892332508" type="mosca2">
+                    <param id="0" name="Animation">&quot;mosca_voando_contrario&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="2798238592099428" type="bubble_basic2">
+                    <param id="0" name="Animation">&quot;balao_voando_contrario&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-1" name="Set X" sid="3792518098724903" type="bubble_basic2">
+                    <param id="0" name="X">mosca2.X - 50</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3184369193943232">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="153680979307391" type="mosca2">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="8234122780860341" type="mosca2">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="9422281124475175" type="mosca2">
+                    <param id="0" name="Distance">1</param>
+                </action>
+                <action id="-17" name="Move forward" sid="104643936875036" type="bubble_basic2">
+                    <param id="0" name="Distance">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8846133560699092">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="883452125293815" type="mosca2">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="342765740695735" type="mosca2">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="713735788927652" type="mosca2">
+                    <param id="0" name="Distance">-1</param>
+                </action>
+                <action id="-17" name="Move forward" sid="3340301953248897" type="bubble_basic2">
+                    <param id="0" name="Distance">-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8276287613636437">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="1858398029492042" type="Touch">
+                    <param id="0" name="Object">mosca2</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="5443546265852424" type="mosca2">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="7673961376359678" type="mosca2">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="3272371023226491" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;7_year_old_boy_screams&quot;</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7337411402807724">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="5727210000934346" type="mosca2">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="18567786714222" type="mosca2">
+                    <param id="0" name="Instance variable">mosca_no_prato</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="5" name="Set gravity" sid="6205012055463567" type="mosca2">
+                    <param id="0" name="Gravity">40</param>
+                </action>
+                <action behavior="Platform" id="5" name="Set gravity" sid="3796923104985096" type="bubble_basic2">
+                    <param id="0" name="Gravity">40</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="518028369665303">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7790703876023327" type="mosca2">
+                    <param id="0" name="Object">area_dentro_prato</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="6862561982819769" type="mosca2">
+                    <param id="0" name="Instance variable">mosca_no_prato</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="9122823488008916" type="mosca2">
+                    <param id="0" name="Instance variable">mosca_no_prato</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="3877304243388554" type="placa_jogo_jogar">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="4456505774652895" type="bubble_basic2">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="2" name="Set at X" sid="8484359386911184" type="niveis_dificuldade_selecionados">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="8588309353461015" type="System">
+                    <param id="0" name="Variable">indice_inserir_nivel_dificuldade_novo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7398288670811692">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="2452356431582702" type="bubble_advanced1">
+                    <param id="0" name="Object">area_virar_mosca_select_level</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="4578595323251702" type="mosca3">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="3973903502051692" type="mosca3">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="671506231390338" type="mosca3">
+                    <param id="0" name="Animation">&quot;mosca_voando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="1203893530092969" type="bubble_advanced1">
+                    <param id="0" name="Animation">&quot;balao_voando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-1" name="Set X" sid="4131523253280535" type="bubble_advanced1">
+                    <param id="0" name="X">mosca3.X +50</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6130248184910372">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="8872885971799237" type="bubble_advanced1">
+                    <param id="0" name="Object">area_virar_mosca_select_level2</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="6134089117820896" type="mosca3">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="283099550101322" type="mosca3">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="3616017683369322" type="mosca3">
+                    <param id="0" name="Animation">&quot;mosca_voando_contrario&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="133991465629339" type="bubble_advanced1">
+                    <param id="0" name="Animation">&quot;balao_voando_contrario&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-1" name="Set X" sid="1875085635134564" type="bubble_advanced1">
+                    <param id="0" name="X">mosca3.X - 50</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5351304729008048">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="7469425108945888" type="mosca3">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="7434467481204294" type="mosca3">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="7850094403456063" type="mosca3">
+                    <param id="0" name="Distance">1</param>
+                </action>
+                <action id="-17" name="Move forward" sid="6403603294482023" type="bubble_advanced1">
+                    <param id="0" name="Distance">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7437587166446085">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="5011214347129354" type="mosca3">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="6704196958693765" type="mosca3">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="7666042212628146" type="mosca3">
+                    <param id="0" name="Distance">-1</param>
+                </action>
+                <action id="-17" name="Move forward" sid="1556357600708712" type="bubble_advanced1">
+                    <param id="0" name="Distance">-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1354284405627617">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="7399440303361192" type="Touch">
+                    <param id="0" name="Object">mosca3</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="7999412075682143" type="mosca3">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="1211128821666641" type="mosca3">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="7492627657593557" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;7_year_old_boy_screams&quot;</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1577299803921761">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="599387732894578" type="mosca3">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="3841914362883583" type="mosca3">
+                    <param id="0" name="Instance variable">mosca_no_prato</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="5" name="Set gravity" sid="1281458706688061" type="mosca3">
+                    <param id="0" name="Gravity">40</param>
+                </action>
+                <action behavior="Platform" id="5" name="Set gravity" sid="2060727385094241" type="bubble_advanced1">
+                    <param id="0" name="Gravity">40</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9342103992945361">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1773271976026676" type="mosca3">
+                    <param id="0" name="Object">area_dentro_prato</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="8824526599154705" type="mosca3">
+                    <param id="0" name="Instance variable">mosca_no_prato</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="4086968741106664" type="mosca3">
+                    <param id="0" name="Instance variable">mosca_no_prato</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="2462277625316202" type="placa_jogo_jogar">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="5628173631901535" type="bubble_advanced1">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="2" name="Set at X" sid="8303376599440261" type="niveis_dificuldade_selecionados">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="5958667074410732" type="System">
+                    <param id="0" name="Variable">indice_inserir_nivel_dificuldade_novo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1532178868943613">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="361361182911232" type="bubble_advanced2">
+                    <param id="0" name="Object">area_virar_mosca_select_level</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="2388467770296029" type="mosca4">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="97734126154156" type="mosca4">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="8872736747973065" type="mosca4">
+                    <param id="0" name="Animation">&quot;mosca_voando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="8101067196032694" type="bubble_advanced2">
+                    <param id="0" name="Animation">&quot;balao_voando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-1" name="Set X" sid="9669372219591042" type="bubble_advanced2">
+                    <param id="0" name="X">mosca4.X +50</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7974099796935518">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="8730796543292138" type="bubble_advanced2">
+                    <param id="0" name="Object">area_virar_mosca_select_level2</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="315254978313033" type="mosca4">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="6503196369894761" type="mosca4">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="9714911968024471" type="mosca4">
+                    <param id="0" name="Animation">&quot;mosca_voando_contrario&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="4523940605237323" type="bubble_advanced2">
+                    <param id="0" name="Animation">&quot;balao_voando_contrario&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-1" name="Set X" sid="9451410910867689" type="bubble_advanced2">
+                    <param id="0" name="X">mosca4.X - 50</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9946958011917429">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="8637593864767919" type="mosca4">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="2925814921334269" type="mosca4">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="156183085012484" type="mosca4">
+                    <param id="0" name="Distance">1</param>
+                </action>
+                <action id="-17" name="Move forward" sid="1749610994031715" type="bubble_advanced2">
+                    <param id="0" name="Distance">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3912377651229685">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="3913280583234735" type="mosca4">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="96845437388044" type="mosca4">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="1931887017630277" type="mosca4">
+                    <param id="0" name="Distance">-1</param>
+                </action>
+                <action id="-17" name="Move forward" sid="5045854196913219" type="bubble_advanced2">
+                    <param id="0" name="Distance">-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6160279104380205">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="7022023919862172" type="Touch">
+                    <param id="0" name="Object">mosca4</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="5376904073853728" type="mosca4">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="3278379458869814" type="mosca4">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="246540528281105" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;7_year_old_boy_screams&quot;</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7113783476744065">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="1272677592442848" type="mosca4">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="6735219545291635" type="mosca4">
+                    <param id="0" name="Instance variable">mosca_no_prato</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="5" name="Set gravity" sid="54046003256183" type="mosca4">
+                    <param id="0" name="Gravity">40</param>
+                </action>
+                <action behavior="Platform" id="5" name="Set gravity" sid="4291575886337423" type="bubble_advanced2">
+                    <param id="0" name="Gravity">40</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6530604421032149">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2790804357940356" type="mosca4">
+                    <param id="0" name="Object">area_dentro_prato</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="952242119142588" type="mosca4">
+                    <param id="0" name="Instance variable">mosca_no_prato</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="3167076481947503" type="mosca4">
+                    <param id="0" name="Instance variable">mosca_no_prato</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="2490716601965668" type="placa_jogo_jogar">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="8322427344851224" type="bubble_advanced2">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="2" name="Set at X" sid="2192579038804447" type="niveis_dificuldade_selecionados">
+                    <param id="0" name="X">3</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="6743385834227078" type="System">
+                    <param id="0" name="Variable">indice_inserir_nivel_dificuldade_novo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="899770215523291">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="9959113183733743" type="Touch">
+                    <param id="0" name="Object">texto_menu_inicial</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="2219106296906806" type="System">
+                    <param id="0" name="Layout">MenuInicial</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6735365186089189">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="3027033817311219" type="Touch">
+                    <param id="0" name="Object">texto_jogar</param>
+                </condition>
+                <condition id="-10" name="Compare opacity" sid="7391646204237354" type="placa_jogo_jogar">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="1879803528771194" type="System">
+                    <param id="0" name="Layout">CopiaDoLayout 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="193679530014738">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9362179225821176" type="System" />
+            </conditions>
+            <actions>
+                <action disabled="1" id="0" name="Clear" sid="3468895176191443" type="niveis_dificuldade_selecionados" />
+                <action behavior="Platform" id="5" name="Set gravity" sid="9412393307240519" type="mosca1">
+                    <param id="0" name="Gravity">0</param>
+                </action>
+                <action behavior="Platform" id="5" name="Set gravity" sid="5497238920018059" type="mosca2">
+                    <param id="0" name="Gravity">0</param>
+                </action>
+                <action behavior="Platform" id="5" name="Set gravity" sid="8221784589478029" type="mosca3">
+                    <param id="0" name="Gravity">0</param>
+                </action>
+                <action behavior="Platform" id="5" name="Set gravity" sid="4172492195563845" type="mosca4">
+                    <param id="0" name="Gravity">0</param>
+                </action>
+                <action behavior="Platform" id="5" name="Set gravity" sid="2394065247911649" type="bubble_basic1">
+                    <param id="0" name="Gravity">0</param>
+                </action>
+                <action behavior="Platform" id="5" name="Set gravity" sid="37695845741324" type="bubble_basic2">
+                    <param id="0" name="Gravity">0</param>
+                </action>
+                <action behavior="Platform" id="5" name="Set gravity" sid="4922594680799071" type="bubble_advanced1">
+                    <param id="0" name="Gravity">0</param>
+                </action>
+                <action behavior="Platform" id="5" name="Set gravity" sid="7892922141285063" type="bubble_advanced2">
+                    <param id="0" name="Gravity">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="4231128582002364" type="System">
+                    <param id="0" name="Variable">indice_inserir_nivel_dificuldade_novo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="2" name="Set at X" sid="7738511588689959" type="niveis_dificuldade_selecionados">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="2" name="Set at X" sid="2311624390061781" type="niveis_dificuldade_selecionados">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="2" name="Set at X" sid="6696348085970035" type="niveis_dificuldade_selecionados">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="2" name="Set at X" sid="4399192285946373" type="niveis_dificuldade_selecionados">
+                    <param id="0" name="X">3</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
