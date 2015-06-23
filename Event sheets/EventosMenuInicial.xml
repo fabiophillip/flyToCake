@@ -213,8 +213,8 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-25" name="Go to layout (by name)" sid="5513364263639206" type="System">
-                    <param id="0" name="Layout">&quot;Layout 1&quot;</param>
+                <action id="-2" name="Go to layout" sid="5513364263639206" type="System">
+                    <param id="0" name="Layout">TelaEscolhaNivel</param>
                 </action>
             </actions>
         </event-block>

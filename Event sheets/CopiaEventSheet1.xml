@@ -3,9 +3,6 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>CopiaEventSheet1</name>
     <events>
-        <variable comment="indice onde estava o último nível de dificuldade das perguntas que o jogo escolheu pro jogador jogar" constant="0" name="indice_ultimo_nivel_dificuldade_no_jogo" sid="8007398201660958" static="0" type="number">-1</variable>
-        <variable constant="0" name="indice_percorre_niveis_dificuldade_selecionados" sid="8044034480227917" static="0" type="number">0</variable>
-        <variable constant="0" name="quantas_moscas_no_prato" sid="5353115430529006" static="0" type="number">0</variable>
         <variable constant="0" name="tempo_restante" sid="8647882511149372" static="0" type="number">240</variable>
         <variable comment="nome do sprite da mosca" constant="0" name="sprite_da_mosca" sid="3559637804088934" static="0" type="text">mosca</variable>
         <variable constant="0" name="moscas_viraram_bolo" sid="3862675104719746" static="0" type="number">0</variable>

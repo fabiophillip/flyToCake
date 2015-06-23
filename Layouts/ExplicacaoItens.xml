@@ -362,7 +362,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="descricao_item4" uid="74">
+                <instance type="descricao_item4" uid="5">
                     <properties>
                         <text>Hint hand   - As mãozinhas indicarão moscas com a resposta correta</text>
                         <initial-visibility>Visible</initial-visibility>

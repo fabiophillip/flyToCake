@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="background_movendo" uid="165">
+                <instance type="background_movendo" uid="166">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="fundo_logo" uid="166">
+                <instance type="fundo_logo" uid="167">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -73,7 +73,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mosca_logo" uid="167">
+                <instance type="mosca_logo" uid="168">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -98,7 +98,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="texto_titulo_logo" uid="168">
+                <instance type="texto_titulo_logo" uid="169">
                     <properties>
                         <text>Shop</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -125,7 +125,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="area_virar_mosca_logo1" uid="169">
+                <instance type="area_virar_mosca_logo1" uid="170">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -147,7 +147,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="area_virar_mosca_logo2" uid="170">
+                <instance type="area_virar_mosca_logo2" uid="171">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -169,7 +169,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="background_tela_mostra_itens" uid="171">
+                <instance type="background_tela_mostra_itens" uid="172">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -191,7 +191,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="coins" uid="172">
+                <instance type="coins" uid="173">
                     <properties>
                         <text>Your Coins:</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -218,7 +218,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="icone_coins" uid="173">
+                <instance type="icone_coins" uid="174">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -240,7 +240,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="X_fim_jogo_coins" uid="174">
+                <instance type="X_fim_jogo_coins" uid="175">
                     <properties>
                         <text>X</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -267,7 +267,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="botao_voltar_tela_descreve_itens" uid="175">
+                <instance type="botao_voltar_tela_descreve_itens" uid="176">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -289,7 +289,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="texto_jogar" uid="176">
+                <instance type="texto_jogar" uid="179">
                     <properties>
                         <text>Back</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -316,7 +316,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="botao_character_bee" uid="179">
+                <instance type="botao_character_bee" uid="180">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -338,7 +338,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="label_character" uid="180">
+                <instance type="label_character" uid="181">
                     <properties>
                         <text>Character: Bee</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -365,7 +365,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="botao_character_bat" uid="181">
+                <instance type="botao_character_bat" uid="182">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -387,7 +387,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="label_character" uid="182">
+                <instance type="label_character" uid="183">
                     <properties>
                         <text>Character: Bat</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -414,7 +414,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="botao_character_cake" uid="183">
+                <instance type="botao_character_cake" uid="184">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -436,7 +436,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="label_character" uid="184">
+                <instance type="label_character" uid="185">
                     <properties>
                         <text>Character: Cake</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -566,7 +566,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="icone_coins_nao_se_mexe" uid="185">
+                <instance type="icone_coins_nao_se_mexe" uid="186">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -588,7 +588,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="icone_coins_nao_se_mexe" uid="186">
+                <instance type="icone_coins_nao_se_mexe" uid="187">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

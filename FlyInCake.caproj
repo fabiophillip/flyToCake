@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>FlyInCake</name>
     <description></description>
@@ -2954,7 +2954,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-         <object-type name="sapa" sid="8099214388974503">
+        <object-type name="sapa" sid="8099214388974503">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="sapa_aparecendo" sid="8928348057719794" type="boolean" />
@@ -3744,13 +3744,13 @@
         <event-sheet>eeventSheetTelaEscolhaNivel.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Touch" uid="101">
+        <global-instance type="Touch" uid="211">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Mouse" uid="102" />
-        <global-instance type="Audio" uid="103">
+        <global-instance type="Mouse" uid="212" />
+        <global-instance type="Audio" uid="213">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -3764,7 +3764,7 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
-        <global-instance type="WebStorage" uid="104" />
+        <global-instance type="WebStorage" uid="214" />
     </global-instances>
     <sounds-folder>
         <file name="7_year_old_boy_screams.m4a" />

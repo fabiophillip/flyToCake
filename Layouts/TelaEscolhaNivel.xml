@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="background_movendo" uid="4">
+                <instance type="background_movendo" uid="192">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="pratoPhi" uid="17">
+                <instance type="pratoPhi" uid="193">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -73,7 +73,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mosca2" uid="14">
+                <instance type="mosca2" uid="194">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -142,7 +142,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mosca3" uid="15">
+                <instance type="mosca3" uid="195">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -211,7 +211,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mosca4" uid="16">
+                <instance type="mosca4" uid="196">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -280,7 +280,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="area_dentro_prato" uid="5">
+                <instance type="area_dentro_prato" uid="197">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -309,7 +309,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="placa_choco_voltar_menu" uid="18">
+                <instance type="placa_choco_voltar_menu" uid="198">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -331,7 +331,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="texto_menu_inicial" uid="21">
+                <instance type="texto_menu_inicial" uid="199">
                     <properties>
                         <text>Main menu</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -358,7 +358,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="titulo_escolha_nivel" uid="26">
+                <instance type="titulo_escolha_nivel" uid="200">
                     <properties>
                         <text>Choose difficulties</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -385,7 +385,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="area_virar_mosca_select_level" uid="27">
+                <instance type="area_virar_mosca_select_level" uid="201">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -407,7 +407,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="area_virar_mosca_select_level2" uid="28">
+                <instance type="area_virar_mosca_select_level2" uid="202">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -429,7 +429,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="placa_jogo_jogar" uid="34">
+                <instance type="placa_jogo_jogar" uid="203">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -451,7 +451,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="texto_jogar" uid="20">
+                <instance type="texto_jogar" uid="204">
                     <properties>
                         <text>Play</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -478,7 +478,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="bubble_advanced1" uid="39">
+                <instance type="bubble_advanced1" uid="205">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -516,7 +516,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="bubble_advanced2" uid="70">
+                <instance type="bubble_advanced2" uid="206">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -554,7 +554,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="bubble_basic1" uid="71">
+                <instance type="bubble_basic1" uid="207">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -592,7 +592,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="bubble_basic2" uid="72">
+                <instance type="bubble_basic2" uid="208">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -630,7 +630,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mosca1" uid="73">
+                <instance type="mosca1" uid="209">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -704,7 +704,7 @@
         </layer>
     </layers>
     <nonworld-instances>
-        <instance type="niveis_dificuldade_selecionados" uid="19">
+        <instance type="niveis_dificuldade_selecionados" uid="210">
             <properties>
                 <width>4</width>
                 <height>1</height>

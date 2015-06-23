@@ -586,6 +586,9 @@
                         <item></item>
                         <doisx_em_uso>false</doisx_em_uso>
                         <tempo_que_falta_doisx_em_uso>-1</tempo_que_falta_doisx_em_uso>
+                        <id_item>0</id_item>
+                        <tempo_que_falta_para_bolo_gostoso_em_uso>0</tempo_que_falta_para_bolo_gostoso_em_uso>
+                        <aponta_resposta_em_uso>false</aponta_resposta_em_uso>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
