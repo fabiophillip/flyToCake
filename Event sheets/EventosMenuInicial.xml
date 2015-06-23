@@ -245,5 +245,13 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="3521560770069388">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5799768771615373" type="System" />
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" sid="4083868387305028" type="System" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

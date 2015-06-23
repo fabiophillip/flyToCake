@@ -6992,6 +6992,29 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="-13" name="Set time scale" sid="5798254748671771" type="System">
+                    <param id="0" name="Time scale">1.0</param>
+                </action>
+                <action id="-18" name="Set layer opacity" sid="5832775507869829" type="System">
+                    <param id="0" name="Layer">0</param>
+                    <param id="1" name="Opacity">100</param>
+                </action>
+                <action id="-18" name="Set layer opacity" sid="7111726634010749" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Opacity">100</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="8818964575131246" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="2910916216874053" type="mosca">
+                    <param id="0" name="Instance variable">mosca_parada</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="4758834266348223" type="BiscoitoCimaMosca">
+                    <param id="0" name="Instance variable">biscoito_parado</param>
+                    <param id="1" name="Value">0</param>
+                </action>
                 <action id="-25" name="Go to layout (by name)" sid="561668061652138" type="System">
                     <param id="0" name="Layout">&quot;MenuInicial&quot;</param>
                 </action>
