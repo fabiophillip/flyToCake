@@ -6084,6 +6084,11 @@
                 <condition id="-6" name="Every X seconds" sid="1534169061710136" type="System">
                     <param id="0" name="Interval (seconds)">segundosEntreAparicoesDeMoscas</param>
                 </condition>
+                <condition id="-14" name="Compare variable" sid="5456904298550072" type="System">
+                    <param id="0" name="Variable">primeira_mosca_jah_foi_criada</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-3" name="Create object" sid="4997653734529328" type="System">
@@ -6947,6 +6952,9 @@
                     <param id="0" name="Tag">&quot;smooth_going_free_royalty_free_music_track&quot;</param>
                     <param id="1" name="State">0</param>
                 </action>
+                <action id="-16" name="Set opacity" sid="6273900380101437" type="botao_mais_moscas">
+                    <param id="0" name="Opacity">0</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="5553274337915417">
@@ -6982,6 +6990,9 @@
                 <action id="22" name="Set paused" sid="4507759125654492" type="Audio">
                     <param id="0" name="Tag">&quot;smooth_going_free_royalty_free_music_track&quot;</param>
                     <param id="1" name="State">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="1003831448765964" type="botao_mais_moscas">
+                    <param id="0" name="Opacity">100</param>
                 </action>
             </actions>
         </event-block>
@@ -7453,10 +7464,6 @@
                     <param id="0" name="Instance variable">pontos</param>
                     <param id="1" name="Value">Score.pontos + 10</param>
                 </action>
-                <action id="-10" name="Add to" sid="5504853779297786" type="System">
-                    <param id="0" name="Variable">tempo_restante</param>
-                    <param id="1" name="Value">20</param>
-                </action>
                 <action id="0" name="Set text" sid="348082183614714" type="cronometro">
                     <param id="0" name="Text">zeropad(floor(tempo_restante / 60 % 60), 2) &amp; &quot;:&quot;  &amp; zeropad(floor(tempo_restante % 60), 2)</param>
                 </action>
@@ -7628,10 +7635,6 @@
                     <param id="0" name="Instance variable">pontos</param>
                     <param id="1" name="Value">Score.pontos + 20</param>
                 </action>
-                <action id="-10" name="Add to" sid="8189451996845848" type="System">
-                    <param id="0" name="Variable">tempo_restante</param>
-                    <param id="1" name="Value">10</param>
-                </action>
                 <action id="0" name="Set text" sid="4361825711133058" type="cronometro">
                     <param id="0" name="Text">zeropad(floor(tempo_restante / 60 % 60), 2) &amp; &quot;:&quot;  &amp; zeropad(floor(tempo_restante % 60), 2)</param>
                 </action>
@@ -7748,7 +7751,7 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="7132053758646543">
+        <event-block disabled="1" sid="7132053758646543">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="5889528143720534" type="System">
                     <param id="0" name="Variable">quantas_nuvens_de_veneno</param>
@@ -8344,6 +8347,11 @@
         <event-block sid="9425631627783825">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="5343623801908806" type="System" />
+                <condition id="-14" name="Compare variable" sid="9023678277903892" type="System">
+                    <param id="0" name="Variable">primeira_mosca_jah_foi_criada</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-3" name="Create object" sid="5660492487208344" type="System">
@@ -8351,6 +8359,10 @@
                     <param id="1" name="Layer">0</param>
                     <param id="2" name="X">25</param>
                     <param id="3" name="Y">choose(130, 129, 128, 127, 126)</param>
+                </action>
+                <action id="-10" name="Add to" sid="4009369865224182" type="System">
+                    <param id="0" name="Variable">primeira_mosca_jah_foi_criada</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>
@@ -8515,6 +8527,40 @@
                 <action id="4" name="Set animation" sid="6948985282386336" type="lingua_sapa">
                     <param id="0" name="Animation">&quot;lingua_abrindo&quot;</param>
                     <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4750550326037717">
+            <conditions>
+                <condition id="3" name="On touched object" sid="2750150138650412" type="Touch">
+                    <param id="0" name="Object">botao_mais_moscas</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="7313965522337447" type="System">
+                    <param id="0" name="First value">tempo_restante % segundosEntreAparicoesDeMoscas</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6641875461423424" type="botao_mais_moscas">
+                    <param id="0" name="Animation">&quot;botao_pressionado&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-3" name="Create object" sid="3217706212824232" type="System">
+                    <param id="0" name="Object to create">mosca</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">25</param>
+                    <param id="3" name="Y">choose(130, 129, 128, 127, 126)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9827982456896424">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4521084803597067" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="8075341385895908" type="botao_mais_moscas">
+                    <param id="0" name="Opacity">100</param>
                 </action>
             </actions>
         </event-block>
