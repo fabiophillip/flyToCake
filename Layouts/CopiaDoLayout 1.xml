@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
     <name>CopiaDoLayout 1</name>
-    <sid>8015431095120027</sid>
+    <sid>5268401255822641</sid>
     <event-sheet>CopiaEventSheet1</event-sheet>
     <size>
         <width>1024</width>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="8877169632128654">
+        <layer name="Layer 0" sid="5646615334563271">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="parte_antes_bolo" uid="37">
+                <instance type="parte_antes_bolo" uid="0">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="parte_antes_bolo_pra_trigger" uid="58">
+                <instance type="parte_antes_bolo_pra_trigger" uid="1">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -95,7 +95,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="parte_cima_bolo" uid="38">
+                <instance type="parte_cima_bolo" uid="3">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -139,7 +139,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="seta_placa_moscas_rejeitadas" uid="97">
+                <instance type="seta_placa_moscas_rejeitadas" uid="7">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -161,7 +161,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="texto_placa_moscas_rejeitadas" uid="7">
+                <instance type="texto_placa_moscas_rejeitadas" uid="8">
                     <properties>
                         <text>No-good Flies</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -188,7 +188,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="bolophi" uid="40">
+                <instance type="bolophi" uid="9">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -217,7 +217,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="background_score" uid="8">
+                <instance type="background_score" uid="10">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -239,7 +239,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="cronometro" uid="61">
+                <instance type="cronometro" uid="11">
                     <properties>
                         <text>00:00</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -266,7 +266,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="placa_jogo_pausar" uid="62">
+                <instance type="placa_jogo_pausar" uid="13">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -288,7 +288,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="backgroundScore" uid="9">
+                <instance type="backgroundScore" uid="36">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -310,7 +310,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="pratoPhi" uid="10">
+                <instance type="pratoPhi" uid="37">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -332,7 +332,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="area_dentro_prato" uid="11">
+                <instance type="area_dentro_prato" uid="38">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -361,7 +361,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="AnimacaoAlteraScore" uid="48">
+                <instance type="AnimacaoAlteraScore" uid="40">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -383,7 +383,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="primeiroDigitoScore" uid="52">
+                <instance type="primeiroDigitoScore" uid="48">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -408,7 +408,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="segundoDigitoScore" uid="53">
+                <instance type="segundoDigitoScore" uid="52">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -433,7 +433,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="terceiroDigitoScore" uid="54">
+                <instance type="terceiroDigitoScore" uid="53">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -458,7 +458,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="quartoDigitoScore" uid="55">
+                <instance type="quartoDigitoScore" uid="54">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -483,7 +483,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Score" uid="56">
+                <instance type="Score" uid="55">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -509,7 +509,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="parte_antes_bolo2" uid="57">
+                <instance type="parte_antes_bolo2" uid="56">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -531,7 +531,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="fireball" uid="59">
+                <instance type="fireball" uid="57">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -575,7 +575,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="item" uid="60">
+                <instance type="item" uid="58">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -586,8 +586,8 @@
                         <item></item>
                         <doisx_em_uso>false</doisx_em_uso>
                         <tempo_que_falta_doisx_em_uso>-1</tempo_que_falta_doisx_em_uso>
-                        <id_item>0</id_item>
-                        <tempo_que_falta_para_bolo_gostoso_em_uso>0</tempo_que_falta_para_bolo_gostoso_em_uso>
+                        <id_item>-1</id_item>
+                        <tempo_que_falta_para_bolo_gostoso_em_uso>-1</tempo_que_falta_para_bolo_gostoso_em_uso>
                         <aponta_resposta_em_uso>false</aponta_resposta_em_uso>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -605,7 +605,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="texto_botao_pausar" uid="63">
+                <instance type="texto_botao_pausar" uid="59">
                     <properties>
                         <text>Pause</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -632,7 +632,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="trigger_nuvem_veneno" uid="99">
+                <instance type="trigger_nuvem_veneno" uid="60">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -654,7 +654,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="nuvem_veneno" uid="98">
+                <instance type="nuvem_veneno" uid="61">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -679,7 +679,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="vidro" uid="78">
+                <instance type="vidro" uid="62">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -701,7 +701,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="sapo" uid="105">
+                <instance type="sapo" uid="63">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -723,7 +723,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="2x_perto_score" uid="106">
+                <instance type="2x_perto_score" uid="64">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -745,11 +745,11 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="label_item" uid="107">
+                <instance type="label_item" uid="74">
                     <properties>
                         <text>Item</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-29,400,0</font>
+                        <font>AR CENA,-29,400,0</font>
                         <color>255,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -761,7 +761,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>802</x>
-                        <y>125</y>
+                        <y>120</y>
                         <z>0</z>
                         <width>200</width>
                         <height>46</height>
@@ -772,7 +772,56 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="lingua_sapa" uid="1">
+                <instance type="Alerta_mais_moscas_aparecerao_fundo" uid="78">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>719</x>
+                        <y>32</y>
+                        <z>0</z>
+                        <width>195</width>
+                        <height>49</height>
+                        <depth>0</depth>
+                        <hotspotX>0.502564132</hotspotX>
+                        <hotspotY>0.510204077</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Alerta_mais_moscas_aparecerao" uid="80">
+                    <properties>
+                        <text>Mais moscas aparecerão para comer o bolo granulado!</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>AR CENA,-16,400,0</font>
+                        <color>255,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>628</x>
+                        <y>12</y>
+                        <z>0</z>
+                        <width>178</width>
+                        <height>71</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="lingua_sapa" uid="81">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>default</initial-animation>
@@ -794,7 +843,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="sapa" uid="0">
+                <instance type="sapa" uid="82">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -820,7 +869,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="area_fazer_sapa_recuar" uid="3">
+                <instance type="area_fazer_sapa_recuar" uid="83">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -842,7 +891,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="balao_sapo" uid="13">
+                <instance type="balao_sapo" uid="84">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -864,7 +913,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="texto_balao_sapo" uid="74">
+                <instance type="texto_balao_sapo" uid="85">
                     <properties>
                         <text>CLIQUE EM MIM PARA LIMPAR PRATO! RIBBIT!</text>
                         <initial-visibility>Invisible</initial-visibility>
@@ -891,10 +940,32 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="botao_mais_moscas" uid="224">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>799</x>
+                        <y>357</y>
+                        <z>0</z>
+                        <width>45</width>
+                        <height>49</height>
+                        <depth>0</depth>
+                        <hotspotX>0.51111114</hotspotX>
+                        <hotspotY>0.510204077</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
-        <layer name="mosca" sid="4462518382892148">
+        <layer name="mosca" sid="9871585706975245">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -910,7 +981,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="mosca" uid="64">
+                <instance type="mosca" uid="86">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -979,7 +1050,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="LetraCimaMosca" uid="80">
+                <instance type="LetraCimaMosca" uid="87">
                     <properties>
                         <text>z</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -1037,7 +1108,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="BiscoitoCimaMosca" uid="81">
+                <instance type="BiscoitoCimaMosca" uid="91">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1094,7 +1165,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="pause menu" sid="1248341628376832">
+        <layer name="pause menu" sid="4471535847605845">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -1110,7 +1181,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="background_menu_pausado" uid="82">
+                <instance type="background_menu_pausado" uid="97">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1123,8 +1194,8 @@
                         <x>424</x>
                         <y>245</y>
                         <z>0</z>
-                        <width>324.912658691</width>
-                        <height>422.116455078</height>
+                        <width>324.912994385</width>
+                        <height>422.115997314</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1132,7 +1203,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="texto_titulo_pausar_jogo" uid="83">
+                <instance type="texto_titulo_pausar_jogo" uid="98">
                     <properties>
                         <text>Game Paused</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -1148,7 +1219,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>421.417999268</x>
-                        <y>93.357002258</y>
+                        <y>143.356994629</y>
                         <z>0</z>
                         <width>205.716003418</width>
                         <height>44.544998169</height>
@@ -1159,7 +1230,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="placa_choco_resume" uid="84">
+                <instance type="placa_choco_resume" uid="99">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1181,7 +1252,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="placa_choco_voltar_menu" uid="85">
+                <instance type="placa_choco_voltar_menu" uid="105">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1203,7 +1274,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="texto_resume" uid="86">
+                <instance type="texto_resume" uid="106">
                     <properties>
                         <text>Resume</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -1230,7 +1301,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="texto_menu_inicial" uid="87">
+                <instance type="texto_menu_inicial" uid="107">
                     <properties>
                         <text>Main menu</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -1260,7 +1331,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="layer questao" sid="6419936779049644">
+        <layer name="layer questao" sid="7822783907044711">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -1276,7 +1347,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Questao" uid="36">
+                <instance type="Questao" uid="220">
                     <properties>
                         <text>Se um trem atravessa a ponte em x quilômetros, em quanto tempo ele irá atravessar novamente? \n a)10km \n b)20km \n c)30km d)40km</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -1311,7 +1382,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="animacao_mudar_questao" uid="91">
+                <instance type="animacao_mudar_questao" uid="221">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1337,21 +1408,6 @@
             <effects />
         </layer>
     </layers>
-    <nonworld-instances>
-        <instance type="array_alternativas_mosca" uid="12">
-            <properties>
-                <width>4</width>
-                <height>1</height>
-                <depth>1</depth>
-            </properties>
-        </instance>
-        <instance type="array_temporario_shuffle" uid="89">
-            <properties>
-                <width>4</width>
-                <height>1</height>
-                <depth>1</depth>
-            </properties>
-        </instance>
-    </nonworld-instances>
+    <nonworld-instances />
     <effects />
 </c2layout>

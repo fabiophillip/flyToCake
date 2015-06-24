@@ -319,8 +319,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>116</x>
-                        <y>420</y>
+                        <x>727</x>
+                        <y>219</y>
                         <z>0</z>
                         <width>205.716003418</width>
                         <height>75.488998413</height>
@@ -346,8 +346,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>117</x>
-                        <y>421</y>
+                        <x>727</x>
+                        <y>221</y>
                         <z>0</z>
                         <width>191.817321777</width>
                         <height>63.636230469</height>
@@ -417,8 +417,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>830</x>
-                        <y>240</y>
+                        <x>600</x>
+                        <y>241</y>
                         <z>0</z>
                         <width>50</width>
                         <height>481</height>
@@ -439,8 +439,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>736</x>
-                        <y>420</y>
+                        <x>727</x>
+                        <y>108</y>
                         <z>0</z>
                         <width>205.716003418</width>
                         <height>75.488998413</height>
@@ -466,8 +466,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>737.5</x>
-                        <y>420</y>
+                        <x>727</x>
+                        <y>107</y>
                         <z>0</z>
                         <width>193</width>
                         <height>62</height>
@@ -695,6 +695,55 @@
                         <depth>0</depth>
                         <hotspotX>0.491525412</hotspotX>
                         <hotspotY>0.957446814</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="placa_choco_reselect" uid="222">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>726</x>
+                        <y>330</y>
+                        <z>0</z>
+                        <width>205.716003418</width>
+                        <height>75.488998413</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.5</opacity>
+                    </world>
+                </instance>
+                <instance type="texto_reselect" uid="223">
+                    <properties>
+                        <text>Redo</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-32,400,0</font>
+                        <color>255,153,204</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>631</x>
+                        <y>299</y>
+                        <z>0</z>
+                        <width>191.817001343</width>
+                        <height>63.636001587</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

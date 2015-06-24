@@ -3719,11 +3719,55 @@
         <object-type name="texto_balao_sapo" sid="9744147124542449">
             <plugin id="Text" />
         </object-type>
+        <object-type name="botao_mais_moscas" sid="8993764112099406">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5025528326898445" speed="5">
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.510204" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\botao_mais_moscas.png">
+                        <collision-poly>
+                            <point x="0.0222222" y="0.0204082" />
+                            <point x="0.488889" y="0" />
+                            <point x="0.977778" y="0.0204082" />
+                            <point x="1" y="0.489796" />
+                            <point x="0.977778" y="0.979592" />
+                            <point x="0.488889" y="1" />
+                            <point x="0.0222222" y="0.979592" />
+                            <point x="0" y="0.489796" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="botao_pressionado" pingpong="0" repeatcount="1" repeatto="0" sid="580847407391975" speed="5">
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.510204" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\botao_mais_moscas.png" />
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.510204" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\botao_mais_moscas_pressed.png" />
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.510204" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="placa_choco_reselect" sid="9295034555568067">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9638210540482269" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\placaChocolate6.png">
+                        <collision-poly>
+                            <point x="0.00883392" y="0.0181159" />
+                            <point x="0.5" y="0" />
+                            <point x="0.991166" y="0.0181159" />
+                            <point x="0.991166" y="0.981884" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00883392" y="0.981884" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="texto_reselect" sid="419497640745437">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
-        <layout>CopiaDoLayout 1.xml</layout>
         <layout>Layout 1.xml</layout>
+        <layout>CopiaDoLayout 1.xml</layout>
         <layout>LayoutPhi.xml</layout>
         <layout>MenuInicial.xml</layout>
         <layout>ExplicacaoItens.xml</layout>
