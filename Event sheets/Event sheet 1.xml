@@ -6955,6 +6955,12 @@
                 <action id="-16" name="Set opacity" sid="6273900380101437" type="botao_mais_moscas">
                     <param id="0" name="Opacity">0</param>
                 </action>
+                <action id="-16" name="Set opacity" sid="4874300421251292" type="Questao">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="1121721268527216" type="vidro">
+                    <param id="0" name="Opacity">0</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="5553274337915417">
@@ -6992,6 +6998,12 @@
                     <param id="1" name="State">1</param>
                 </action>
                 <action id="-16" name="Set opacity" sid="1003831448765964" type="botao_mais_moscas">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="6117587016655206" type="Questao">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="7604196569192702" type="vidro">
                     <param id="0" name="Opacity">100</param>
                 </action>
             </actions>
@@ -8561,6 +8573,20 @@
             <actions>
                 <action id="-16" name="Set opacity" sid="8075341385895908" type="botao_mais_moscas">
                     <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9657922250033287">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8630886606614873" type="System" />
+                <condition id="3" name="Local key exists" sid="9628601076669857" type="WebStorage">
+                    <param id="0" name="Key">&quot;sprite_da_mosca&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1343747371263169" type="System">
+                    <param id="0" name="Variable">sprite_da_mosca</param>
+                    <param id="1" name="Value">WebStorage.LocalValue(&quot;sprite_da_mosca&quot;) </param>
                 </action>
             </actions>
         </event-block>

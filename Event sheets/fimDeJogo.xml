@@ -18,6 +18,20 @@
                 <action id="0" name="Set text" sid="5230671729382736" type="coins">
                     <param id="0" name="Text">&quot;Total coins:&quot; &amp; WebStorage.LocalValue(&quot;coins&quot;)</param>
                 </action>
+                <action id="0" name="Set text" sid="8137669565320713" type="coins">
+                    <param id="0" name="Text">&quot;Total coins:&quot; &amp; WebStorage.LocalValue(&quot;coins&quot;) </param>
+                </action>
+                <action id="-5" name="Set width" sid="4058685489327253" type="coins">
+                    <param id="0" name="Width">len(coins.Text) * 100</param>
+                </action>
+                <action id="-3" name="Set position" sid="3002106762027383" type="X_fim_jogo_coins">
+                    <param id="0" name="X">coins.X + len(coins.Text)*9</param>
+                    <param id="1" name="Y">X_fim_jogo_coins.Y</param>
+                </action>
+                <action id="-3" name="Set position" sid="2860317071758015" type="icone_coins">
+                    <param id="0" name="X">X_fim_jogo_coins.X +50</param>
+                    <param id="1" name="Y">icone_coins.Y</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="9484446575175052">
@@ -109,7 +123,7 @@
             <actions>
                 <action id="-9" name="Set value" sid="7454931733499531" type="System">
                     <param id="0" name="Variable">moedas_obtidas</param>
-                    <param id="1" name="Value">Ceil(pontuacaoNoJogoAtual/20)</param>
+                    <param id="1" name="Value">Ceil(pontuacaoNoJogoAtual/10)</param>
                 </action>
             </actions>
         </event-block>

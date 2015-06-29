@@ -128,11 +128,27 @@
                     <param id="0" name="Family name">&quot;chifontregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;chifontsheet.css&quot;</param>
                 </action>
-                <action id="5" name="Set web font" sid="3399060818775669" type="label_character">
+                <action id="5" name="Set web font" sid="3092904298756355" type="texto_jogar">
+                    <param id="0" name="Family name">&quot;lobster_1.3regular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;lobstersheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="7048017009068989" type="label_character_cake">
                     <param id="0" name="Family name">&quot;chifontregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;chifontsheet.css&quot;</param>
                 </action>
-                <action id="5" name="Set web font" sid="5637977537625605" type="label_coins_item">
+                <action id="5" name="Set web font" sid="1456745986574884" type="label_character_bat">
+                    <param id="0" name="Family name">&quot;chifontregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;chifontsheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="2198376426418896" type="label_character_bee">
+                    <param id="0" name="Family name">&quot;chifontregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;chifontsheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="4123741937150258" type="label_coins_item">
+                    <param id="0" name="Family name">&quot;chifontregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;chifontsheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="9900163610557509" type="texto_moedas_insuficientes">
                     <param id="0" name="Family name">&quot;chifontregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;chifontsheet.css&quot;</param>
                 </action>
@@ -153,7 +169,7 @@
                     <param id="0" name="Width">len(coins.Text) * 100</param>
                 </action>
                 <action id="-3" name="Set position" sid="8960912874673216" type="X_fim_jogo_coins">
-                    <param id="0" name="X">coins.X + len(coins.Text)*9</param>
+                    <param id="0" name="X">coins.X + len(coins.Text)*14</param>
                     <param id="1" name="Y">X_fim_jogo_coins.Y</param>
                 </action>
                 <action id="-3" name="Set position" sid="910383986179664" type="icone_coins">
@@ -181,7 +197,7 @@
                     <param id="0" name="Width">len(coins.Text) * 100</param>
                 </action>
                 <action id="-3" name="Set position" sid="5376174096889224" type="X_fim_jogo_coins">
-                    <param id="0" name="X">coins.X + len(coins.Text)*9</param>
+                    <param id="0" name="X">coins.X + len(coins.Text)*14</param>
                     <param id="1" name="Y">X_fim_jogo_coins.Y</param>
                 </action>
                 <action id="-3" name="Set position" sid="8005916351639812" type="icone_coins">
@@ -196,8 +212,8 @@
         </event-block>
         <event-block sid="307360465280777">
             <conditions>
-                <condition id="3" name="On touched object" sid="8856052007816961" type="Touch">
-                    <param id="0" name="Object">botao_voltar_tela_descreve_itens</param>
+                <condition id="17" name="On tap object" sid="8856052007816961" type="Touch">
+                    <param id="0" name="Object">botao_voltar_shop_subsecao_game</param>
                 </condition>
             </conditions>
             <actions>
@@ -422,12 +438,19 @@
                     <param id="0" name="Width">len(coins.Text) * 100</param>
                 </action>
                 <action id="-3" name="Set position" sid="5862043264784284" type="X_fim_jogo_coins">
-                    <param id="0" name="X">coins.X + len(coins.Text)*9</param>
+                    <param id="0" name="X">coins.X + len(coins.Text)*14</param>
                     <param id="1" name="Y">X_fim_jogo_coins.Y</param>
                 </action>
                 <action id="-3" name="Set position" sid="7051068496291032" type="icone_coins">
                     <param id="0" name="X">X_fim_jogo_coins.X +50</param>
                     <param id="1" name="Y">icone_coins.Y</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="2162862493782879" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;cashregister&quot;</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -470,12 +493,19 @@
                     <param id="0" name="Width">len(coins.Text) * 100</param>
                 </action>
                 <action id="-3" name="Set position" sid="6268362449197973" type="X_fim_jogo_coins">
-                    <param id="0" name="X">coins.X + len(coins.Text)*9</param>
+                    <param id="0" name="X">coins.X + len(coins.Text)*14</param>
                     <param id="1" name="Y">X_fim_jogo_coins.Y</param>
                 </action>
                 <action id="-3" name="Set position" sid="4014964818369399" type="icone_coins">
                     <param id="0" name="X">X_fim_jogo_coins.X +50</param>
                     <param id="1" name="Y">icone_coins.Y</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="1173204401542104" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;cashregister&quot;</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -492,7 +522,7 @@
                 <condition id="7" name="Compare key value (as number)" sid="1701686109529717" type="WebStorage">
                     <param id="0" name="Key">&quot;coins&quot;</param>
                     <param id="1" name="Comparison">5</param>
-                    <param id="2" name="Value">200</param>
+                    <param id="2" name="Value">300</param>
                 </condition>
             </conditions>
             <actions>
@@ -518,12 +548,103 @@
                     <param id="0" name="Width">len(coins.Text) * 100</param>
                 </action>
                 <action id="-3" name="Set position" sid="913583115002294" type="X_fim_jogo_coins">
-                    <param id="0" name="X">coins.X + len(coins.Text)*9</param>
+                    <param id="0" name="X">coins.X + len(coins.Text)*14</param>
                     <param id="1" name="Y">X_fim_jogo_coins.Y</param>
                 </action>
                 <action id="-3" name="Set position" sid="4220884855102493" type="icone_coins">
                     <param id="0" name="X">X_fim_jogo_coins.X +50</param>
                     <param id="1" name="Y">icone_coins.Y</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="1699942952763253" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;cashregister&quot;</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7246762961690228">
+            <conditions>
+                <condition id="3" name="On touched object" sid="9256824607101314" type="Touch">
+                    <param id="0" name="Object">botao_character_bee</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="810232243384786" type="System">
+                    <param id="0" name="Variable">habilitou_bee</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+                <condition id="7" name="Compare key value (as number)" sid="4172192806618155" type="WebStorage">
+                    <param id="0" name="Key">&quot;coins&quot;</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="2110121793489767" type="texto_moedas_insuficientes">
+                    <param id="0" name="Text">&quot;You don&apos;t have enough coins!&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="1026567640736149" type="System">
+                    <param id="0" name="Seconds">4.0</param>
+                </action>
+                <action id="0" name="Set text" sid="7057559640834913" type="texto_moedas_insuficientes">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2958077961985577">
+            <conditions>
+                <condition id="3" name="On touched object" sid="3394887218799677" type="Touch">
+                    <param id="0" name="Object">botao_character_bat</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="9756493832737552" type="System">
+                    <param id="0" name="Variable">habilitou_bat</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+                <condition id="7" name="Compare key value (as number)" sid="6163375658290134" type="WebStorage">
+                    <param id="0" name="Key">&quot;coins&quot;</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">200</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="5004754110802657" type="texto_moedas_insuficientes">
+                    <param id="0" name="Text">&quot;You don&apos;t have enough coins!&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="5904333759377677" type="System">
+                    <param id="0" name="Seconds">4.0</param>
+                </action>
+                <action id="0" name="Set text" sid="6278267625796413" type="texto_moedas_insuficientes">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7248113602890889">
+            <conditions>
+                <condition id="3" name="On touched object" sid="5478497634232591" type="Touch">
+                    <param id="0" name="Object">botao_character_cake</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3332562979985304" type="System">
+                    <param id="0" name="Variable">habilitou_cake</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+                <condition id="7" name="Compare key value (as number)" sid="2536853763821203" type="WebStorage">
+                    <param id="0" name="Key">&quot;coins&quot;</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">300</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="5360233631721608" type="texto_moedas_insuficientes">
+                    <param id="0" name="Text">&quot;You don&apos;t have enough coins!&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="8258253301388293" type="System">
+                    <param id="0" name="Seconds">4.0</param>
+                </action>
+                <action id="0" name="Set text" sid="9419741211186368" type="texto_moedas_insuficientes">
+                    <param id="0" name="Text">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>

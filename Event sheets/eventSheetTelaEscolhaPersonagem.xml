@@ -1,0 +1,903 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>eventSheetTelaEscolhaPersonagem</name>
+    <events>
+        <variable constant="0" name="personagem_escolhido_tela_escolha_personagem" sid="7293580675978617" static="0" type="text"></variable>
+        <event-block sid="1748040240656944">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="632110383456773" type="escolha_personagem_mosca">
+                    <param id="0" name="Object">area_virar_mosca_select_level</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="6374900710037255" type="escolha_personagem_mosca">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="8600974101925206" type="escolha_personagem_mosca">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="8448332705525795" type="escolha_personagem_mosca">
+                    <param id="0" name="Animation">&quot;mosca_voando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6303862081908629">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="2029687956321894" type="escolha_personagem_abelha">
+                    <param id="0" name="Object">area_virar_mosca_select_level</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="3675018744945079" type="escolha_personagem_abelha">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="1381287308696288" type="escolha_personagem_abelha">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="1110145200156274" type="escolha_personagem_abelha">
+                    <param id="0" name="Animation">&quot;mosca_voando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2443663430598457">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="9611148988349643" type="escolha_personagem_bolo">
+                    <param id="0" name="Object">area_virar_mosca_select_level</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="2887681337259028" type="escolha_personagem_bolo">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="2707765928916202" type="escolha_personagem_bolo">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="8697055093365724" type="escolha_personagem_bolo">
+                    <param id="0" name="Animation">&quot;mosca_voando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6904339678666129">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="5967425076817215" type="escolha_personagem_morcego">
+                    <param id="0" name="Object">area_virar_mosca_select_level</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="1612034633804413" type="escolha_personagem_morcego">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="2584393470831324" type="escolha_personagem_morcego">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="264326467657033" type="escolha_personagem_morcego">
+                    <param id="0" name="Animation">&quot;mosca_voando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5077623002770914">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="7506194509868463" type="escolha_personagem_mosca">
+                    <param id="0" name="Object">area_virar_mosca_select_level2</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="5746674541197711" type="escolha_personagem_mosca">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="1995963869551541" type="escolha_personagem_mosca">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="2286346817795798" type="escolha_personagem_mosca">
+                    <param id="0" name="Animation">&quot;mosca_voando_contrario&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4757737053849788">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="3743790673610868" type="escolha_personagem_abelha">
+                    <param id="0" name="Object">area_virar_mosca_select_level2</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="6509172392092634" type="escolha_personagem_abelha">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="4220615542741104" type="escolha_personagem_abelha">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="1587188590975114" type="escolha_personagem_abelha">
+                    <param id="0" name="Animation">&quot;mosca_voando_contrario&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7210546927363757">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="3620476848081879" type="escolha_personagem_bolo">
+                    <param id="0" name="Object">area_virar_mosca_select_level2</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="5930149716910401" type="escolha_personagem_bolo">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="6610634717150518" type="escolha_personagem_bolo">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="4599542528955579" type="escolha_personagem_bolo">
+                    <param id="0" name="Animation">&quot;mosca_voando_contrario&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5369003881951993">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="27794675790222" type="escolha_personagem_morcego">
+                    <param id="0" name="Object">area_virar_mosca_select_level2</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="316391558741415" type="escolha_personagem_morcego">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="8957857232570646" type="escolha_personagem_morcego">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="6562484122157733" type="escolha_personagem_morcego">
+                    <param id="0" name="Animation">&quot;mosca_voando_contrario&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="792450999192921">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="4399765337783861" type="escolha_personagem_mosca">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="8157720486798881" type="escolha_personagem_mosca">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="3124556194768115" type="escolha_personagem_mosca">
+                    <param id="0" name="Distance">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="984689078433323">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="4332405600294496" type="escolha_personagem_abelha">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="4092250340868901" type="escolha_personagem_abelha">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="2822232925070861" type="escolha_personagem_abelha">
+                    <param id="0" name="Distance">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="629068511456019">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="2914470409692653" type="escolha_personagem_bolo">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="1625214430924275" type="escolha_personagem_bolo">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="562648432318992" type="escolha_personagem_bolo">
+                    <param id="0" name="Distance">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3387099364262962">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="7070970569757925" type="escolha_personagem_morcego">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="7065339197155584" type="escolha_personagem_morcego">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="3307269996045487" type="escolha_personagem_morcego">
+                    <param id="0" name="Distance">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="465897346299935">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="4628119908082929" type="escolha_personagem_mosca">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="1542302268909683" type="escolha_personagem_mosca">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="2396413285312166" type="escolha_personagem_mosca">
+                    <param id="0" name="Distance">-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6096772427327667">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="2114367200736431" type="escolha_personagem_abelha">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="8443137956733217" type="escolha_personagem_abelha">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="3713638085474759" type="escolha_personagem_abelha">
+                    <param id="0" name="Distance">-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3549544932185187">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="1948729642265952" type="escolha_personagem_bolo">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="857949947168198" type="escolha_personagem_bolo">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="3307965602683819" type="escolha_personagem_bolo">
+                    <param id="0" name="Distance">-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9461887548763125">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="7323487589106908" type="escolha_personagem_morcego">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="4675423097229224" type="escolha_personagem_morcego">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="294381739057291" type="escolha_personagem_morcego">
+                    <param id="0" name="Distance">-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9195454458862562">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="822649400180325" type="Touch">
+                    <param id="0" name="Object">escolha_personagem_mosca</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="992084774486387" type="escolha_personagem_mosca">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="6862346930827684" type="escolha_personagem_mosca">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="847819313699836" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;7_year_old_boy_screams&quot;</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8666704456641377">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="386001097220465" type="Touch">
+                    <param id="0" name="Object">escolha_personagem_abelha</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="992439390369021" type="escolha_personagem_abelha">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="7142543659744503" type="escolha_personagem_abelha">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="8425664902930234" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;7_year_old_boy_screams&quot;</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4228282530351073">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="5147157593307698" type="Touch">
+                    <param id="0" name="Object">escolha_personagem_bolo</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="5334219238863604" type="escolha_personagem_bolo">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="328784135726464" type="escolha_personagem_bolo">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="9937558976217981" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;7_year_old_boy_screams&quot;</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7488707059410551">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="3623424786583241" type="Touch">
+                    <param id="0" name="Object">escolha_personagem_morcego</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="3053050256022223" type="escolha_personagem_morcego">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="760818663615289" type="escolha_personagem_morcego">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="2369566986738209" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;7_year_old_boy_screams&quot;</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9485865545829774">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="5432735560576324" type="escolha_personagem_mosca">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="9439718656968785" type="escolha_personagem_mosca">
+                    <param id="0" name="Instance variable">mosca_no_prato</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="5" name="Set gravity" sid="2638577899771838" type="escolha_personagem_mosca">
+                    <param id="0" name="Gravity">40</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6634595226499908">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="6205301909192773" type="escolha_personagem_abelha">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="2160709882337154" type="escolha_personagem_abelha">
+                    <param id="0" name="Instance variable">mosca_no_prato</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="5" name="Set gravity" sid="8373049028845476" type="escolha_personagem_abelha">
+                    <param id="0" name="Gravity">40</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4506505081831482">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="2055259892767214" type="escolha_personagem_bolo">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="8210870489894441" type="escolha_personagem_bolo">
+                    <param id="0" name="Instance variable">mosca_no_prato</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="5" name="Set gravity" sid="1017536462640076" type="escolha_personagem_bolo">
+                    <param id="0" name="Gravity">40</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7954105892657492">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="6915665587914327" type="escolha_personagem_morcego">
+                    <param id="0" name="Instance variable">mosca_caindo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="3486519954315366" type="escolha_personagem_morcego">
+                    <param id="0" name="Instance variable">mosca_no_prato</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="5" name="Set gravity" sid="5093376194766926" type="escolha_personagem_morcego">
+                    <param id="0" name="Gravity">40</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9965523506070825">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="3760278800014165" type="escolha_personagem_mosca">
+                    <param id="0" name="Object">area_dentro_prato</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="7903860883131059" type="escolha_personagem_mosca">
+                    <param id="0" name="Instance variable">mosca_no_prato</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="9012645019461176" type="escolha_personagem_mosca">
+                    <param id="0" name="Instance variable">mosca_no_prato</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="1752352971760846" type="placa_jogo_jogar">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-9" name="Set value" sid="7264094459414046" type="System">
+                    <param id="0" name="Variable">personagem_escolhido_tela_escolha_personagem</param>
+                    <param id="1" name="Value">&quot;mosca&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="6929215999336467" type="placa_choco_reset_escolha_personagem">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-9" name="Destroy" sid="3758993309073583" type="escolha_personagem_abelha" />
+                <action id="-9" name="Destroy" sid="2647357477951522" type="escolha_personagem_morcego" />
+                <action id="-9" name="Destroy" sid="9393325796690295" type="escolha_personagem_bolo" />
+            </actions>
+        </event-block>
+        <event-block sid="4283639521838472">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6053683495044115" type="escolha_personagem_abelha">
+                    <param id="0" name="Object">area_dentro_prato</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="6567588121578783" type="escolha_personagem_abelha">
+                    <param id="0" name="Instance variable">mosca_no_prato</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="8450301156322287" type="escolha_personagem_abelha">
+                    <param id="0" name="Instance variable">mosca_no_prato</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="6225765791616214" type="placa_jogo_jogar">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-9" name="Set value" sid="5133612082804159" type="System">
+                    <param id="0" name="Variable">personagem_escolhido_tela_escolha_personagem</param>
+                    <param id="1" name="Value">&quot;abelha&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="4798481960233828" type="placa_choco_reset_escolha_personagem">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-9" name="Destroy" sid="4112200997712613" type="escolha_personagem_mosca" />
+                <action id="-9" name="Destroy" sid="5208136443788841" type="escolha_personagem_morcego" />
+                <action id="-9" name="Destroy" sid="4587129503217956" type="escolha_personagem_bolo" />
+            </actions>
+        </event-block>
+        <event-block sid="2657155444558025">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7917047626743863" type="escolha_personagem_bolo">
+                    <param id="0" name="Object">area_dentro_prato</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="9777327278144327" type="escolha_personagem_bolo">
+                    <param id="0" name="Instance variable">mosca_no_prato</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="9451534214365575" type="escolha_personagem_bolo">
+                    <param id="0" name="Instance variable">mosca_no_prato</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="2546406158872759" type="placa_jogo_jogar">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-9" name="Set value" sid="1754194933236201" type="System">
+                    <param id="0" name="Variable">personagem_escolhido_tela_escolha_personagem</param>
+                    <param id="1" name="Value">&quot;bolo&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="8827100571826648" type="placa_choco_reset_escolha_personagem">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-9" name="Destroy" sid="9392354698895594" type="escolha_personagem_abelha" />
+                <action id="-9" name="Destroy" sid="4842441083468598" type="escolha_personagem_morcego" />
+                <action id="-9" name="Destroy" sid="2519531336941325" type="escolha_personagem_mosca" />
+            </actions>
+        </event-block>
+        <event-block sid="6092512428080101">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6048771002741949" type="escolha_personagem_morcego">
+                    <param id="0" name="Object">area_dentro_prato</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="3447569456054971" type="escolha_personagem_morcego">
+                    <param id="0" name="Instance variable">mosca_no_prato</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="7295515650452118" type="escolha_personagem_morcego">
+                    <param id="0" name="Instance variable">mosca_no_prato</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="7897520900794144" type="placa_jogo_jogar">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-9" name="Set value" sid="441859563178861" type="System">
+                    <param id="0" name="Variable">personagem_escolhido_tela_escolha_personagem</param>
+                    <param id="1" name="Value">&quot;morcego&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="4676250409386107" type="placa_choco_reset_escolha_personagem">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-9" name="Destroy" sid="3101595948084034" type="escolha_personagem_abelha" />
+                <action id="-9" name="Destroy" sid="9989606998555612" type="escolha_personagem_mosca" />
+                <action id="-9" name="Destroy" sid="6315525597993162" type="escolha_personagem_bolo" />
+            </actions>
+        </event-block>
+        <event-block sid="8243441948183573">
+            <conditions>
+                <condition id="17" name="On tap object" sid="7282636507678519" type="Touch">
+                    <param id="0" name="Object">placa_choco_voltar_tela_escolha_personagem</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3446824786275592" type="System">
+                    <param id="0" name="Layout">TelaEscolhaNivel</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6321395272461612">
+            <conditions>
+                <condition id="17" name="On tap object" sid="1750420114542453" type="Touch">
+                    <param id="0" name="Object">placa_choco_reset_escolha_personagem</param>
+                </condition>
+                <condition id="-10" name="Compare opacity" sid="8916268932520282" type="placa_choco_reset_escolha_personagem">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="6793734912123997" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="3226867942815991">
+            <conditions>
+                <condition id="17" name="On tap object" sid="8884404254457482" type="Touch">
+                    <param id="0" name="Object">placa_jogo_jogar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="9586540496445579" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
+                </action>
+                <action id="0" name="Set local value" sid="2228639964143626" type="WebStorage">
+                    <param id="0" name="Key">&quot;sprite_da_mosca&quot;</param>
+                    <param id="1" name="Value">personagem_escolhido_tela_escolha_personagem</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="577110811191863">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3962452928292567" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="3525869650579367" type="System">
+                    <param id="0" name="Variable">personagem_escolhido_tela_escolha_personagem</param>
+                    <param id="1" name="Value">&quot;&quot;</param>
+                </action>
+                <action behavior="Platform" id="5" name="Set gravity" sid="8473393344606659" type="escolha_personagem_mosca">
+                    <param id="0" name="Gravity">0</param>
+                </action>
+                <action behavior="Platform" id="5" name="Set gravity" sid="282874281625804" type="escolha_personagem_abelha">
+                    <param id="0" name="Gravity">0</param>
+                </action>
+                <action behavior="Platform" id="5" name="Set gravity" sid="9965672452043944" type="escolha_personagem_bolo">
+                    <param id="0" name="Gravity">0</param>
+                </action>
+                <action behavior="Platform" id="5" name="Set gravity" sid="7694005037147052" type="escolha_personagem_morcego">
+                    <param id="0" name="Gravity">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1098955759636561">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1587760742833113" type="System" />
+                <condition id="3" inverted="1" name="Local key exists" sid="8058895668885066" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_bee&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set local value" sid="8689341953561922" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_bee&quot;</param>
+                    <param id="1" name="Value">&quot;false&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="1196520952047994" type="System">
+                    <param id="0" name="Variable">habilitou_bee</param>
+                    <param id="1" name="Value">&quot;false&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="355702000278546">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5683918090490332" type="System" />
+                <condition id="3" inverted="1" name="Local key exists" sid="7675469803932452" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_bat&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set local value" sid="6018072495173823" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_bat&quot;</param>
+                    <param id="1" name="Value">&quot;false&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="163142980856642" type="System">
+                    <param id="0" name="Variable">habilitou_bat</param>
+                    <param id="1" name="Value">&quot;false&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6259737223059689">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1065725720823601" type="System" />
+                <condition id="3" inverted="1" name="Local key exists" sid="7015007185141736" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_cake&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set local value" sid="5372450837818695" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_cake&quot;</param>
+                    <param id="1" name="Value">&quot;false&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="283802623836228" type="System">
+                    <param id="0" name="Variable">habilitou_cake</param>
+                    <param id="1" name="Value">&quot;false&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5284529402729071">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3914835987076808" type="System" />
+                <condition id="3" name="Local key exists" sid="8232525682442582" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_bee&quot;</param>
+                </condition>
+                <condition id="6" name="Compare key value (as text)" sid="5409719406527742" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_bee&quot;</param>
+                    <param id="1" name="Text to compare">&quot;true&quot;</param>
+                    <param id="2" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="4754071729294753" type="System">
+                    <param id="0" name="Variable">habilitou_bee</param>
+                    <param id="1" name="Value">WebStorage.LocalValue(&quot;habilitou_bee&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="400464508484887">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4329645367280912" type="System" />
+                <condition id="3" name="Local key exists" sid="1008437723579158" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_bee&quot;</param>
+                </condition>
+                <condition id="6" name="Compare key value (as text)" sid="314578568665692" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_bee&quot;</param>
+                    <param id="1" name="Text to compare">&quot;false&quot;</param>
+                    <param id="2" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="6050624405119594" type="System">
+                    <param id="0" name="Variable">habilitou_bee</param>
+                    <param id="1" name="Value">WebStorage.LocalValue(&quot;habilitou_bee&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8049728063866315">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9535765295901345" type="System" />
+                <condition id="3" name="Local key exists" sid="2124380865074743" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_bat&quot;</param>
+                </condition>
+                <condition id="6" name="Compare key value (as text)" sid="508006579509268" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_bat&quot;</param>
+                    <param id="1" name="Text to compare">&quot;true&quot;</param>
+                    <param id="2" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="6950795849899223" type="System">
+                    <param id="0" name="Variable">habilitou_bat</param>
+                    <param id="1" name="Value">WebStorage.LocalValue(&quot;habilitou_bat&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9145941437716233">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5226716463187146" type="System" />
+                <condition id="3" name="Local key exists" sid="7346375842673065" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_bat&quot;</param>
+                </condition>
+                <condition id="6" name="Compare key value (as text)" sid="7113738002420451" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_bat&quot;</param>
+                    <param id="1" name="Text to compare">&quot;false&quot;</param>
+                    <param id="2" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1383057819197287" type="System">
+                    <param id="0" name="Variable">habilitou_bat</param>
+                    <param id="1" name="Value">WebStorage.LocalValue(&quot;habilitou_bat&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2059741015715681">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="238556014560175" type="System" />
+                <condition id="3" name="Local key exists" sid="4905234733203303" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_cake&quot;</param>
+                </condition>
+                <condition id="6" name="Compare key value (as text)" sid="6255458373199747" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_cake&quot;</param>
+                    <param id="1" name="Text to compare">&quot;true&quot;</param>
+                    <param id="2" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="2793230748067132" type="System">
+                    <param id="0" name="Variable">habilitou_cake</param>
+                    <param id="1" name="Value">WebStorage.LocalValue(&quot;habilitou_cake&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5565010656124577">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2052315469871735" type="System" />
+                <condition id="3" name="Local key exists" sid="7735253952557634" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_cake&quot;</param>
+                </condition>
+                <condition id="6" name="Compare key value (as text)" sid="6343510797558539" type="WebStorage">
+                    <param id="0" name="Key">&quot;habilitou_cake&quot;</param>
+                    <param id="1" name="Text to compare">&quot;false&quot;</param>
+                    <param id="2" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="5273419404238085" type="System">
+                    <param id="0" name="Variable">habilitou_cake</param>
+                    <param id="1" name="Value">WebStorage.LocalValue(&quot;habilitou_cake&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6363860584179739">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2258390884941438" type="System" />
+                <condition id="-14" name="Compare variable" sid="8659625482818968" type="System">
+                    <param id="0" name="Variable">habilitou_bat</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="3966733213742218" type="escolha_personagem_morcego" />
+            </actions>
+        </event-block>
+        <event-block sid="9756336279513814">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8324231880683231" type="System" />
+                <condition id="-14" name="Compare variable" sid="5449969987121486" type="System">
+                    <param id="0" name="Variable">habilitou_bee</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="4855700517502865" type="escolha_personagem_abelha" />
+            </actions>
+        </event-block>
+        <event-block sid="5860374737526075">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4001018636450625" type="System" />
+                <condition id="-14" name="Compare variable" sid="9278920094982296" type="System">
+                    <param id="0" name="Variable">habilitou_cake</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="3337937514415412" type="escolha_personagem_bolo" />
+            </actions>
+        </event-block>
+        <event-block sid="1296316253764658">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3480090631089817" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set local value" sid="2868788613910818" type="WebStorage">
+                    <param id="0" name="Key">&quot;sprite_da_mosca&quot;</param>
+                    <param id="1" name="Value">&quot;mosca&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

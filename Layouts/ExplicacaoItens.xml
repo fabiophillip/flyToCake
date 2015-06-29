@@ -133,10 +133,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>427</x>
-                        <y>286</y>
+                        <y>258.5</y>
                         <z>0</z>
                         <width>858</width>
-                        <height>353</height>
+                        <height>332</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -154,8 +154,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>47</x>
-                        <y>162</y>
+                        <x>48</x>
+                        <y>144</y>
                         <z>0</z>
                         <width>49</width>
                         <height>45</height>
@@ -176,8 +176,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>47</x>
-                        <y>266</y>
+                        <x>48</x>
+                        <y>242</y>
                         <z>0</z>
                         <width>49</width>
                         <height>45</height>
@@ -198,8 +198,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>47</x>
-                        <y>213</y>
+                        <x>48</x>
+                        <y>193</y>
                         <z>0</z>
                         <width>49</width>
                         <height>45</height>
@@ -220,8 +220,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>47</x>
-                        <y>319</y>
+                        <x>48</x>
+                        <y>291</y>
                         <z>0</z>
                         <width>49</width>
                         <height>45</height>
@@ -242,8 +242,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>47</x>
-                        <y>372</y>
+                        <x>48</x>
+                        <y>341</y>
                         <z>0</z>
                         <width>49</width>
                         <height>45</height>
@@ -256,9 +256,9 @@
                 </instance>
                 <instance type="descricao_item" uid="39">
                     <properties>
-                        <text>Fireball   -   Bolas de fogo queimam todas as moscas na tela</text>
+                        <text>Fireball - Bolas de fogo queimam todas as moscas na tela</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Cooper Black,-16,400,0</font>
+                        <font>Arial Narrow,-21,400,0</font>
                         <color>255,153,204</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -269,11 +269,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>79</x>
-                        <y>153</y>
+                        <x>80</x>
+                        <y>130</y>
                         <z>0</z>
-                        <width>529</width>
-                        <height>30</height>
+                        <width>747</width>
+                        <height>34</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -283,9 +283,9 @@
                 </instance>
                 <instance type="descricao_item2" uid="67">
                     <properties>
-                        <text>Change question   -   A questão atual mudará</text>
+                        <text>Change question - A pergunta atual muda</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Cooper Black,-16,400,0</font>
+                        <font>Arial Narrow,-21,400,0</font>
                         <color>255,153,204</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -296,11 +296,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>79</x>
-                        <y>201</y>
+                        <x>80</x>
+                        <y>176</y>
                         <z>0</z>
-                        <width>448</width>
-                        <height>30</height>
+                        <width>734</width>
+                        <height>35</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -310,9 +310,9 @@
                 </instance>
                 <instance type="descricao_item3" uid="72">
                     <properties>
-                        <text>Double points   -   Caso você acerte uma questão, ganhará o dobro dos pontos</text>
+                        <text>Double points - Se acertar uma pergunta, ganha o dobro dos pontos</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Cooper Black,-16,400,0</font>
+                        <font>Arial Narrow,-21,400,0</font>
                         <color>255,153,204</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -323,11 +323,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>79</x>
-                        <y>255</y>
+                        <x>80</x>
+                        <y>226</y>
                         <z>0</z>
                         <width>877</width>
-                        <height>30</height>
+                        <height>35</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -337,9 +337,9 @@
                 </instance>
                 <instance type="descricao_item4" uid="73">
                     <properties>
-                        <text>Yummy cake   -   O bolo fica mais gostoso e as moscas aparecerão com maior frequência</text>
+                        <text>Yummy cake - O bolo fica mais gostoso e mais moscas aparecem</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Cooper Black,-16,400,0</font>
+                        <font>Arial Narrow,-21,400,0</font>
                         <color>255,153,204</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -350,11 +350,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>79</x>
-                        <y>309</y>
+                        <x>80</x>
+                        <y>277</y>
                         <z>0</z>
                         <width>877</width>
-                        <height>30</height>
+                        <height>34</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -364,9 +364,9 @@
                 </instance>
                 <instance type="descricao_item4" uid="5">
                     <properties>
-                        <text>Hint hand   - As mãozinhas indicarão moscas com a resposta correta</text>
+                        <text>Hint hand - As luvas indicam moscas com a resposta correta</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Cooper Black,-16,400,0</font>
+                        <font>Arial Narrow,-21,400,0</font>
                         <color>255,153,204</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -377,11 +377,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>79</x>
-                        <y>359</y>
+                        <x>80</x>
+                        <y>324</y>
                         <z>0</z>
                         <width>877</width>
-                        <height>30</height>
+                        <height>34</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -400,7 +400,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>568</x>
-                        <y>418</y>
+                        <y>382</y>
                         <z>0</z>
                         <width>110.512809753</width>
                         <height>53.889640808</height>
@@ -427,7 +427,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>567</x>
-                        <y>413</y>
+                        <y>377</y>
                         <z>0</z>
                         <width>128</width>
                         <height>44</height>
@@ -449,7 +449,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>299</x>
-                        <y>418</y>
+                        <y>382</y>
                         <z>0</z>
                         <width>110.513000488</width>
                         <height>53.88999939</height>
@@ -476,7 +476,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>297</x>
-                        <y>416</y>
+                        <y>380</y>
                         <z>0</z>
                         <width>128</width>
                         <height>44</height>
@@ -501,7 +501,7 @@
                         <y>67.636756897</y>
                         <z>0</z>
                         <width>164</width>
-                        <height>82</height>
+                        <height>60</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

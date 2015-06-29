@@ -68,11 +68,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>446</x>
-                        <y>273.454040527</y>
+                        <x>442.36340332</x>
+                        <y>162.090209961</y>
                         <z>0</z>
                         <width>214.697937012</width>
-                        <height>110.986221313</height>
+                        <height>80.986587524</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -90,8 +90,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>446.472015381</x>
-                        <y>277.422088623</y>
+                        <x>443.744934082</x>
+                        <y>168.330627441</y>
                         <z>0</z>
                         <width>110.512809753</width>
                         <height>53.889640808</height>
@@ -119,11 +119,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>449.27230835</x>
-                        <y>400.091491699</y>
+                        <x>445.63571167</x>
+                        <y>255.092086792</y>
                         <z>0</z>
                         <width>331.165344238</width>
-                        <height>146.908538818</height>
+                        <height>107.818084717</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -141,11 +141,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>446</x>
-                        <y>417</y>
+                        <x>441.453918457</x>
+                        <y>263.817901611</y>
                         <z>0</z>
-                        <width>271</width>
-                        <height>84</height>
+                        <width>216.454956055</width>
+                        <height>66.72644043</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -157,7 +157,7 @@
                     <properties>
                         <text>Play</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial Narrow,-29,400,0</font>
+                        <font>Arial Narrow,-37,400,0</font>
                         <color>255,153,204</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -168,11 +168,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>444.682403564</x>
-                        <y>277.273223877</y>
+                        <x>440.772003174</x>
+                        <y>164.091003418</y>
                         <z>0</z>
                         <width>128</width>
-                        <height>44</height>
+                        <height>51.273239136</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -195,8 +195,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>446.5</x>
-                        <y>412.545776367</y>
+                        <x>442.863006592</x>
+                        <y>263</y>
                         <z>0</z>
                         <width>253</width>
                         <height>69</height>
@@ -218,10 +218,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>444.364074707</x>
-                        <y>93.727272034</y>
+                        <y>69.181869507</y>
                         <z>0</z>
                         <width>297.615600586</width>
-                        <height>128.726486206</height>
+                        <height>79.635673523</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -243,7 +243,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>556</x>
-                        <y>30</y>
+                        <y>26</y>
                         <z>0</z>
                         <width>57</width>
                         <height>45</height>
@@ -258,7 +258,7 @@
                     <properties>
                         <text>Fly To Plate</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-48,400,0</font>
+                        <font>Arial,-37,400,0</font>
                         <color>255,153,204</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -270,10 +270,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>441</x>
-                        <y>106.5</y>
+                        <y>75.773002625</y>
                         <z>0</z>
                         <width>282</width>
-                        <height>114</height>
+                        <height>68.54510498</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -329,7 +329,7 @@
                     <properties>
                         <text>Your Coins:</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-16</font>
+                        <font>Arial,-27,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -340,11 +340,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>53.184997559</x>
-                        <y>27.154350281</y>
+                        <x>13.185028076</x>
+                        <y>32.608573914</y>
                         <z>0</z>
-                        <width>95.909881592</width>
-                        <height>30</height>
+                        <width>152.273925781</width>
+                        <height>45.454559326</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -362,14 +362,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>262.184997559</x>
-                        <y>35.154350281</y>
+                        <x>222.185028076</x>
+                        <y>43.608222961</y>
                         <z>0</z>
-                        <width>40</width>
-                        <height>42</height>
+                        <width>45</width>
+                        <height>45</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.51111114</hotspotX>
+                        <hotspotY>0.51111114</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -378,7 +378,7 @@
                     <properties>
                         <text>X</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-16</font>
+                        <font>Arial,-27,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -389,14 +389,92 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>224.184997559</x>
-                        <y>27.154350281</y>
+                        <x>184.185028076</x>
+                        <y>31.608222961</y>
                         <z>0</z>
-                        <width>14</width>
-                        <height>30</height>
+                        <width>21.273611069</width>
+                        <height>39.090835571</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="bolophi3" uid="226">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>444.980010986</x>
+                        <y>360.106994629</y>
+                        <z>0</z>
+                        <width>383.89239502</width>
+                        <height>107.818000793</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="placa_choco_shop" uid="227">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>441.45401001</x>
+                        <y>369.104003906</y>
+                        <z>0</z>
+                        <width>110.513000488</width>
+                        <height>53.88999939</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="texto_shop" uid="228">
+                    <properties>
+                        <text>Shop</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-37,400,0</font>
+                        <color>255,153,204</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>439.731994629</x>
+                        <y>364.561004639</y>
+                        <z>0</z>
+                        <width>90.909851074</width>
+                        <height>52.726409912</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

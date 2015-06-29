@@ -171,6 +171,22 @@
                     <param id="0" name="Family name">&quot;chifontregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;chifontsheet.css&quot;</param>
                 </action>
+                <action id="5" name="Set web font" sid="2311297535557247" type="descricao_item">
+                    <param id="0" name="Family name">&quot;chifontregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;chifontsheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="1086475423304524" type="descricao_item2">
+                    <param id="0" name="Family name">&quot;chifontregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;chifontsheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="6392687474774303" type="descricao_item3">
+                    <param id="0" name="Family name">&quot;chifontregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;chifontsheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="4907848893250523" type="descricao_item4">
+                    <param id="0" name="Family name">&quot;chifontregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;chifontsheet.css&quot;</param>
+                </action>
             </actions>
         </event-block>
     </events>

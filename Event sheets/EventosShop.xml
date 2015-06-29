@@ -129,6 +129,10 @@
                     <param id="0" name="Family name">&quot;chifontregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;chifontsheet.css&quot;</param>
                 </action>
+                <action id="5" name="Set web font" sid="1608506852109217" type="texto_jogar">
+                    <param id="0" name="Family name">&quot;lobster_1.3regular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;lobstersheet.css&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="2693154847290169">
@@ -146,7 +150,7 @@
                     <param id="0" name="Width">len(coins.Text) * 100</param>
                 </action>
                 <action id="-3" name="Set position" sid="7367592077474017" type="X_fim_jogo_coins">
-                    <param id="0" name="X">coins.X + len(coins.Text)*9</param>
+                    <param id="0" name="X">coins.X + len(coins.Text)*14</param>
                     <param id="1" name="Y">X_fim_jogo_coins.Y</param>
                 </action>
                 <action id="-3" name="Set position" sid="168058063107676" type="icone_coins">
@@ -174,7 +178,7 @@
                     <param id="0" name="Width">len(coins.Text) * 100</param>
                 </action>
                 <action id="-3" name="Set position" sid="115217455331404" type="X_fim_jogo_coins">
-                    <param id="0" name="X">coins.X + len(coins.Text)*9</param>
+                    <param id="0" name="X">coins.X + len(coins.Text)*14</param>
                     <param id="1" name="Y">X_fim_jogo_coins.Y</param>
                 </action>
                 <action id="-3" name="Set position" sid="1694521754940391" type="icone_coins">

@@ -379,6 +379,158 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="3" loop="1" name="abelha_voando" pingpong="0" repeatcount="1" repeatto="0" sid="6347875323497516" speed="9">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.958333" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\sprites unlocked characters\bee_contrario.png">
+                        <image-point name="Imagepoint 1" x="0.553571" y="-0.0416667" />
+                        <collision-poly>
+                            <point x="0.671429" y="0.510638" />
+                            <point x="0.5" y="0.893617" />
+                            <point x="0.2" y="0.702128" />
+                            <point x="0.271429" y="0.489362" />
+                            <point x="0.0142857" y="0.0212766" />
+                            <point x="0.5" y="0.425532" />
+                            <point x="0.985714" y="0.0212766" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.491803" hotspotY="1" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\sprites unlocked characters\bee_fly_contrario.png">
+                        <collision-poly>
+                            <point x="0.886364" y="0.486486" />
+                            <point x="0.761364" y="0.432432" />
+                            <point x="0.5" y="0.864865" />
+                            <point x="0.238636" y="0.432432" />
+                            <point x="0.113636" y="0.486486" />
+                            <point x="0.0681818" y="0.162162" />
+                            <point x="0.5" y="0.27027" />
+                            <point x="0.943182" y="0.135135" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.482143" hotspotY="1" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\sprites unlocked characters\bee_contrario.png">
+                        <collision-poly>
+                            <point x="0.671429" y="0.510638" />
+                            <point x="0.5" y="0.893617" />
+                            <point x="0.2" y="0.702128" />
+                            <point x="0.271429" y="0.489362" />
+                            <point x="0.0142857" y="0.0212766" />
+                            <point x="0.5" y="0.425532" />
+                            <point x="0.985714" y="0.0212766" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="abelha_voando_contrario" pingpong="0" repeatcount="1" repeatto="0" sid="8738470495662502" speed="9">
+                    <frame duration="1" hotspotX="0.517857" hotspotY="0.958333" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\sprites unlocked characters\bee.png">
+                        <image-point name="Imagepoint 1" x="0.446429" y="-0.0416667" />
+                        <collision-poly>
+                            <point x="0.0142857" y="0.0212766" />
+                            <point x="0.5" y="0.425532" />
+                            <point x="0.985714" y="0.0212766" />
+                            <point x="0.728571" y="0.489362" />
+                            <point x="0.8" y="0.702128" />
+                            <point x="0.5" y="0.893617" />
+                            <point x="0.328571" y="0.510638" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.491803" hotspotY="1" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\sprites unlocked characters\bee_fly.png">
+                        <collision-poly>
+                            <point x="0.0568182" y="0.135135" />
+                            <point x="0.5" y="0.27027" />
+                            <point x="0.931818" y="0.162162" />
+                            <point x="0.886364" y="0.486486" />
+                            <point x="0.761364" y="0.432432" />
+                            <point x="0.5" y="0.864865" />
+                            <point x="0.238636" y="0.432432" />
+                            <point x="0.113636" y="0.486486" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.482143" hotspotY="1" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\sprites unlocked characters\bee.png">
+                        <collision-poly>
+                            <point x="0.0142857" y="0.0212766" />
+                            <point x="0.5" y="0.425532" />
+                            <point x="0.985714" y="0.0212766" />
+                            <point x="0.728571" y="0.489362" />
+                            <point x="0.8" y="0.702128" />
+                            <point x="0.5" y="0.893617" />
+                            <point x="0.328571" y="0.510638" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="bolo_voando" pingpong="0" repeatcount="1" repeatto="0" sid="2895503616753608" speed="9">
+                    <frame duration="1" hotspotX="0.491228" hotspotY="0.955556">
+                        <image-point name="Imagepoint 1" x="0.561404" y="-0.0444444" />
+                        <collision-poly>
+                            <point x="0.210526" y="0.266667" />
+                            <point x="0.491228" y="0.222222" />
+                            <point x="0.947368" y="0.0666667" />
+                            <point x="0.824561" y="0.488889" />
+                            <point x="0.824561" y="0.777778" />
+                            <point x="0.491228" y="1" />
+                            <point x="0.0877193" y="0.888889" />
+                            <point x="0.0877193" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507692" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.0923077" y="0.153846" />
+                            <point x="0.492308" y="0.230769" />
+                            <point x="0.969231" y="0.0512821" />
+                            <point x="0.815385" y="0.487179" />
+                            <point x="0.8" y="0.666667" />
+                            <point x="0.492308" y="1" />
+                            <point x="0.153846" y="0.74359" />
+                            <point x="0.0769231" y="0.487179" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507692" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.0923077" y="0.153846" />
+                            <point x="0.492308" y="0.230769" />
+                            <point x="0.969231" y="0.0512821" />
+                            <point x="0.815385" y="0.487179" />
+                            <point x="0.8" y="0.666667" />
+                            <point x="0.492308" y="1" />
+                            <point x="0.153846" y="0.74359" />
+                            <point x="0.0769231" y="0.487179" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="bolo_voando_contrario" pingpong="0" repeatcount="1" repeatto="0" sid="8626423972953726" speed="9">
+                    <frame duration="1" hotspotX="0.508772" hotspotY="0.955556">
+                        <image-point name="Imagepoint 1" x="0.438596" y="-0.0444444" />
+                        <collision-poly>
+                            <point x="0.912281" y="0.488889" />
+                            <point x="0.912281" y="0.888889" />
+                            <point x="0.508772" y="1" />
+                            <point x="0.175439" y="0.777778" />
+                            <point x="0.175439" y="0.488889" />
+                            <point x="0.0526316" y="0.0666667" />
+                            <point x="0.508772" y="0.222222" />
+                            <point x="0.789474" y="0.266667" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.492308" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.923077" y="0.487179" />
+                            <point x="0.846154" y="0.74359" />
+                            <point x="0.507692" y="1" />
+                            <point x="0.2" y="0.666667" />
+                            <point x="0.184615" y="0.487179" />
+                            <point x="0.0307692" y="0.0512821" />
+                            <point x="0.507692" y="0.230769" />
+                            <point x="0.907692" y="0.153846" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.492308" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.923077" y="0.487179" />
+                            <point x="0.846154" y="0.74359" />
+                            <point x="0.507692" y="1" />
+                            <point x="0.2" y="0.666667" />
+                            <point x="0.184615" y="0.487179" />
+                            <point x="0.0307692" y="0.0512821" />
+                            <point x="0.507692" y="0.230769" />
+                            <point x="0.907692" y="0.153846" />
+                        </collision-poly>
+                    </frame>
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="LetraCimaMosca" sid="3272350357212903">
@@ -2587,7 +2739,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3257196708373766" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.511111" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\moedinha\moedinha_nova.png">
                         <collision-poly>
                             <point x="0.15" y="0.142857" />
                             <point x="0.5" y="0" />
@@ -2883,7 +3035,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="label_character" sid="6114380546275523">
+        <object-type name="label_character_bee" sid="6114380546275523">
             <plugin id="Text" />
         </object-type>
         <object-type name="Sprite7" sid="4289892245426449">
@@ -2939,7 +3091,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6325161145560585" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\moedinha\moedinha.png">
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.511111" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\moedinha\moedinha_nova.png">
                         <collision-poly>
                             <point x="0.15" y="0.142857" />
                             <point x="0.5" y="0" />
@@ -3763,6 +3915,267 @@
         <object-type name="texto_reselect" sid="419497640745437">
             <plugin id="Text" />
         </object-type>
+        <object-type name="bolophi3" sid="6049071860195448">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="432390167453318">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2741201138401858" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\bolo_maior\bolo_maior_true.png">
+                        <collision-poly>
+                            <point x="0.0285714" y="0.0285714" />
+                            <point x="0.5" y="0" />
+                            <point x="0.971429" y="0.0285714" />
+                            <point x="1" y="0.5" />
+                            <point x="0.971429" y="0.971429" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0285714" y="0.971429" />
+                            <point x="0.0142857" y="0.514286" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="bolo_gostoso" pingpong="0" repeatcount="1" repeatto="0" sid="6513305755208059" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\items de jogo\bologostoso\bologostoso_sprite_true.png">
+                        <collision-poly>
+                            <point x="0.0285714" y="0.0285714" />
+                            <point x="0.5" y="0" />
+                            <point x="0.971429" y="0.0285714" />
+                            <point x="1" y="0.5" />
+                            <point x="0.971429" y="0.971429" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0285714" y="0.971429" />
+                            <point x="0.0142857" y="0.514286" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="placa_choco_shop" sid="4508312985053114">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5343157316159093" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\placaChocolate6.png">
+                        <collision-poly>
+                            <point x="0.00883392" y="0.0181159" />
+                            <point x="0.5" y="0" />
+                            <point x="0.991166" y="0.0181159" />
+                            <point x="0.991166" y="0.981884" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00883392" y="0.981884" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="texto_shop" sid="6102929817269405">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="label_character_bat" sid="1230605235934163">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="label_character_cake" sid="2579827522939385">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="botao_voltar_shop_subsecao_game" sid="3470271906241503">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9080784407062853" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\placaChocolate6.png">
+                        <collision-poly>
+                            <point x="0.00883392" y="0.0181159" />
+                            <point x="0.5" y="0" />
+                            <point x="0.991166" y="0.0181159" />
+                            <point x="0.991166" y="0.981884" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00883392" y="0.981884" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="escolha_personagem_mosca" sid="3664046865414569">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="mosca_voando_contrario" sid="8734288149661748" type="number" />
+                <instance-variable name="mosca_caindo" sid="4049678501011409" type="number" />
+                <instance-variable name="mosca_no_prato" sid="8886692604844326" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="2433250725502046">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="10000" repeatto="0" sid="1105145922723924" speed="9">
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.510638" original-source="C:\Users\fábioandrews\Documents\git\flytocake\flyToCake\Animations\mosca\mosca_voando\000.png" />
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.510638" original-source="C:\Users\fábioandrews\Documents\git\flytocake\flyToCake\Animations\mosca\mosca_voando\002.png" />
+                    <frame duration="1" hotspotX="0.507463" hotspotY="0.512195" original-source="C:\Users\fábioandrews\Documents\git\flytocake\flyToCake\Animations\mosca\mosca_voando\001.png" />
+                </animation>
+                <animation framecount="3" loop="1" name="mosca_voando_contrario" pingpong="0" repeatcount="10000" repeatto="0" sid="2359961649920505" speed="9">
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.510638" original-source="C:\Users\fábioandrews\Documents\git\flytocake\flyToCake\Animations\mosca\mosca_voando_contrario\002.png" />
+                    <frame duration="1" hotspotX="0.507463" hotspotY="0.512195" original-source="C:\Users\fábioandrews\Documents\git\flytocake\flyToCake\Animations\mosca\mosca_voando_contrario\001.png" />
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.510638" original-source="C:\Users\fábioandrews\Documents\git\flytocake\flyToCake\Animations\mosca\mosca_voando_contrario\000.png" />
+                </animation>
+                <animation framecount="3" loop="1" name="mosca_voando" pingpong="0" repeatcount="10000" repeatto="0" sid="5874925355938369" speed="9">
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.510638" />
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.510638" />
+                    <frame duration="1" hotspotX="0.507463" hotspotY="0.512195" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="escolha_personagem_abelha" sid="1867094526328101">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="mosca_voando_contrario" sid="5214565200087844" type="number" />
+                <instance-variable name="mosca_caindo" sid="9255596916119881" type="number" />
+                <instance-variable name="mosca_no_prato" sid="7040623324111362" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="1244308329458694">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="10000" repeatto="0" sid="3193711822179622" speed="9">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Documents\git\flytocake\flyToCake\Animations\mosca\abelha_voando\002.png" />
+                    <frame duration="1" hotspotX="0.508197" hotspotY="0.5" original-source="C:\Users\fábioandrews\Documents\git\flytocake\flyToCake\Animations\mosca\abelha_voando\001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Documents\git\flytocake\flyToCake\Animations\mosca\abelha_voando\000.png" />
+                </animation>
+                <animation framecount="3" loop="1" name="mosca_voando_contrario" pingpong="0" repeatcount="10000" repeatto="0" sid="9633239253229352" speed="9">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Documents\git\flytocake\flyToCake\Animations\mosca\abelha_voando_contrario\002.png" />
+                    <frame duration="1" hotspotX="0.508197" hotspotY="0.5" original-source="C:\Users\fábioandrews\Documents\git\flytocake\flyToCake\Animations\mosca\abelha_voando_contrario\001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Documents\git\flytocake\flyToCake\Animations\mosca\abelha_voando_contrario\000.png" />
+                </animation>
+                <animation framecount="3" loop="1" name="mosca_voando" pingpong="0" repeatcount="10000" repeatto="0" sid="5391511026688489" speed="9">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.508197" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="escolha_personagem_bolo" sid="5980620357335359">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="mosca_voando_contrario" sid="5939684414224724" type="number" />
+                <instance-variable name="mosca_caindo" sid="5467078475770313" type="number" />
+                <instance-variable name="mosca_no_prato" sid="4141013756000566" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="9773242476286165">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="10000" repeatto="0" sid="8473920370874534" speed="9">
+                    <frame duration="1" hotspotX="0.507692" hotspotY="0.512821" original-source="C:\Users\fábioandrews\Documents\git\flytocake\flyToCake\Animations\mosca\mosca_bolo\001.png" />
+                    <frame duration="1" hotspotX="0.508772" hotspotY="0.511111" original-source="C:\Users\fábioandrews\Documents\git\flytocake\flyToCake\Animations\mosca\mosca_bolo\000.png" />
+                    <frame duration="1" hotspotX="0.507692" hotspotY="0.512821" original-source="C:\Users\fábioandrews\Documents\git\flytocake\flyToCake\Animations\mosca\mosca_bolo\002.png" />
+                </animation>
+                <animation framecount="3" loop="1" name="mosca_voando_contrario" pingpong="0" repeatcount="10000" repeatto="0" sid="4409955832586648" speed="9">
+                    <frame duration="1" hotspotX="0.507692" hotspotY="0.512821" original-source="C:\Users\fábioandrews\Documents\git\flytocake\flyToCake\Animations\mosca\mosca_bolo_contrario\001.png" />
+                    <frame duration="1" hotspotX="0.508772" hotspotY="0.511111" original-source="C:\Users\fábioandrews\Documents\git\flytocake\flyToCake\Animations\mosca\mosca_bolo_contrario\000.png" />
+                    <frame duration="1" hotspotX="0.507692" hotspotY="0.512821" original-source="C:\Users\fábioandrews\Documents\git\flytocake\flyToCake\Animations\mosca\mosca_bolo_contrario\002.png" />
+                </animation>
+                <animation framecount="3" loop="1" name="mosca_voando" pingpong="0" repeatcount="10000" repeatto="0" sid="3568404324868526" speed="9">
+                    <frame duration="1" hotspotX="0.507692" hotspotY="0.512821" />
+                    <frame duration="1" hotspotX="0.508772" hotspotY="0.511111" />
+                    <frame duration="1" hotspotX="0.507692" hotspotY="0.512821" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="texto_voltar_tela_escolha_personagem" sid="1799480792788445">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="placa_choco_voltar_tela_escolha_personagem" sid="4836702730623615">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8123516931272026" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\placaChocolate6.png">
+                        <collision-poly>
+                            <point x="0.00883392" y="0.0181159" />
+                            <point x="0.5" y="0" />
+                            <point x="0.991166" y="0.0181159" />
+                            <point x="0.991166" y="0.981884" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00883392" y="0.981884" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="placa_choco_reset_escolha_personagem" sid="9519744745385667">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3894958771053617" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\placaChocolate6.png">
+                        <collision-poly>
+                            <point x="0.00883392" y="0.0181159" />
+                            <point x="0.5" y="0" />
+                            <point x="0.991166" y="0.0181159" />
+                            <point x="0.991166" y="0.981884" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00883392" y="0.981884" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="escolha_personagem_morcego" sid="6668649344182321">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="mosca_voando_contrario" sid="4838061956431633" type="number" />
+                <instance-variable name="mosca_caindo" sid="9168190029233861" type="number" />
+                <instance-variable name="mosca_no_prato" sid="4167296805280971" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="6833544218004032">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="10000" repeatto="0" sid="6096038051154343" speed="9">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510638" original-source="C:\Users\fábioandrews\Documents\git\flytocake\flyToCake\Animations\mosca\morcego_voando\002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.513514" original-source="C:\Users\fábioandrews\Documents\git\flytocake\flyToCake\Animations\mosca\morcego_voando\001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510638" original-source="C:\Users\fábioandrews\Documents\git\flytocake\flyToCake\Animations\mosca\morcego_voando\000.png" />
+                </animation>
+                <animation framecount="3" loop="1" name="mosca_voando" pingpong="0" repeatcount="10000" repeatto="0" sid="6775313440925766" speed="9">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510638" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.513514" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510638" />
+                </animation>
+                <animation framecount="3" loop="1" name="mosca_voando_contrario" pingpong="0" repeatcount="10000" repeatto="0" sid="2401214890968335" speed="9">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510638" original-source="C:\Users\fábioandrews\Documents\git\flytocake\flyToCake\Animations\mosca\morcego_voando_contrario\002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.513514" original-source="C:\Users\fábioandrews\Documents\git\flytocake\flyToCake\Animations\mosca\morcego_voando_contrario\001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510638" original-source="C:\Users\fábioandrews\Documents\git\flytocake\flyToCake\Animations\mosca\morcego_voando_contrario\000.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="placa_choco_ir_para_tela_escolha_personagem" sid="9465765598175608">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3958086431822089" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\placaChocolate6.png">
+                        <collision-poly>
+                            <point x="0.00883392" y="0.0181159" />
+                            <point x="0.5" y="0" />
+                            <point x="0.991166" y="0.0181159" />
+                            <point x="0.991166" y="0.981884" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00883392" y="0.981884" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="personagem_escolhido_text" sid="9398580275985853">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="texto_moedas_insuficientes" sid="1283998520644033">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -3775,6 +4188,7 @@
         <layout>Shop.xml</layout>
         <layout>Shop_game.xml</layout>
         <layout>TelaEscolhaNivel.xml</layout>
+        <layout>TelaEscolhaPersonagem.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
@@ -3786,6 +4200,7 @@
         <event-sheet>EventosShop.xml</event-sheet>
         <event-sheet>EventosShop_game.xml</event-sheet>
         <event-sheet>eeventSheetTelaEscolhaNivel.xml</event-sheet>
+        <event-sheet>eventSheetTelaEscolhaPersonagem.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="211">
@@ -3840,6 +4255,8 @@
         <file name="_first_day_alt_version_light_hearted_acoustic_loop.ogg" />
         <file name="GameOver1.m4a" />
         <file name="GameOver1.ogg" />
+        <file name="cashregister.m4a" />
+        <file name="cashregister.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>
