@@ -413,7 +413,7 @@
                 </instance>
                 <instance type="texto_jogar" uid="76">
                     <properties>
-                        <text>Play</text>
+                        <text>Jogar</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial Narrow,-29,400,0</font>
                         <color>255,153,204</color>
@@ -462,7 +462,7 @@
                 </instance>
                 <instance type="texto_jogar" uid="92">
                     <properties>
-                        <text>Back</text>
+                        <text>Voltar</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial Narrow,-29,400,0</font>
                         <color>255,153,204</color>

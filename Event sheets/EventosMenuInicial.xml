@@ -252,7 +252,7 @@
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="3528131996566405" type="System">
-                    <param id="0" name="Layout">ExplicacaoItens</param>
+                    <param id="0" name="Layout">VideoTutorial</param>
                 </action>
             </actions>
         </event-block>

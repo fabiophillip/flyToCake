@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>FlyInCake</name>
     <description></description>
@@ -21,6 +21,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
         <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
@@ -3555,7 +3556,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7323102685518889" speed="5">
-                    <frame duration="1" hotspotX="0.504065" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_advanced_1.png">
+                    <frame duration="1" hotspotX="0.503401" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_advanced_1.png">
                         <collision-poly>
                             <point x="0.0731707" y="0.15" />
                             <point x="0.495935" y="0.05" />
@@ -3568,7 +3569,7 @@
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="balao_voando" pingpong="0" repeatcount="1" repeatto="0" sid="3317953352624592" speed="5">
-                    <frame duration="1" hotspotX="0.504065" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_advanced_1.png">
+                    <frame duration="1" hotspotX="0.503401" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_advanced_1.png">
                         <collision-poly>
                             <point x="0.0731707" y="0.15" />
                             <point x="0.495935" y="0.05" />
@@ -3581,7 +3582,7 @@
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="balao_voando_contrario" pingpong="0" repeatcount="1" repeatto="0" sid="9520496819425018" speed="5">
-                    <frame duration="1" hotspotX="0.504065" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_advanced_1_right.png">
+                    <frame duration="1" hotspotX="0.503401" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_advanced_1_right.png">
                         <collision-poly>
                             <point x="0.0487805" y="0.1" />
                             <point x="0.495935" y="0.05" />
@@ -3604,7 +3605,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5806628189939672" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_advanced_2.png">
+                    <frame duration="1" hotspotX="0.504505" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_advanced_2.png">
                         <collision-poly>
                             <point x="0.0714286" y="0.15" />
                             <point x="0.5" y="0.05" />
@@ -3617,7 +3618,7 @@
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="balao_voando" pingpong="0" repeatcount="1" repeatto="0" sid="9916719651936324" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_advanced_2.png">
+                    <frame duration="1" hotspotX="0.504505" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_advanced_2.png">
                         <collision-poly>
                             <point x="0.0714286" y="0.15" />
                             <point x="0.5" y="0.05" />
@@ -3630,7 +3631,7 @@
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="balao_voando_contrario" pingpong="0" repeatcount="1" repeatto="0" sid="5618002474175816" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_advanced_2_right.png">
+                    <frame duration="1" hotspotX="0.504505" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_advanced_2_right.png">
                         <collision-poly>
                             <point x="0.047619" y="0.1" />
                             <point x="0.5" y="0.05" />
@@ -3653,7 +3654,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3293439798295699" speed="5">
-                    <frame duration="1" hotspotX="0.505747" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_basic_1.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_basic_1.png">
                         <collision-poly>
                             <point x="0.103448" y="0.15" />
                             <point x="0.494253" y="0.05" />
@@ -3666,7 +3667,7 @@
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="balao_voando" pingpong="0" repeatcount="1" repeatto="0" sid="5049345511566952" speed="5">
-                    <frame duration="1" hotspotX="0.505747" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_basic_1.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_basic_1.png">
                         <collision-poly>
                             <point x="0.103448" y="0.15" />
                             <point x="0.494253" y="0.05" />
@@ -3679,7 +3680,7 @@
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="balao_voando_contrario" pingpong="0" repeatcount="1" repeatto="0" sid="7598759397319355" speed="5">
-                    <frame duration="1" hotspotX="0.505747" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_basic_1_right.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_basic_1_right.png">
                         <collision-poly>
                             <point x="0.0689655" y="0.1" />
                             <point x="0.494253" y="0.05" />
@@ -3702,7 +3703,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2085350003427707" speed="5">
-                    <frame duration="1" hotspotX="0.505747" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_basic_2.png">
+                    <frame duration="1" hotspotX="0.506944" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_basic_2.png">
                         <collision-poly>
                             <point x="0.103448" y="0.15" />
                             <point x="0.494253" y="0.05" />
@@ -3715,7 +3716,7 @@
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="balao_voando" pingpong="0" repeatcount="1" repeatto="0" sid="1488335257201588" speed="5">
-                    <frame duration="1" hotspotX="0.505747" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_basic_2.png">
+                    <frame duration="1" hotspotX="0.506944" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_basic_2.png">
                         <collision-poly>
                             <point x="0.103448" y="0.15" />
                             <point x="0.494253" y="0.05" />
@@ -3728,7 +3729,7 @@
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="balao_voando_contrario" pingpong="0" repeatcount="1" repeatto="0" sid="9282049544646519" speed="5">
-                    <frame duration="1" hotspotX="0.505747" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_basic_2_right.png">
+                    <frame duration="1" hotspotX="0.506944" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\speech_bubble_basic_2_right.png">
                         <collision-poly>
                             <point x="0.0689655" y="0.1" />
                             <point x="0.494253" y="0.05" />
@@ -4415,13 +4416,13 @@
         <event-sheet>EventSheetVideoTutorial.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Touch" uid="211">
+        <global-instance type="Touch" uid="275">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Mouse" uid="212" />
-        <global-instance type="Audio" uid="213">
+        <global-instance type="Mouse" uid="276" />
+        <global-instance type="Audio" uid="277">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -4435,7 +4436,7 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
-        <global-instance type="WebStorage" uid="214" />
+        <global-instance type="WebStorage" uid="278" />
     </global-instances>
     <sounds-folder>
         <file name="7_year_old_boy_screams.m4a" />
