@@ -6916,6 +6916,9 @@
                 <condition id="4" name="Is touching object" sid="5258716538667755" type="Touch">
                     <param id="0" name="Object">placa_jogo_pausar</param>
                 </condition>
+                <condition id="-9" name="Layer is visible" sid="7545329852557514" type="System">
+                    <param id="0" name="Layer">2</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-13" name="Set time scale" sid="2567055325092" type="System">
@@ -6962,6 +6965,9 @@
             <conditions>
                 <condition id="4" name="Is touching object" sid="8495414876809169" type="Touch">
                     <param id="0" name="Object">placa_choco_resume</param>
+                </condition>
+                <condition id="-9" name="Layer is visible" sid="880179325064981" type="System">
+                    <param id="0" name="Layer">2</param>
                 </condition>
             </conditions>
             <actions>
@@ -8363,12 +8369,6 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-3" name="Create object" sid="5507253517925026" type="System">
-                    <param id="0" name="Object to create">mosca</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">25</param>
-                    <param id="3" name="Y">choose(130, 129, 128, 127, 126)</param>
-                </action>
                 <action id="-10" name="Add to" sid="2944617184223019" type="System">
                     <param id="0" name="Variable">primeira_mosca_jah_foi_criada</param>
                     <param id="1" name="Value">1</param>

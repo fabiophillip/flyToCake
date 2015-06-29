@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>FlyInCake</name>
     <description></description>
@@ -4176,6 +4176,216 @@
         <object-type name="texto_moedas_insuficientes" sid="1283998520644033">
             <plugin id="Text" />
         </object-type>
+        <object-type name="explicacao_tutorial1" sid="2360561203402876">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="fundo_botao_voltar" sid="1305523369219888">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1960751469092189" speed="5">
+                    <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\placaChocolate6.png">
+                        <collision-poly>
+                            <point x="0.00883392" y="0.0181159" />
+                            <point x="0.5" y="0" />
+                            <point x="0.991166" y="0.0181159" />
+                            <point x="0.991166" y="0.981884" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00883392" y="0.981884" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="fundo_botao_seguinte" sid="7628577077329294">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6673016505395252" speed="5">
+                    <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\placaChocolate6.png">
+                        <collision-poly>
+                            <point x="0.00883392" y="0.0181159" />
+                            <point x="0.5" y="0" />
+                            <point x="0.991166" y="0.0181159" />
+                            <point x="0.991166" y="0.981884" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00883392" y="0.981884" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="texto_botao_voltar" sid="578197817290404">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="texto_botao_seguinte" sid="5547906385542779">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text2" sid="8681189005505731">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="explicacao_tutorial2" sid="7670487199470136">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="videoTut2" sid="1686872383044034">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="2304274687274317">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="20" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8154325805844293" speed="5">
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut2\00000.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut2\00001.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut2\00002.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut2\00003.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut2\00004.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut2\00005.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut2\00006.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut2\00007.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut2\00008.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut2\00009.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut2\00010.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut2\00011.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut2\00012.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut2\00013.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut2\00014.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut2\00015.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut2\00016.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut2\00017.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut2\00018.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut2\00019.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="explicacao_tutorial3" sid="9339673347723016">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="videoTut1" sid="7280501293608579">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="9650347400077276">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="18" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9666839162759484" speed="5">
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut1\00000.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut1\00001.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut1\00002.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut1\00003.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut1\00004.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut1\00005.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut1\00006.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut1\00007.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut1\00008.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut1\00009.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut1\00010.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut1\00011.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut1\00012.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut1\00013.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut1\00014.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut1\00015.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut1\00016.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut1\00017.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="videoTut3" sid="8386713600276291">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="8885859076618117">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="58" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5982174070422432" speed="5">
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\00002.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\00003.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\00004.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\00005.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\00006.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\00007.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\00008.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\00009.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\00010.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\00011.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\00012.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\00013.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\00014.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\00015.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\00016.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\00017.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\00018.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\00019.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\00020.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\00021.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\00022.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\00023.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\00024.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\00025.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\00026.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\00027.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\00028.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\00029.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00000.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00001.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00002.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00003.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00004.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00005.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00006.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00007.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00008.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00009.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00010.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00011.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00012.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00013.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00014.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00015.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00016.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00017.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00018.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00019.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00020.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00021.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00022.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00023.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00024.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00025.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00026.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00027.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00028.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut3\parte 2\00029.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="explicacao_tutorial4" sid="4831189905396439">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="videoTut4" sid="3902229535290478">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="16" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3347827826274998" speed="5">
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut4\00000.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut4\00001.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut4\00002.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut4\00003.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut4\00004.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut4\00005.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut4\00006.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut4\00007.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut4\00008.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut4\00009.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut4\00010.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut4\00011.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut4\00012.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut4\00013.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut4\00014.jpg" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502392" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.1\estagio\VIDEOS TUTORIAIS\gifTut4\00015.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -4189,6 +4399,7 @@
         <layout>Shop_game.xml</layout>
         <layout>TelaEscolhaNivel.xml</layout>
         <layout>TelaEscolhaPersonagem.xml</layout>
+        <layout>VideoTutorial.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
@@ -4201,6 +4412,7 @@
         <event-sheet>EventosShop_game.xml</event-sheet>
         <event-sheet>eeventSheetTelaEscolhaNivel.xml</event-sheet>
         <event-sheet>eventSheetTelaEscolhaPersonagem.xml</event-sheet>
+        <event-sheet>EventSheetVideoTutorial.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="211">
@@ -4284,5 +4496,6 @@
         <file name="lobster_1.3-webfont.ttf" />
         <file name="lobster_1.3-webfont.woff" />
         <file name="lobstersheet.css" />
+        <file name="tut1_melhor_cortado.mp4" />
     </files-folder>
 </c2project>

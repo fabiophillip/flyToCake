@@ -915,7 +915,7 @@
                 </instance>
                 <instance type="texto_balao_sapo" uid="85">
                     <properties>
-                        <text>CLIQUE EM MIM PARA LIMPAR PRATO! RIBBIT!</text>
+                        <text>CLIQUE EM MINHA CABEÇA PARA LIMPAR PRATO! RIBBIT!</text>
                         <initial-visibility>Invisible</initial-visibility>
                         <font>Arial,-16</font>
                         <color>0,0,0</color>

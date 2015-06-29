@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventSheetVideoTutorial</name>
+    <events>
+        <variable constant="0" name="qual_parte_tutorial_visivel" sid="3447098106970016" static="0" type="number">1</variable>
+        <event-block sid="8935715384616391">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8470256123811332" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="8839413301496297" type="texto_jogar">
+                    <param id="0" name="Family name">&quot;lobster_1.3regular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;lobstersheet.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9304509888477863">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3226431339801792" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="9304218285208236" type="texto_jogar">
+                    <param id="0" name="Family name">&quot;lobster_1.3regular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;lobstersheet.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="907713562313283">
+            <conditions>
+                <condition id="1" name="On any touch end" sid="2761580181542036" type="Touch" />
+                <condition id="4" name="Is touching object" sid="9315765758625522" type="Touch">
+                    <param id="0" name="Object">fundo_botao_voltar</param>
+                </condition>
+                <condition id="-17" name="Compare opacity" sid="7960400037014293" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Opacity">100</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="351291061164693" type="System">
+                    <param id="0" name="Variable">qual_parte_tutorial_visivel</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="8017526844432634" type="System">
+                    <param id="0" name="Layout">MenuInicial</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2549596738518165">
+            <conditions>
+                <condition id="17" name="On tap object" sid="8489585608825484" type="Touch">
+                    <param id="0" name="Object">fundo_botao_seguinte</param>
+                </condition>
+                <condition id="-17" name="Compare opacity" sid="3178271999125148" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Opacity">100</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="1434672115489608" type="System">
+                    <param id="0" name="Variable">qual_parte_tutorial_visivel</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="1" name="Start fade" sid="3539383262385465" type="videoTut1" />
+                <action id="-18" name="Set layer opacity" sid="8506813186058001" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Opacity">100</param>
+                </action>
+                <action id="-18" name="Set layer opacity" sid="9692391985516367" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Opacity">0</param>
+                </action>
+                <action id="-18" name="Set layer opacity" sid="18541426522977" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Opacity">0</param>
+                </action>
+                <action id="-18" name="Set layer opacity" sid="677259147843365" type="System">
+                    <param id="0" name="Layer">4</param>
+                    <param id="1" name="Opacity">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="4836735102698546" type="System">
+                    <param id="0" name="Variable">qual_parte_tutorial_visivel</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8965748273436245">
+            <conditions>
+                <condition id="1" name="On any touch end" sid="8778956688727265" type="Touch" />
+                <condition id="4" name="Is touching object" sid="350972507102692" type="Touch">
+                    <param id="0" name="Object">fundo_botao_voltar</param>
+                </condition>
+                <condition id="-17" name="Compare opacity" sid="2548509276696794" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Opacity">100</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4785754906519534" type="System">
+                    <param id="0" name="Variable">qual_parte_tutorial_visivel</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-18" name="Set layer opacity" sid="9521968191696095" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Opacity">100</param>
+                </action>
+                <action id="-18" name="Set layer opacity" sid="4508361509656525" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Opacity">0</param>
+                </action>
+                <action id="-18" name="Set layer opacity" sid="9709587114279305" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Opacity">0</param>
+                </action>
+                <action id="-18" name="Set layer opacity" sid="7898008092838201" type="System">
+                    <param id="0" name="Layer">4</param>
+                    <param id="1" name="Opacity">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="2523353321297921" type="System">
+                    <param id="0" name="Variable">qual_parte_tutorial_visivel</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="6092543175725761" type="videoTut1">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2250467531629803">
+            <conditions>
+                <condition id="17" name="On tap object" sid="2226907239618895" type="Touch">
+                    <param id="0" name="Object">fundo_botao_seguinte</param>
+                </condition>
+                <condition id="-17" name="Compare opacity" sid="7204931469768573" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Opacity">100</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7438284232683588" type="System">
+                    <param id="0" name="Variable">qual_parte_tutorial_visivel</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition id="-10" name="Compare opacity" sid="5902059719508174" type="videoTut1">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Opacity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-18" name="Set layer opacity" sid="6877024065315332" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Opacity">100</param>
+                </action>
+                <action id="-18" name="Set layer opacity" sid="6308727825982236" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Opacity">0</param>
+                </action>
+                <action id="-18" name="Set layer opacity" sid="3553784849093146" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Opacity">0</param>
+                </action>
+                <action id="-18" name="Set layer opacity" sid="2092311715693027" type="System">
+                    <param id="0" name="Layer">4</param>
+                    <param id="1" name="Opacity">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="1096923366477082" type="System">
+                    <param id="0" name="Variable">qual_parte_tutorial_visivel</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="1158681679384972" type="videoTut2" />
+            </actions>
+        </event-block>
+        <event-block sid="7187514947086647">
+            <conditions>
+                <condition id="1" name="On any touch end" sid="7068623999864452" type="Touch" />
+                <condition id="4" name="Is touching object" sid="9938879411592154" type="Touch">
+                    <param id="0" name="Object">fundo_botao_voltar</param>
+                </condition>
+                <condition id="-17" name="Compare opacity" sid="7470090764925781" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Opacity">100</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8793623128402987" type="System">
+                    <param id="0" name="Variable">qual_parte_tutorial_visivel</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-18" name="Set layer opacity" sid="4960804750061693" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Opacity">100</param>
+                </action>
+                <action id="-18" name="Set layer opacity" sid="3859858611597173" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Opacity">0</param>
+                </action>
+                <action id="-18" name="Set layer opacity" sid="1727033600620818" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Opacity">0</param>
+                </action>
+                <action id="-18" name="Set layer opacity" sid="4773899216055848" type="System">
+                    <param id="0" name="Layer">4</param>
+                    <param id="1" name="Opacity">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="2668507657954371" type="System">
+                    <param id="0" name="Variable">qual_parte_tutorial_visivel</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="3476352119158155" type="videoTut2">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1054318196547221">
+            <conditions>
+                <condition id="17" name="On tap object" sid="1745157019843499" type="Touch">
+                    <param id="0" name="Object">fundo_botao_seguinte</param>
+                </condition>
+                <condition id="-17" name="Compare opacity" sid="6023339771058592" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Opacity">100</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4239037006333454" type="System">
+                    <param id="0" name="Variable">qual_parte_tutorial_visivel</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+                <condition id="-10" name="Compare opacity" sid="663428657575506" type="videoTut2">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Opacity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-18" name="Set layer opacity" sid="136271199852036" type="System">
+                    <param id="0" name="Layer">4</param>
+                    <param id="1" name="Opacity">100</param>
+                </action>
+                <action id="-18" name="Set layer opacity" sid="2335365606516955" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Opacity">0</param>
+                </action>
+                <action id="-18" name="Set layer opacity" sid="4372133581930111" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Opacity">0</param>
+                </action>
+                <action id="-18" name="Set layer opacity" sid="9091445046773365" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Opacity">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="2532611870553076" type="System">
+                    <param id="0" name="Variable">qual_parte_tutorial_visivel</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="9046812266917464" type="videoTut3" />
+            </actions>
+        </event-block>
+        <event-block sid="3394259122869763">
+            <conditions>
+                <condition id="1" name="On any touch end" sid="9518756713057909" type="Touch" />
+                <condition id="4" name="Is touching object" sid="1112668781392328" type="Touch">
+                    <param id="0" name="Object">fundo_botao_voltar</param>
+                </condition>
+                <condition id="-17" name="Compare opacity" sid="5180370670891134" type="System">
+                    <param id="0" name="Layer">4</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Opacity">100</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="6601740500755299" type="System">
+                    <param id="0" name="Variable">qual_parte_tutorial_visivel</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-18" name="Set layer opacity" sid="4341404586329108" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Opacity">100</param>
+                </action>
+                <action id="-18" name="Set layer opacity" sid="9414681323285761" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Opacity">0</param>
+                </action>
+                <action id="-18" name="Set layer opacity" sid="5495330821826255" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Opacity">0</param>
+                </action>
+                <action id="-18" name="Set layer opacity" sid="990032376144325" type="System">
+                    <param id="0" name="Layer">4</param>
+                    <param id="1" name="Opacity">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="9095282120116535" type="System">
+                    <param id="0" name="Variable">qual_parte_tutorial_visivel</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="1003400791814009" type="videoTut3">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3516842435119396">
+            <conditions>
+                <condition id="17" name="On tap object" sid="1262237755150055" type="Touch">
+                    <param id="0" name="Object">fundo_botao_seguinte</param>
+                </condition>
+                <condition id="-17" name="Compare opacity" sid="3054925846607672" type="System">
+                    <param id="0" name="Layer">4</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Opacity">100</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5559681269229797" type="System">
+                    <param id="0" name="Variable">qual_parte_tutorial_visivel</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+                <condition id="-10" name="Compare opacity" sid="980920262577672" type="videoTut2">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Opacity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="6849601345714581" type="System">
+                    <param id="0" name="Layout">ExplicacaoItens</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3234830168544833">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="3489360066126899" type="mosca_logo">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="2088986595428784" type="mosca_logo">
+                    <param id="0" name="Distance">-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4688399516920278">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="2367438417325498" type="mosca_logo">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="5968474213652374" type="mosca_logo">
+                    <param id="0" name="Distance">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6378779340949591">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="8170001443481642" type="mosca_logo">
+                    <param id="0" name="Object">area_virar_mosca_logo1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="9624283566524229" type="mosca_logo">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="1799732310501393" type="mosca_logo">
+                    <param id="0" name="Animation">&quot;mosca_voando_contrario&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3784266085037604">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="337123687176536" type="mosca_logo">
+                    <param id="0" name="Object">area_virar_mosca_logo2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="1037673089945295" type="mosca_logo">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="1313679908679851" type="mosca_logo">
+                    <param id="0" name="Animation">&quot;mosca_voando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8729562022629742">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4638090616651234" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8077195229679223" type="mosca_logo">
+                    <param id="0" name="Animation">&quot;mosca_voando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="8723742250078756" type="mosca_logo">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="8466549593895048" type="background_movendo">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6520797841201201">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="1909049194658915" type="System" />
+                <condition id="-7" name="Compare instance variable" sid="1966296659048414" type="mosca_logo">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="2935246643085639" type="mosca_logo">
+                    <param id="0" name="Animation">&quot;mosca_voando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9944670104279707">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="6701603221831953" type="System" />
+                <condition id="-7" inverted="1" name="Compare instance variable" sid="3171026474856208" type="mosca_logo">
+                    <param id="0" name="Instance variable">mosca_voando_contrario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1538438812272248" type="mosca_logo">
+                    <param id="0" name="Animation">&quot;mosca_voando_contrario&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="697627550358547">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="184989027129312" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="7726270019658887" type="texto_titulo_logo">
+                    <param id="0" name="Family name">&quot;chifontregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;chifontsheet.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4810477874864385">
+            <conditions>
+                <condition id="-7" name="Compare time" sid="9658975520699215" type="System">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Time (seconds)">0.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-18" name="Set layer opacity" sid="9575827248022447" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Opacity">0</param>
+                </action>
+                <action id="-18" name="Set layer opacity" sid="7260415918842548" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Opacity">0</param>
+                </action>
+                <action id="-18" name="Set layer opacity" sid="2509703659918429" type="System">
+                    <param id="0" name="Layer">4</param>
+                    <param id="1" name="Opacity">0</param>
+                </action>
+                <action id="-21" name="Reset global variables" sid="1796274837272137" type="System" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
